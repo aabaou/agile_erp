@@ -1,0 +1,14 @@
+uuid: ccd7385d-3e85-498c-9925-2688b2d44049
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.representant_organisme
+  module:
+    - user
+id: user_remove_role_action.representant_organisme
+label: 'Retirer le rôle Représentant Organisme aux utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: representant_organisme

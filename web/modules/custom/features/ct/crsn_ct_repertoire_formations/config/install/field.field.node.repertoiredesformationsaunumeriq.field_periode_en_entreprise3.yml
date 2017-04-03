@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periode_en_entreprise3
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_periode_en_entreprise3
+field_name: field_periode_en_entreprise3
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Période du stage en entreprise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

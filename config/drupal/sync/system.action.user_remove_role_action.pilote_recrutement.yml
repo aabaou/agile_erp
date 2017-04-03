@@ -1,0 +1,14 @@
+uuid: 480acb8c-633b-478c-9608-b98b9a11e935
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.pilote_recrutement
+  module:
+    - user
+id: user_remove_role_action.pilote_recrutement
+label: 'Retirer le rôle Pilote recrutement aux utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pilote_recrutement

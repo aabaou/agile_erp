@@ -1,0 +1,23 @@
+uuid: b05baf65-be69-4c62-a062-8239452abf9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nb_heure_dida_annee3
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee3
+field_name: field_nb_heure_dida_annee3
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Nb d’heures de didacticiel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

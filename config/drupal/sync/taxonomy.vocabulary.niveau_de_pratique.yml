@@ -1,0 +1,9 @@
+uuid: 3d47a1c1-661c-4186-ae2a-42903d3254ad
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Niveau de pratique'
+vid: niveau_de_pratique
+description: ''
+hierarchy: 0
+weight: 0

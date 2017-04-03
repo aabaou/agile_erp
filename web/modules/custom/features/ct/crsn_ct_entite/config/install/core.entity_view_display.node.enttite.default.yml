@@ -1,0 +1,34 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.enttite.field_code_postal
+    - field.field.node.enttite.field_numero
+    - field.field.node.enttite.field_statut
+    - field.field.node.enttite.field_ville_entite
+    - field.field.node.enttite.field_voie
+    - field.field.node.enttite.field_zone_geographique
+    - node.type.enttite
+  module:
+    - user
+id: node.enttite.default
+targetEntityType: node
+bundle: enttite
+mode: default
+content:
+  field_ville_entite:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden:
+  field_code_postal: true
+  field_numero: true
+  field_statut: true
+  field_voie: true
+  field_zone_geographique: true
+  langcode: true

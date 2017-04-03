@@ -1,0 +1,15 @@
+uuid: 6769c886-4017-43ca-9009-9e41de498cba
+langcode: fr
+status: true
+dependencies: {  }
+name: slide_show
+label: slide_show
+effects:
+  da7692be-38c9-48f4-b5ad-640230e45630:
+    uuid: da7692be-38c9-48f4-b5ad-640230e45630
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false

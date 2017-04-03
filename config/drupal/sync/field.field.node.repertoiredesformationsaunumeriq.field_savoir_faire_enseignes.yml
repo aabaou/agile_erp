@@ -1,0 +1,19 @@
+uuid: 505f867b-8639-4ec8-818a-7fd993ab8e07
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_savoir_faire_enseignes
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_savoir_faire_enseignes
+field_name: field_savoir_faire_enseignes
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Savoir-Faire enseignés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

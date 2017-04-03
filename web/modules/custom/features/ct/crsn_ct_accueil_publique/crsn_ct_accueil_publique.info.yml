@@ -1,0 +1,13 @@
+name: 'CRSN : Accueil publique'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - language
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+version: 8.x-1.0

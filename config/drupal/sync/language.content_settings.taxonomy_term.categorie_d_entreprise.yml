@@ -1,0 +1,11 @@
+uuid: 90411a72-d37f-4fe4-94dd-cd1eff993f35
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_d_entreprise
+id: taxonomy_term.categorie_d_entreprise
+target_entity_type_id: taxonomy_term
+target_bundle: categorie_d_entreprise
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,160 @@
+/*****************************************
+ *RFN = Repertoire Des Formations Au Numerique
+ ****************************************/
+.repertoiredesformationsaunumeriq .content .field--name-field-nom {
+  width: 25%;
+}
+.repertoiredesformationsaunumeriq .content .field--name-field-site-web2 {
+  width: 25%;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--4 {
+  width: 25%;
+  float: left;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--4 .panel-heading {
+  background-color: #cccccc;
+  font-weight: bold;
+  text-align: center;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--4 .panel-body {
+  background-color: #cccccc;
+  padding: 5px;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--4 .panel-body .form-item .panel-heading .panel-title {
+  background-color: #cccccc;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--5 {
+  width: 75%;
+  float: right;
+  border-style: solid;
+  border-color: #a8c80c;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--5 .panel-heading .panel-title {
+  font-weight: bold;
+  color: #a8c80c;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--5 .panel-body .field .field--label {
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 220px;
+  padding: 5px;
+  display: inline-block;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--5 .panel-body .field .field--item {
+  width: 50%;
+  display: inline-block;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--5 .panel-body .field .field__items {
+  width: 50%;
+  display: inline-block;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--6 {
+  width: 75%;
+  float: right;
+  border-style: solid;
+  border-color: #a8c80c;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--6 .panel-heading .panel-title {
+  font-weight: bold;
+  color: #a8c80c;
+}
+.repertoiredesformationsaunumeriq .content #bootstrap-panel--6 .panel-body .field .field--label {
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 200px;
+  padding: 5px;
+  display: inline-block;
+}
+/*****************************************
+ * Tableau deroulement de la formation
+ ****************************************/
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation {
+  border-style: solid;
+  border-color: #a8c80c;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .title_tab_rfn {
+  font-weight: bold;
+  color: #a8c80c;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn {
+  border-style: solid;
+  border-color: #cccccc;
+  margin-top: 20px;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn .rfn_col_title {
+  width: 30%;
+  display: inline-block;
+  background-color: #cccccc;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn .rfn_col_title .rfn_data_title_line {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn .rfn_col_annee {
+  text-align: center;
+  width: 13%;
+  display: inline-block;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn .rfn_col_annee .rfn_annee {
+  background-color: #cccccc;
+  color: #ffffff;
+  line-height: normal;
+}
+.repertoiredesformationsaunumeriq .content #rfn_deroulement_formation .cadre_tab_rfn .rfn_col_annee .field .field--label {
+  display: none;
+  line-height: normal;
+}
+/*****************************************
+ * Tableau Modalités d'accès à la formation
+ ****************************************/
+#rfn_modalite_acces_forma {
+  border-style: solid;
+  border-color: #a8c80c;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#rfn_modalite_acces_forma .title_tab_rfn {
+  font-weight: bold;
+  color: #a8c80c;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#rfn_modalite_acces_forma .data_modalite_acces .field .field--label {
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 200px;
+  padding: 5px;
+  display: inline-block;
+}

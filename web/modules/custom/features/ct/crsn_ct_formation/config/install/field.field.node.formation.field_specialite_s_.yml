@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialite_s_
+    - node.type.formation
+    - taxonomy.vocabulary.specialite_s_
+id: node.formation.field_specialite_s_
+field_name: field_specialite_s_
+entity_type: node
+bundle: formation
+label: Spécialité(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialite_s_: specialite_s_
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

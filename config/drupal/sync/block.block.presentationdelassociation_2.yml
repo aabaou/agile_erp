@@ -1,0 +1,25 @@
+uuid: 33d03d07-69fe-40bb-a315-21b5bd7279ca
+langcode: fr
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:323357aa-8006-4cdd-8300-b37629a7ba43'
+  module:
+    - block_content
+  theme:
+    - portailcrsn
+id: presentationdelassociation_2
+theme: portailcrsn
+region: '-1'
+weight: -6
+provider: null
+plugin: 'block_content:323357aa-8006-4cdd-8300-b37629a7ba43'
+settings:
+  id: 'block_content:323357aa-8006-4cdd-8300-b37629a7ba43'
+  label: 'Présentation de l''association'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

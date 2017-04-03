@@ -1,0 +1,22 @@
+uuid: aa0df290-14e0-44cd-a500-db49d35906cb
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - portailcrsn
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: portailcrsn_powered
+theme: portailcrsn
+region: '-1'
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

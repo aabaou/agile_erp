@@ -1,0 +1,64 @@
+<?php
+
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+use Drupal\Core\Mail;
+
+function _redirect_condition_required_field($account,$type){
+
+  $field_organisme = $account->get('field_organisme')->getValue();
+  if($field_organisme != null || !empty($field_organisme)){
+    $roles = $account->getRoles();
+    $node = \Drupal\node\Entity\Node::load($field_organisme[0]['target_id']);
+    foreach($roles as $r) {
+      // Si l'utilisateur est non valide, il se fait déconnecter
+      if($r == "utilisateur_non_valide") {
+        $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+        user_logout($user);
+      }else{
+        // Si l'utilisateur est representant_organisme
+        if($r == "representant_organisme"){
+          // Si le champ CNIL = 0 on renvoi l'utilisateur vers son formulaire d'édition
+          $field_cnil = $account->get('field_user_cnil')->getValue();
+          if($field_cnil[0]['value'] == 0){
+            $field_uid = $account->get('uid')->getValue();
+            drupal_set_message(t('Merci de cocher la case des conditions d\'utilisation des données de votre profil pour être en conformité avec la CNIL'));
+            $response = new RedirectResponse(Url::fromRoute('entity.user.edit_form', ['user' => intval($field_uid[0]['value'])])->toString());
+            $response->send();
+            return;
+          }
+
+          $field_representant = $node->get('field_representant')->getValue();
+          $field_accepter_les_conditions = $node->get('field_accepter_les_conditions')->getValue();
+          $field_type_d_organisme = $node->get('field_type_d_organisme')->getValue();
+
+          // Si les CGV ne sont pas cochées, on renvoi l'utilisateur vers le formulaire de contrib de l'organisme attaché.
+          if($field_representant[0]['value'] == 0 || $field_accepter_les_conditions[0]['value'] == 0) {
+            if($field_type_d_organisme[0]['target_id'] != '66'){
+              drupal_set_message(t('Les clauses d\'engagement pour l\'organisme sont obligatoires'));
+              $response = new RedirectResponse(Url::fromRoute('entity.node.edit_form', ['node' => intval($field_organisme[0]['target_id'])])->toString());
+              $response->send();
+              return;
+            }
+          }
+          if($type == "login"){
+            // Sinon on renvoi vers les actualités interne.
+            $response = new RedirectResponse('/actualites-interne');
+            $response->send();
+            return;
+          }
+        }
+      }
+    }
+    return;
+  }else{
+    $roles = $account->getRoles();
+    foreach($roles as $r) {
+      if($r == "representant_organisme" || $r == "entreprise"){
+        $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+        user_logout($user);
+      }
+    }
+  }
+}

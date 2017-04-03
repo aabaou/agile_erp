@@ -1,0 +1,21 @@
+uuid: 25b07058-82a8-4456-9e3a-cb8e8b37c727
+langcode: fr
+status: false
+dependencies: {  }
+name: 'Format Administrateur'
+format: format_administrateur
+weight: -6
+filters:
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

@@ -1,0 +1,19 @@
+uuid: 2000bbae-1ec5-443f-872f-d567e54efbc0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periode_en_entreprise5
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_periode_en_entreprise5
+field_name: field_periode_en_entreprise5
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Période du stage en entreprise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

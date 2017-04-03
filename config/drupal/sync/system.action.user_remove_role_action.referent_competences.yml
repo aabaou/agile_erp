@@ -1,0 +1,14 @@
+uuid: fa66bc7b-17f7-4ef9-82a1-8bb2cfc70d6d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.referent_competences
+  module:
+    - user
+id: user_remove_role_action.referent_competences
+label: 'Retirer le rôle Référent compétences aux utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: referent_competences

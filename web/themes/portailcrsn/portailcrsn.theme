@@ -1,0 +1,68 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/*
+ * Implements hook_preprocess_page
+ */
+function portailcrsn_preprocess_page(&$variables){
+
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  $block_manager = \Drupal::service('plugin.manager.block');
+
+  //Remove page content for homepage, add block to vars
+  if($is_front) {
+    $block_config = [];
+    $block_formations = $block_manager->createInstance('block_annuaire_des_formations', $block_config);
+    $block_build_formations = $block_formations->build();
+    $variables['block_annuaire'] = $block_build_formations;
+
+    $block_members = $block_manager->createInstance('block_annuaire_des_membres', $block_config);
+    $block_build_members = $block_members->build();
+    $variables['block_members'] = $block_build_members;
+  }
+}
+
+function portailcrsn_preprocess_file_link(&$variables){
+  // Add target _blank attribute to all file links.
+  $file = $variables['file'];
+  $fileUrl = file_create_url($file->uri->value);
+  $url = Drupal\Core\Url::fromUri($fileUrl);
+  $url->setOption('attributes', array('target'=>'_blank'));
+  $link = new Drupal\Core\Link($variables['file']->getFilename(), $url);
+  $variables['link'] = null;
+  $variables['link'] = $link;
+}
+
+function portailcrsn_preprocess_node(&$variables){
+  $node = $variables['node'];
+
+  $type_node = $node->get('type')->getValue();
+  $type_node = $type_node[0]['target_id'];
+  if($type_node == "organisme"){
+
+
+    $user_node = $node->get('uid')->getValue();
+    $user_node = $user_node[0]['target_id'];
+
+    $user_rh = $node->get('field_contact_rh')->getValue();
+    if(isset($user_rh[0])){
+        $user_rh = $user_rh[0]['target_id'];
+    }
+
+    if($user_rh != ''){
+      $variables['contact_rh'] = $user_rh;
+    }else{
+      $variables['contact_rh'] = $user_node;
+    }
+
+    $type_orga = $node->get('field_categorie_d_organisme')->getValue();
+    $variables['node_type_orga'] = $type_orga[0]['target_id'];
+  }else{
+    $variables['node_type_orga'] = "";
+  }
+}

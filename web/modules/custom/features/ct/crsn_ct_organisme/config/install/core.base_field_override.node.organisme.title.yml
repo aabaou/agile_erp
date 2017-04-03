@@ -1,0 +1,17 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.organisme
+id: node.organisme.title
+field_name: title
+entity_type: node
+bundle: organisme
+label: 'Raison sociale'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

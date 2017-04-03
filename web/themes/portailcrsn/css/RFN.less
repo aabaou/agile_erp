@@ -1,0 +1,318 @@
+/*****************************************
+ *RFN = Repertoire Des Formations Au Numerique
+ ****************************************/
+
+@greylight: #cccccc;
+@green: #a8c80c;
+
+.repertoiredesformationsaunumeriq {
+  .content {
+    .field--name-field-nom {
+      width: 25%;
+    }
+
+    .field--name-field-site-web2 {
+      width: 25%;
+    }
+
+    #bootstrap-panel--4 {
+      width: 25%;
+      float: left;
+      .panel-heading {
+        background-color: @greylight;
+        font-weight: bold;
+        text-align: center;
+      }
+      .panel-body {
+        background-color: @greylight;
+        padding: 5px;
+        .form-item {
+          .panel-heading {
+            .panel-title {
+              background-color: @greylight;
+              text-align: center;
+              text-decoration: underline;
+              padding: 0px;
+            }
+          }
+          .panel-body {
+          }
+        }
+      }
+    }
+    #bootstrap-panel--5 {
+      width: 75%;
+      float: right;
+      border-style: solid;
+      border-color: @green;
+      border-width: 2px;
+      border-radius: 20px;
+      padding: 20px;
+
+      .panel-heading {
+        .panel-title {
+          font-weight: bold;
+          color: @green;
+        }
+      }
+      .panel-body {
+        .field {
+          .field--label {
+            background-color: @greylight;
+            color: #ffffff;
+            width: 220px;
+            padding: 5px;
+            display: inline-block;
+          }
+          .field--item {
+            width: 50%;
+            display: inline-block;
+          }
+          .field__items {
+            width: 50%;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    #bootstrap-panel--6 {
+      width: 75%;
+      float: right;
+      border-style: solid;
+      border-color: @green;
+      border-width: 2px;
+      border-radius: 20px;
+      padding: 20px;
+      .panel-heading {
+        .panel-title {
+          font-weight: bold;
+          color: @green;
+        }
+      }
+      .panel-body {
+        .field {
+          .field--label {
+            background-color: @greylight;
+            color: #ffffff;
+            width: 100%;
+            padding: 5px;
+            display: inline-block;
+          }
+          .field--item {
+
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+/*****************************************
+ * Tableau deroulement de la formation
+ ****************************************/
+.repertoiredesformationsaunumeriq {
+  .content {
+    .field--label{
+      font-weight: 400;
+    }
+    .formation_table_info_zone{
+      #formation_table_info{
+        width: 100%;
+        tr{
+          th{
+            background-color: #cccccc;
+            color: #ffffff;
+            padding: 4px;
+            font-weight: 400;
+            &.center{
+              text-align: center;
+            }
+          }
+          td{
+            text-align: center;
+            .field--label{
+              display: none;
+            }
+            .field{
+              float: left;
+            }
+          }
+          &.header{
+            th{
+              border-right: 10px solid #fff;
+            }
+          }
+        }
+      }
+    }
+    #rfn_deroulement_formation {
+      border-style: solid;
+      border-color: @green;
+      border-width: 2px;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+      .title_tab_rfn {
+        font-weight: bold;
+        color: @green;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: block;
+        border-bottom: 1px solid #ddd;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        margin-bottom: 20px;
+      }
+
+      .cadre_tab_rfn {
+        border-style: solid;
+        border-color: @greylight;
+        margin-top: 20px;
+
+        .rfn_col_title {
+          float: left;
+          width: 30%;
+          display: inline-block;
+          background-color: @greylight;
+
+          //padding-bottom: 1%;
+          //padding-top: 1%;
+          .rfn_data_title_line {
+            text-align: left;
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            //font-weight: bold;
+            //width: 19.5%;
+            color: #ffffff;
+            line-height: 1.6;
+
+          }
+        }
+
+        .rfn_col_annee {
+          float: left;
+          text-align: center;
+          width: 13%;
+          display: inline-block;
+          .rfn_annee {
+            background-color: @greylight;
+            color: #ffffff;
+            line-height: normal;
+          }
+          .field {
+            .field--label {
+              display: none;
+              line-height: normal;
+            }
+          }
+        }
+        .rfn_col_annee.large-col {
+          width: 23.33%;
+        }
+      }
+    }
+  }
+}
+
+/*****************************************
+* Tableau Modalités d'accès à la formation
+****************************************/
+
+#rfn_modalite_acces_forma {
+  border-style: solid;
+  border-color: @green;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  .title_tab_rfn {
+    font-weight: bold;
+    color: @green;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: 20px;
+  }
+  .data_modalite_acces {
+    .field {
+      .field--label {
+        background-color: @greylight;
+        color: #ffffff;
+        width: 200px;
+        padding: 5px;
+        display: inline-block;
+      }
+    }
+    .rfn_field {
+      float: left;
+      width: 13.7%;
+      margin-right: 10px;
+    }
+    .rfn_field_large {
+      float: left;
+      width: 20%;
+      margin-right: 10px;
+    }
+    .full-width, .full-width .field--label {
+      width: 100%;
+    }
+    .full-width .quickedit-field{
+      padding-top: 0px;
+    }
+    .middle-width{
+      width: 50%;
+      margin-right: 10px;
+    }
+    .middle-width, .middle-width .quickedit-field{
+      padding-top: 0px;
+    }
+    .middle-width .field--label{
+      width: 100%;
+    }
+  }
+}
+
+.page-repertoiredesformationsaunumeriq {
+  article {
+    border: none;
+    padding: 5px;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.inline-b div {
+  display: inline-block;
+}
+
+.view-id-repertoire_des_formations {
+  .field-content {
+    margin-bottom: 0 !important;
+  }
+  .views-field-field-logo {
+    float: left;
+    width: 200px;
+  }
+  .views-field-title-1 {
+    float: left;
+    width: 200px;
+    clear: both;
+  }
+  .views-field-field-organisme-site-web {
+    float: left;
+    width: 200px;
+    clear: both;
+  }
+}

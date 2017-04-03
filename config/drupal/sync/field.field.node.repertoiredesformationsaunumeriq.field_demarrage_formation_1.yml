@@ -1,0 +1,28 @@
+uuid: 5eb7a546-dfae-4a48-b631-a6cccd10e716
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demarrage_formation_1
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.mois
+id: node.repertoiredesformationsaunumeriq.field_demarrage_formation_1
+field_name: field_demarrage_formation_1
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Démarrage session 1 dans l''année'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mois: mois
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

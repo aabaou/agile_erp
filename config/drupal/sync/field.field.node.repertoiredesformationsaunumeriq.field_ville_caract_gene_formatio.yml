@@ -1,0 +1,19 @@
+uuid: 7585d674-3e16-466e-bbc2-37f45e1b6324
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ville_caract_gene_formatio
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_ville_caract_gene_formatio
+field_name: field_ville_caract_gene_formatio
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Ville(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

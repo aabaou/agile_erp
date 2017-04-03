@@ -1,0 +1,29 @@
+uuid: 1487c3ef-6be7-4a14-9320-328ff1cea1a2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.menu-presentation-de-l-asso
+  module:
+    - system
+  theme:
+    - portailcrsn
+id: menupresentationdelassociation
+theme: portailcrsn
+region: ContentFrontTop
+weight: -13
+provider: null
+plugin: 'system_menu_block:menu-presentation-de-l-asso'
+settings:
+  id: 'system_menu_block:menu-presentation-de-l-asso'
+  label: 'Menu présentation de l''association'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/13
+    negate: false
+    context_mapping: {  }

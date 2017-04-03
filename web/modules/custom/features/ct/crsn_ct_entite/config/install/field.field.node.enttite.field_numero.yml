@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero
+    - node.type.enttite
+id: node.enttite.field_numero
+field_name: field_numero
+entity_type: node
+bundle: enttite
+label: Numéro
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

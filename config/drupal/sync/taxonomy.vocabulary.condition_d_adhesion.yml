@@ -1,0 +1,9 @@
+uuid: 9d2a414e-8bcf-47c7-b40c-d1012571f550
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Condition d''adhésion'
+vid: condition_d_adhesion
+description: ''
+hierarchy: 0
+weight: 0

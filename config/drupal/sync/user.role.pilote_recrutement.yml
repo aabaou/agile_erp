@@ -1,0 +1,25 @@
+uuid: 46d67225-e5cd-4b55-80f8-628e78bccc59
+langcode: fr
+status: true
+dependencies: {  }
+id: pilote_recrutement
+label: 'Pilote recrutement'
+weight: 2
+is_admin: null
+permissions:
+  - 'create application_channel content'
+  - 'delete any application_channel content'
+  - 'delete own application_channel content'
+  - 'delete application_channel revisions'
+  - 'edit any application_channel content'
+  - 'edit own application_channel content'
+  - 'revert application_channel revisions'
+  - 'view application_channel revisions'
+  - 'create qec_session content'
+  - 'delete any qec_session content'
+  - 'delete own qec_session content'
+  - 'delete qec_session revisions'
+  - 'edit any qec_session content'
+  - 'edit own qec_session content'
+  - 'revert qec_session revisions'
+  - 'view qec_session revisions'

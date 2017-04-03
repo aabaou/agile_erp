@@ -1,0 +1,9 @@
+
+
+name: Organisme
+description: Module pour corriger la syncro
+package: Custom
+
+type: module
+core: 8.x
+

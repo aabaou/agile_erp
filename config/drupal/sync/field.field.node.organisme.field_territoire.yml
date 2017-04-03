@@ -1,0 +1,30 @@
+uuid: d42126ac-2779-4495-b725-376f76672bfe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_territoire
+    - node.type.organisme
+    - taxonomy.vocabulary.lieu_departement
+_core:
+  default_config_hash: zXw8NyGiTUhVZ1Q6gIfHOfP-ELbFIJ2Kn2bqtMBOyyc
+id: node.organisme.field_territoire
+field_name: field_territoire
+entity_type: node
+bundle: organisme
+label: 'Localisation de la direction régionale'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lieu_departement: lieu_departement
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: lieu_departement
+field_type: entity_reference

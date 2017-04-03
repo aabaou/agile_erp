@@ -1,0 +1,57 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partenaire.field_categorie_organisme
+    - field.field.node.partenaire.field_description_partenaire
+    - field.field.node.partenaire.field_logo
+    - field.field.node.partenaire.field_raison_sociale
+    - field.field.node.partenaire.field_site_web
+    - node.type.partenaire
+  module:
+    - image
+    - text
+    - user
+id: node.partenaire.default
+targetEntityType: node
+bundle: partenaire
+mode: default
+content:
+  field_categorie_organisme:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_description_partenaire:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_raison_sociale:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_site_web:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden:
+  langcode: true

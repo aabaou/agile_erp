@@ -1,0 +1,32 @@
+uuid: 1b0f3170-e9eb-4a44-8ca0-2c9f02a99d84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organisme
+    - node.type.organisme
+  module:
+    - user
+_core:
+  default_config_hash: S0odz7aXusIV5z7rT2nidQZWNAb-1UrhFSmA1WlzqdQ
+id: user.user.field_organisme
+field_name: field_organisme
+entity_type: user
+bundle: user
+label: Organisme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organisme: organisme
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

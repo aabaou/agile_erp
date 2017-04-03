@@ -1,0 +1,41 @@
+uuid: 6ef80c44-cf16-453b-8976-65ff2377518d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_participants
+    - node.type.qec_session
+id: node.qec_session.field_analysis_participants
+field_name: field_analysis_participants
+entity_type: node
+bundle: qec_session
+label: Participants
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        entreprise: entreprise
+        administrator: '0'
+        partenaire_emploi: '0'
+        gestionnaire: '0'
+        representant_organisme: '0'
+        responsable_communication: '0'
+        responsable_filiere_formation: '0'
+        utilisateur_non_valide: '0'
+        pilote_recrutement: '0'
+        referent_competences: '0'
+        recruteur_entreprise: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,651 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.repertoiredesformationsaunumeriq.field_admission
+    - field.field.node.repertoiredesformationsaunumeriq.field_alternance_annee1
+    - field.field.node.repertoiredesformationsaunumeriq.field_alternance_annee2
+    - field.field.node.repertoiredesformationsaunumeriq.field_alternance_annee3
+    - field.field.node.repertoiredesformationsaunumeriq.field_alternance_annee4
+    - field.field.node.repertoiredesformationsaunumeriq.field_alternance_annee5
+    - field.field.node.repertoiredesformationsaunumeriq.field_civilite
+    - field.field.node.repertoiredesformationsaunumeriq.field_civilite_gestio
+    - field.field.node.repertoiredesformationsaunumeriq.field_civilitedosscandi
+    - field.field.node.repertoiredesformationsaunumeriq.field_cursus
+    - field.field.node.repertoiredesformationsaunumeriq.field_demarrage_formation_1
+    - field.field.node.repertoiredesformationsaunumeriq.field_demarrage_formation_2
+    - field.field.node.repertoiredesformationsaunumeriq.field_diplome
+    - field.field.node.repertoiredesformationsaunumeriq.field_fre
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance1
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance2
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance3
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance4
+    - field.field.node.repertoiredesformationsaunumeriq.field_frequence_d_alternance5
+    - field.field.node.repertoiredesformationsaunumeriq.field_lieu
+    - field.field.node.repertoiredesformationsaunumeriq.field_mail
+    - field.field.node.repertoiredesformationsaunumeriq.field_mail_gestionnaire_stage
+    - field.field.node.repertoiredesformationsaunumeriq.field_mail_info_inscription
+    - field.field.node.repertoiredesformationsaunumeriq.field_metier_s_cible_s_
+    - field.field.node.repertoiredesformationsaunumeriq.field_modalites_pedagogiques
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee1
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee2
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee3
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee4
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_dida_annee5
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee1
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee2
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee3
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee4
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee5
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise2
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise3
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise4
+    - field.field.node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise5
+    - field.field.node.repertoiredesformationsaunumeriq.field_niveau_d_etude_prerequis
+    - field.field.node.repertoiredesformationsaunumeriq.field_nom_gestionnaire_stage
+    - field.field.node.repertoiredesformationsaunumeriq.field_nom_infos_inscription
+    - field.field.node.repertoiredesformationsaunumeriq.field_nom_relation_entreprises
+    - field.field.node.repertoiredesformationsaunumeriq.field_nombre_d_annee
+    - field.field.node.repertoiredesformationsaunumeriq.field_nombre_moyen_de_stagiaires
+    - field.field.node.repertoiredesformationsaunumeriq.field_organisme_repertoire
+    - field.field.node.repertoiredesformationsaunumeriq.field_page_web
+    - field.field.node.repertoiredesformationsaunumeriq.field_periode_en_entreprise
+    - field.field.node.repertoiredesformationsaunumeriq.field_periode_en_entreprise2
+    - field.field.node.repertoiredesformationsaunumeriq.field_periode_en_entreprise3
+    - field.field.node.repertoiredesformationsaunumeriq.field_periode_en_entreprise4
+    - field.field.node.repertoiredesformationsaunumeriq.field_periode_en_entreprise5
+    - field.field.node.repertoiredesformationsaunumeriq.field_plaquette
+    - field.field.node.repertoiredesformationsaunumeriq.field_precisions
+    - field.field.node.repertoiredesformationsaunumeriq.field_prenom_gestionnaire_stage
+    - field.field.node.repertoiredesformationsaunumeriq.field_prenom_info_inscription
+    - field.field.node.repertoiredesformationsaunumeriq.field_prenom_relation_entreprise
+    - field.field.node.repertoiredesformationsaunumeriq.field_presentation_formation
+    - field.field.node.repertoiredesformationsaunumeriq.field_savoir_faire_enseignes
+    - field.field.node.repertoiredesformationsaunumeriq.field_savoir_faire_prerequis
+    - field.field.node.repertoiredesformationsaunumeriq.field_site_web2
+    - field.field.node.repertoiredesformationsaunumeriq.field_specialisation_s_
+    - field.field.node.repertoiredesformationsaunumeriq.field_t
+    - field.field.node.repertoiredesformationsaunumeriq.field_te
+    - field.field.node.repertoiredesformationsaunumeriq.field_telephone_relation_entrepr
+    - field.field.node.repertoiredesformationsaunumeriq.field_ty
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna1
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna2
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna3
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna4
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna5
+    - field.field.node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alternan
+    - field.field.node.repertoiredesformationsaunumeriq.field_ville_caract_gene_formatio
+    - node.type.repertoiredesformationsaunumeriq
+  module:
+    - field_group
+    - file
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_caracteristiques_generales:
+      children: {  }
+      parent_name: ''
+      weight: 122
+      label: 'Caractéristiques générales de la formation'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+id: node.repertoiredesformationsaunumeriq.default
+targetEntityType: node
+bundle: repertoiredesformationsaunumeriq
+mode: default
+content:
+  field_admission:
+    weight: 164
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_alternance_annee1:
+    weight: 137
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_alternance_annee2:
+    weight: 138
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_alternance_annee3:
+    weight: 139
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_alternance_annee4:
+    weight: 140
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_alternance_annee5:
+    weight: 141
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_civilite:
+    weight: 111
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_civilite_gestio:
+    weight: 115
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_civilitedosscandi:
+    weight: 104
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_cursus:
+    weight: 126
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_demarrage_formation_1:
+    weight: 171
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_demarrage_formation_2:
+    weight: 172
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_diplome:
+    weight: 125
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_fre:
+    weight: 147
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance:
+    weight: 151
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance1:
+    weight: 143
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance2:
+    weight: 173
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance3:
+    weight: 174
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance4:
+    weight: 156
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_frequence_d_alternance5:
+    weight: 159
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_lieu:
+    weight: 128
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_mail:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_mail_gestionnaire_stage:
+    weight: 119
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_mail_info_inscription:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_metier_s_cible_s_:
+    weight: 135
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_modalites_pedagogiques:
+    weight: 136
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_nb_heure_dida_annee1:
+    weight: 177
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_dida_annee2:
+    weight: 178
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_dida_annee3:
+    weight: 179
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_dida_annee4:
+    weight: 180
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_dida_annee5:
+    weight: 181
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_pres_annee1:
+    weight: 182
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_pres_annee2:
+    weight: 183
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_pres_annee3:
+    weight: 184
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_pres_annee4:
+    weight: 185
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_heure_pres_annee5:
+    weight: 186
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_mois_en_entreprise:
+    weight: 144
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_mois_en_entreprise2:
+    weight: 148
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_mois_en_entreprise3:
+    weight: 152
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_mois_en_entreprise4:
+    weight: 157
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nb_mois_en_entreprise5:
+    weight: 160
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_niveau_d_etude_prerequis:
+    weight: 162
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_nom_gestionnaire_stage:
+    weight: 116
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_nom_infos_inscription:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_nom_relation_entreprises:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_nombre_d_annee:
+    weight: 127
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_nombre_moyen_de_stagiaires:
+    weight: 129
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_organisme_repertoire:
+    weight: 170
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_page_web:
+    weight: 132
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_periode_en_entreprise:
+    weight: 145
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_periode_en_entreprise2:
+    weight: 149
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_periode_en_entreprise3:
+    weight: 153
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_periode_en_entreprise4:
+    weight: 158
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_periode_en_entreprise5:
+    weight: 161
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_plaquette:
+    weight: 133
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_precisions:
+    weight: 165
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_prenom_gestionnaire_stage:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_prenom_info_inscription:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_prenom_relation_entreprise:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_presentation_formation:
+    weight: 131
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_savoir_faire_enseignes:
+    weight: 169
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_savoir_faire_prerequis:
+    weight: 167
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_site_web2:
+    weight: 166
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_specialisation_s_:
+    weight: 124
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_t:
+    weight: 118
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_te:
+    weight: 113
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_telephone_relation_entrepr:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_ty:
+    weight: 154
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alterna1:
+    weight: 175
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alterna2:
+    weight: 146
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alterna3:
+    weight: 150
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alterna4:
+    weight: 155
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alterna5:
+    weight: 176
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type_de_contrat_d_alternan:
+    weight: 142
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_ville_caract_gene_formatio:
+    weight: 130
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

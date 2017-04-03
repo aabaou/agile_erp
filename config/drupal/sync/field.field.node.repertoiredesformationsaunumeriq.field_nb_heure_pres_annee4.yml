@@ -1,0 +1,23 @@
+uuid: 5b9fbab9-a6fb-4fd6-810e-75f3d8790502
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nb_heure_pres_annee4
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_nb_heure_pres_annee4
+field_name: field_nb_heure_pres_annee4
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Nb d’heures en présentiel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

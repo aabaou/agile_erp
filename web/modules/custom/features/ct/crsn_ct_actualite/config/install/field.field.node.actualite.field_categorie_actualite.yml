@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie_actualite
+    - node.type.actualite
+id: node.actualite.field_categorie_actualite
+field_name: field_categorie_actualite
+entity_type: node
+bundle: actualite
+label: 'Categorie Actualité'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Publique
+  off_label: Privé
+field_type: boolean

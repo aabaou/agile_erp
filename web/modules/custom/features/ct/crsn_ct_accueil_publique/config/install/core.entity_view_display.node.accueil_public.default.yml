@@ -1,0 +1,34 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.accueil_public.body
+    - field.field.node.accueil_public.field_acces_au_fichier_pdf_
+    - node.type.accueil_public
+  module:
+    - file
+    - text
+    - user
+id: node.accueil_public.default
+targetEntityType: node
+bundle: accueil_public
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_acces_au_fichier_pdf_:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

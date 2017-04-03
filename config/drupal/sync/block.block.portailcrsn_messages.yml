@@ -1,0 +1,22 @@
+uuid: b3953140-d2c9-493c-9000-d99748fdf9c9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portailcrsn
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: portailcrsn_messages
+theme: portailcrsn
+region: highlighted
+weight: -14
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }

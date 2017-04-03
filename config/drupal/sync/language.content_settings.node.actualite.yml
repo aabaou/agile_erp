@@ -1,0 +1,13 @@
+uuid: a9ad9b60-4823-47d0-a400-b8bf632f374d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.actualite
+_core:
+  default_config_hash: 635AHxzcIXuXN-A5TgT3CrToZz7TXRJ9alpgNF_keyo
+id: node.actualite
+target_entity_type_id: node
+target_bundle: actualite
+default_langcode: site_default
+language_alterable: false

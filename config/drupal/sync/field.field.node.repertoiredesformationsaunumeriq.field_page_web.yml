@@ -1,0 +1,23 @@
+uuid: 1fdae3c4-a7e8-46fc-9ee2-2f398d27c4c1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_web
+    - node.type.repertoiredesformationsaunumeriq
+  module:
+    - link
+id: node.repertoiredesformationsaunumeriq.field_page_web
+field_name: field_page_web
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Page Web'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

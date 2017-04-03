@@ -1,0 +1,19 @@
+name: 'CRSN : Organisme'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - datetime
+  - field
+  - field_group
+  - image
+  - language
+  - link
+  - menu_ui
+  - node
+  - path
+  - telephone
+  - text
+  - user
+  - views
+version: 8.x-1.0

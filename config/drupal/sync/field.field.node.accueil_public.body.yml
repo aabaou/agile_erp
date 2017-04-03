@@ -1,0 +1,24 @@
+uuid: 02f71eef-9f60-4b4d-a900-cfa01ad128a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.accueil_public
+  module:
+    - text
+_core:
+  default_config_hash: E6Umvy_YO1bnJp8EYpBBHnUO9PNyIm3WW766LeEAloc
+id: node.accueil_public.body
+field_name: body
+entity_type: node
+bundle: accueil_public
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

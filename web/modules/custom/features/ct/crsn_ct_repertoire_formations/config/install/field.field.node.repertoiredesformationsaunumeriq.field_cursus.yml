@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cursus
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.cursus
+id: node.repertoiredesformationsaunumeriq.field_cursus
+field_name: field_cursus
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Cursus
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cursus: cursus
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

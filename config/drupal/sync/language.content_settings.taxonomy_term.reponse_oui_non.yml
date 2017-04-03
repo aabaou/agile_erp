@@ -1,0 +1,11 @@
+uuid: ec0ae443-aa11-47e1-8627-e6e070ccca55
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reponse_oui_non
+id: taxonomy_term.reponse_oui_non
+target_entity_type_id: taxonomy_term
+target_bundle: reponse_oui_non
+default_langcode: site_default
+language_alterable: false

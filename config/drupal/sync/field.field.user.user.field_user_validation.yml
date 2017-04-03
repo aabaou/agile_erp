@@ -1,0 +1,23 @@
+uuid: 2e3f1810-3294-4a6b-a538-da41f8463c67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_validation
+  module:
+    - options
+    - user
+id: user.user.field_user_validation
+field_name: field_user_validation
+entity_type: user
+bundle: user
+label: Validation
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: waiting
+default_value_callback: ''
+settings: {  }
+field_type: list_string

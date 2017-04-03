@@ -1,0 +1,23 @@
+uuid: 3ec4b28e-85c6-4e56-829d-16999eccf772
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nb_mois_en_entreprise2
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_nb_mois_en_entreprise2
+field_name: field_nb_mois_en_entreprise2
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Nb de mois de stage en entreprise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,27 @@
+uuid: 77ccb5c3-2d2d-433e-9621-33792ab4cecd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliation
+    - node.type.organisme
+_core:
+  default_config_hash: leGx5V-l-CUzAPJ6UfpCufV3UyYC5AIWQgDDHb4O-Ic
+id: node.organisme.field_affiliation
+field_name: field_affiliation
+entity_type: node
+bundle: organisme
+label: 'Affiliation à un organisme professionnel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: annuaire_des_organismes
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

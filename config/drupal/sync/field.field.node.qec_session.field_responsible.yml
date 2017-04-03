@@ -1,0 +1,41 @@
+uuid: 4dd4fa67-9301-48dc-a37c-1ca409355c80
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_responsible
+    - node.type.qec_session
+id: node.qec_session.field_responsible
+field_name: field_responsible
+entity_type: node
+bundle: qec_session
+label: Responsable
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        pilote_recrutement: pilote_recrutement
+        administrator: '0'
+        entreprise: '0'
+        partenaire_emploi: '0'
+        gestionnaire: '0'
+        representant_organisme: '0'
+        responsable_communication: '0'
+        responsable_filiere_formation: '0'
+        utilisateur_non_valide: '0'
+        referent_competences: '0'
+        recruteur_entreprise: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

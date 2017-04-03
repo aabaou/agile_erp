@@ -1,0 +1,11 @@
+uuid: af0b1eee-8d8d-46f7-94ef-bdde27c2b20a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.qec_session
+id: node.qec_session
+target_entity_type_id: node
+target_bundle: qec_session
+default_langcode: site_default
+language_alterable: false

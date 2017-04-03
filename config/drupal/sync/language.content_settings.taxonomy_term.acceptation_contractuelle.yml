@@ -1,0 +1,13 @@
+uuid: d111612f-350e-49cc-b000-f97f454f5269
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acceptation_contractuelle
+_core:
+  default_config_hash: GHuiDV5AUP5ZVEZci2_A04YFEBkYv2AVcU-GzdG2vJM
+id: taxonomy_term.acceptation_contractuelle
+target_entity_type_id: taxonomy_term
+target_bundle: acceptation_contractuelle
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voie
+    - node.type.enttite
+id: node.enttite.field_voie
+field_name: field_voie
+entity_type: node
+bundle: enttite
+label: Voie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

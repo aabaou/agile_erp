@@ -1,0 +1,13 @@
+uuid: 6db02d6d-4985-4ca6-9a00-a063e569bec8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_d_organisme
+_core:
+  default_config_hash: D3U-1NEL63AShHmNYoDWEjSCcJqkMdMZXkrkp7Qf7lc
+id: taxonomy_term.categorie_d_organisme
+target_entity_type_id: taxonomy_term
+target_bundle: categorie_d_organisme
+default_langcode: site_default
+language_alterable: false

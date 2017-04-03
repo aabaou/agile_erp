@@ -1,0 +1,8 @@
+uuid: 6b591fb6-30c4-40fd-9636-e5c253ed69e4
+langcode: fr
+status: true
+dependencies: {  }
+id: format_date_francaise
+label: 'Format date Française'
+locked: false
+pattern: j/m/Y

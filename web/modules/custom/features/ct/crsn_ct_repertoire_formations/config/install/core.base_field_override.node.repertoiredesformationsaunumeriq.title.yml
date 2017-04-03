@@ -1,0 +1,17 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.title
+field_name: title
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Titre de la formation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

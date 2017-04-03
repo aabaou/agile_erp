@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.lieu_departement
+id: node.repertoiredesformationsaunumeriq.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Lieu(x)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lieu_departement: lieu_departement
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: lieu_departement
+field_type: entity_reference

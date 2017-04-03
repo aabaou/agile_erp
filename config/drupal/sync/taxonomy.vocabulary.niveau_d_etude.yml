@@ -1,0 +1,9 @@
+uuid: 6a7d224f-2b6f-4b2b-a980-f87c42ace6f9
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Niveau d''étude'
+vid: niveau_d_etude
+description: ''
+hierarchy: 0
+weight: 0

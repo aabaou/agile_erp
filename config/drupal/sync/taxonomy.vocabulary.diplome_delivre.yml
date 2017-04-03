@@ -1,0 +1,9 @@
+uuid: 9cddbb59-429c-494c-b226-387a7880a480
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Diplôme délivré'
+vid: diplome_delivre
+description: ''
+hierarchy: 0
+weight: 0

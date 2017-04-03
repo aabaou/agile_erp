@@ -1,0 +1,11 @@
+uuid: 76b04c6b-bf21-47af-8c07-7c6977e7922f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_de_poste_recherche
+id: taxonomy_term.type_de_poste_recherche
+target_entity_type_id: taxonomy_term
+target_bundle: type_de_poste_recherche
+default_langcode: site_default
+language_alterable: false

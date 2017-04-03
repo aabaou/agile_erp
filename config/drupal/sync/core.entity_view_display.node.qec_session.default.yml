@@ -1,0 +1,151 @@
+uuid: a49b0f87-cdb6-415a-9bd4-0279249d8ecc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.qec_session.field_analysis_date
+    - field.field.node.qec_session.field_analysis_location
+    - field.field.node.qec_session.field_analysis_participants
+    - field.field.node.qec_session.field_analysis_time_slot
+    - field.field.node.qec_session.field_interview_date
+    - field.field.node.qec_session.field_interview_location
+    - field.field.node.qec_session.field_interview_participants
+    - field.field.node.qec_session.field_interview_time_slot
+    - field.field.node.qec_session.field_responsible
+    - field.field.node.qec_session.field_status
+    - field.field.node.qec_session.field_zone
+    - node.type.qec_session
+  module:
+    - datetime
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_id:
+      children:
+        - field_status
+        - field_responsible
+        - field_zone
+      parent_name: ''
+      weight: 0
+      label: 'Identification de la session QEC'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+    group_analysis:
+      children:
+        - field_analysis_date
+        - field_analysis_time_slot
+        - field_analysis_location
+        - field_analysis_participants
+      parent_name: ''
+      weight: 1
+      label: 'Planification de l''étape - Analyse dossier'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+    group_interview:
+      children:
+        - field_interview_date
+        - field_interview_time_slot
+        - field_interview_location
+        - field_interview_participants
+      parent_name: ''
+      weight: 2
+      label: 'Planification de l''étape - Entretien conseil'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+id: node.qec_session.default
+targetEntityType: node
+bundle: qec_session
+mode: default
+content:
+  field_analysis_date:
+    weight: 5
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_analysis_location:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_analysis_participants:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_analysis_time_slot:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_interview_date:
+    weight: 5
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_interview_location:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_interview_participants:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_interview_time_slot:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_responsible:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_status:
+    weight: 2
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_zone:
+    weight: 4
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  langcode: true
+  links: true

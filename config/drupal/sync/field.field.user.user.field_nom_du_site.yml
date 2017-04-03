@@ -1,0 +1,22 @@
+uuid: c2ef6ae7-2779-42ea-bcd3-2f59e520e33d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nom_du_site
+  module:
+    - user
+_core:
+  default_config_hash: gT_Ry7Whi-r1cZPXCekf6-YX2UBgY83UCBqt-7lVioM
+id: user.user.field_nom_du_site
+field_name: field_nom_du_site
+entity_type: user
+bundle: user
+label: 'Nom du site'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

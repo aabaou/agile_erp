@@ -1,0 +1,194 @@
+uuid: 68f60bfe-a440-4981-b1b8-6905477e2696
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.qec_session.field_analysis_date
+    - field.field.node.qec_session.field_analysis_location
+    - field.field.node.qec_session.field_analysis_participants
+    - field.field.node.qec_session.field_analysis_time_slot
+    - field.field.node.qec_session.field_interview_date
+    - field.field.node.qec_session.field_interview_location
+    - field.field.node.qec_session.field_interview_participants
+    - field.field.node.qec_session.field_interview_time_slot
+    - field.field.node.qec_session.field_responsible
+    - field.field.node.qec_session.field_status
+    - field.field.node.qec_session.field_zone
+    - node.type.qec_session
+  module:
+    - datetime
+    - field_group
+    - path
+third_party_settings:
+  field_group:
+    group_id:
+      children:
+        - title
+        - field_status
+        - field_responsible
+        - field_zone
+      parent_name: ''
+      weight: 0
+      label: 'Identification de la session QEC'
+      format_type: tab
+      format_settings:
+        label: 'Identification de la session QEC'
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+    group_analysis:
+      children:
+        - field_analysis_date
+        - field_analysis_time_slot
+        - field_analysis_location
+        - field_analysis_participants
+      parent_name: ''
+      weight: 1
+      label: 'Planification de l''étape - Analyse dossier'
+      format_type: tab
+      format_settings:
+        label: 'Planification de l''étape - Analyse dossier'
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+    group_interview:
+      children:
+        - field_interview_date
+        - field_interview_time_slot
+        - field_interview_location
+        - field_interview_participants
+      parent_name: ''
+      weight: 2
+      label: 'Planification de l''étape - Entretien conseil'
+      format_type: tab
+      format_settings:
+        label: 'Planification de l''étape - Entretien conseil'
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+id: node.qec_session.default
+targetEntityType: node
+bundle: qec_session
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_analysis_date:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_analysis_location:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_analysis_participants:
+    weight: 30
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+  field_analysis_time_slot:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_interview_date:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_interview_location:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_interview_participants:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+  field_interview_time_slot:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_responsible:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_status:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_zone:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  langcode:
+    type: language_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

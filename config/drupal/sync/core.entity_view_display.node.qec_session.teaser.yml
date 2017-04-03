@@ -1,0 +1,40 @@
+uuid: 6d321f57-efbe-4733-821e-77a51a6b1404
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.qec_session.field_analysis_date
+    - field.field.node.qec_session.field_analysis_location
+    - field.field.node.qec_session.field_analysis_participants
+    - field.field.node.qec_session.field_analysis_time_slot
+    - field.field.node.qec_session.field_interview_date
+    - field.field.node.qec_session.field_interview_location
+    - field.field.node.qec_session.field_interview_participants
+    - field.field.node.qec_session.field_interview_time_slot
+    - field.field.node.qec_session.field_responsible
+    - field.field.node.qec_session.field_status
+    - field.field.node.qec_session.field_zone
+    - node.type.qec_session
+  module:
+    - user
+id: node.qec_session.teaser
+targetEntityType: node
+bundle: qec_session
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_analysis_date: true
+  field_analysis_location: true
+  field_analysis_participants: true
+  field_analysis_time_slot: true
+  field_interview_date: true
+  field_interview_location: true
+  field_interview_participants: true
+  field_interview_time_slot: true
+  field_responsible: true
+  field_status: true
+  field_zone: true
+  langcode: true

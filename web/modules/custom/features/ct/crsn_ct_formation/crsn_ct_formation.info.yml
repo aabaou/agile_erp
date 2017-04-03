@@ -1,0 +1,13 @@
+name: 'CRSN : Formation'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - field_group
+  - file
+  - menu_ui
+  - node
+  - options
+  - path
+  - user
+version: 8.x-1.0

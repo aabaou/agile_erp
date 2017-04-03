@@ -1,0 +1,19 @@
+uuid: 243bd500-5a15-44b5-a49d-056a2172a0ae
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_organisme_site_web
+field_name: field_organisme_site_web
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

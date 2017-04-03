@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree_nombre_d_annees_
+    - node.type.formation
+id: node.formation.field_duree_nombre_d_annees_
+field_name: field_duree_nombre_d_annees_
+entity_type: node
+bundle: formation
+label: 'Durée (nombre d''années)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

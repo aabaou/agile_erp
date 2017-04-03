@@ -1,0 +1,25 @@
+uuid: b12bb619-4653-4230-951f-ba53c2dcd280
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cette_actualite_est_public
+    - node.type.actualite
+_core:
+  default_config_hash: wuTECJX4FnT_SnLbYzH_Etyu8l6-hADjN5EK7Ue6GcQ
+id: node.actualite.field_cette_actualite_est_public
+field_name: field_cette_actualite_est_public
+entity_type: node
+bundle: actualite
+label: audience
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Actualité publique'
+  off_label: 'Actualité Privé'
+field_type: boolean

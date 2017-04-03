@@ -1,0 +1,12 @@
+uuid: b2799b30-c000-42e0-9657-878d5634afc6
+langcode: fr
+status: true
+dependencies: {  }
+id: partenaire_emploi
+label: 'Référent Emploi'
+weight: -6
+is_admin: null
+permissions:
+  - 'use text format html_simple_tous_les_roles'
+  - 'access user profiles'
+  - 'access user contact forms'

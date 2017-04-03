@@ -1,0 +1,8 @@
+uuid: 12b28d9c-1fdd-42f7-92bb-37106e543c63
+langcode: fr
+status: true
+dependencies: {  }
+id: te
+label: Communication
+description: ''
+locked: false

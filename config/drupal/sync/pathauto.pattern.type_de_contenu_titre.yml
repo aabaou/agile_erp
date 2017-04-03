@@ -1,0 +1,31 @@
+uuid: 4bfa1935-7178-4a42-89c3-c512dde588ce
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: type_de_contenu_titre
+label: 'Type de contenu / Titre'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  56b0e558-a2c1-48bf-9222-7f01b20752c1:
+    id: node_type
+    bundles:
+      accueil_public: accueil_public
+      actualite: actualite
+      article: article
+      dossier_candidat_: dossier_candidat_
+      enttite: enttite
+      formation: formation
+      organisme: organisme
+      page: page
+      partenaire: partenaire
+      personne: personne
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 56b0e558-a2c1-48bf-9222-7f01b20752c1
+selection_logic: and
+weight: -5
+relationships: {  }

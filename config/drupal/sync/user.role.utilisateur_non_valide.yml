@@ -1,0 +1,9 @@
+uuid: 0352103d-2037-4094-a7d1-23983052b361
+langcode: fr
+status: true
+dependencies: {  }
+id: utilisateur_non_valide
+label: 'Utilisateur non valide'
+weight: 1
+is_admin: null
+permissions: {  }

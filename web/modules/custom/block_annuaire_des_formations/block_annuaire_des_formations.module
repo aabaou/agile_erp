@@ -1,0 +1,36 @@
+<?php
+/**
+ * Theme hook
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\Core\Routing\RouteMatchInterface;
+ 
+function block_annuaire_des_formations_theme($existing, $type, $theme, $path) {
+    return array('block_annuaire_des_formations' =>
+        array(
+            'variables' => array(
+                'titre' => 'titre by default', 
+                'text' => 'text by default',
+                 'bouton'=>'by default',
+                 'link'=>'by default',
+                ),
+            'template' => 'block_annuaire_des_formations'
+        ));
+}
+
+/**
+ * Implements hook_help().
+ */
+function block_annuaire_des_formations_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the block_presentation_association module.
+    case 'help.page.block_annuaire_des_formations':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Block annuaire des formations.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

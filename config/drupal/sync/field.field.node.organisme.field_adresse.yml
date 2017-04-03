@@ -1,0 +1,21 @@
+uuid: f951ce87-6e72-4dbe-b0db-a06b4bf462f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.organisme
+_core:
+  default_config_hash: FzAN8YrYe2-rKHo3QWAJcF4k4OM6K4NAHXIA1dkLySU
+id: node.organisme.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: organisme
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: 7d9c8faf-ec47-4787-9a13-8f281a99083a
+langcode: fr
+status: true
+dependencies: {  }
+id: responsable_filiere_formation
+label: 'Responsable filière formation'
+weight: 0
+is_admin: null
+permissions:
+  2: 'edit own formation content'
+  3: 'use text format html_simple_tous_les_roles'
+  4: 'create repertoiredesformationsaunumeriq content'
+  5: 'edit own repertoiredesformationsaunumeriq content'
+  6: 'access user profiles'
+  7: 'access user contact forms'

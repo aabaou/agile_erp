@@ -1,0 +1,20 @@
+uuid: 4f3acf59-6790-4d47-a86b-4944f03d070a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_civilite
+field_name: field_civilite
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

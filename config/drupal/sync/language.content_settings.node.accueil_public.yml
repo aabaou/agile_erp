@@ -1,0 +1,13 @@
+uuid: 08428885-a044-4c65-be36-54fe683799a9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.accueil_public
+_core:
+  default_config_hash: v1JUitVnrlsObz6YA8lPwypm7FdfZDXtI84F_3DHmBI
+id: node.accueil_public
+target_entity_type_id: node
+target_bundle: accueil_public
+default_langcode: site_default
+language_alterable: false

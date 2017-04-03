@@ -1,0 +1,28 @@
+uuid: 00fdc557-f7a1-4acd-b624-be60083b0376
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_civilite
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.civilite
+id: node.repertoiredesformationsaunumeriq.field_civilite
+field_name: field_civilite
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Civilité
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      civilite: civilite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

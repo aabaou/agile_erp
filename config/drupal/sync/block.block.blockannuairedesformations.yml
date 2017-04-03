@@ -1,0 +1,24 @@
+uuid: 70f0ab9d-3ea4-4f5e-a508-7ac83556ef4b
+langcode: fr
+status: false
+dependencies:
+  module:
+    - block_annuaire_des_formations
+  theme:
+    - portailcrsn
+id: blockannuairedesformations
+theme: portailcrsn
+region: '-1'
+weight: -13
+provider: null
+plugin: block_annuaire_des_formations
+settings:
+  id: block_annuaire_des_formations
+  label: 'Block annuaire des formations'
+  provider: block_annuaire_des_formations
+  label_display: visible
+  title_p: 'REPERTOIRE DES FORMATIONS'
+  text_p: "Vous voulez recruter des jeunes diplômés, accueillir des alternants ou des stagiaires ?  \r\nCe répertoire recense toutes les formations régionales concernant les usages et technologies numériques par profil métier, type de compétences, niveau de formation, zone géographique, …"
+  button_p: 'Consulter le répertoire'
+  link_p: /repertoire-des-formations
+visibility: {  }

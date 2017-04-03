@@ -1,0 +1,11 @@
+uuid: 38aab41d-d91a-484d-90bb-49d6153a845d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.admission
+id: taxonomy_term.admission
+target_entity_type_id: taxonomy_term
+target_bundle: admission
+default_langcode: site_default
+language_alterable: false

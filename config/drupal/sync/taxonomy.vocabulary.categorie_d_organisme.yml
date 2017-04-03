@@ -1,0 +1,11 @@
+uuid: cac9ba2e-3f86-4afb-b208-8c372786abe2
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2zHsLMcyRiCerrsWgAaioL8OndpnETmrNBVyPsefwp0
+name: 'Catégorie d''organisme'
+vid: categorie_d_organisme
+description: 'Exemple : Gouvernance, Entreprise, Partenaire Emploi...'
+hierarchy: 0
+weight: 0

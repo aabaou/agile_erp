@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.partenaire
+  module:
+    - views
+  theme:
+    - portailcrsn
+id: views_block__partenaire_block_3
+theme: portailcrsn
+region: footer
+weight: -8
+provider: null
+plugin: 'views_block:partenaire-block_3'
+settings:
+  id: 'views_block:partenaire-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

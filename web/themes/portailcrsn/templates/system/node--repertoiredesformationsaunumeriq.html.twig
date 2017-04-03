@@ -1,0 +1,272 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+     Only "getter" methods (method names starting with "get", "has", or "is")
+     and a few common methods such as "id" and "label" are available. Calling
+     other methods (such as node.delete) will result in an exception.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{% set classes = [
+node.bundle|clean_class,
+node.isPromoted() ? 'is-promoted',
+node.isSticky() ? 'is-sticky',
+not node.isPublished() ? 'is-unpublished',
+view_mode ? view_mode|clean_class,
+'clearfix',
+] %}
+<div class="page-repertoiredesformationsaunumeriq">
+    <article{{ attributes.addClass(classes) }}>
+
+        {{ title_prefix }}
+        {% if not page %}
+            <h2{{ title_attributes }}>
+                <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            </h2>
+        {% endif %}
+        {{ title_suffix }}
+        <div{{ content_attributes.addClass('content') }}>
+
+            <div id="rfn_modalite_acces_forma">
+                <div class="title_tab_rfn">Organisme responsable de la formation</div>
+                <div class="data_modalite_acces">
+                    {{ content.field_organisme_repertoire }}
+                </div>
+            </div>
+
+            {# Ajout tableau steph #}
+            <div id="rfn_modalite_acces_forma">
+                <div class="title_tab_rfn">Caractéristiques générales de la formation</div>
+                <div class="data_modalite_acces">
+                    <div class="rfn_field middle-width">
+                        <div class="field">
+                            <div class="field--label">Titre</div>
+                            <div class="field--item">{{ label }}</div>
+                        </div>
+                    </div>
+                    <div class="rfn_field middle-width">{{ content.field_specialisation_s_ }}</div>
+                </div>
+                <div class="clear"></div>
+                <div class="data_modalite_acces">
+                    <div class="rfn_field_large">{{ content.field_diplome }}</div>
+                    <div class="rfn_field_large">{{ content.field_cursus }}</div>
+                    <div class="rfn_field_large">{{ content.field_nombre_d_annee }}</div>
+                    <div class="rfn_field_large">{{ content.field_lieu }}</div>
+                    <div class="rfn_field_large">{{ content.field_ville_caract_gene_formatio }}</div>
+                    <div class="rfn_field_large">{{ content.field_nombre_moyen_de_stagiaires }}</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="rfn_modalite_acces_forma">
+                <div class="title_tab_rfn">Période de démarrage des sessions dans l'année </div>
+                <div class="data_modalite_acces">
+                    <div class="rfn_field">
+                        <div class="field">
+                            <div class="field--label">1ère Session</div>
+                            <div class="field--item">{{ content.field_demarrage_formation_1 }}</div>
+                        </div>
+                    </div>
+                    <div class="rfn_field">
+                        <div class="field">
+                            <div class="field--label">2ème Session</div>
+                            <div class="field--item">{{ content.field_demarrage_formation_2 }}</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="rfn_modalite_acces_forma">
+                <div class="title_tab_rfn">Caractéristiques détaillées</div>
+                <div class="data_modalite_acces">
+                    <div class="rfn_field full-width">{{ content.field_presentation_formation }}</div>
+                    <div class="rfn_field_large" style="width:25%;">{{ content.field_page_web }}</div>
+                    <div class="rfn_field_large">{{ content.field_plaquette }}</div>
+                    <div class="rfn_field_large">{{ content.field_metier_s_cible_s_ }}</div>
+                    <div class="rfn_field_large">{{ content.field_modalites_pedagogiques }}</div>
+                    <div class="rfn_field full-width">{{ content.field_savoir_faire_enseignes }}</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="rfn_deroulement_formation">
+                <div class="title_tab_rfn">Déroulement de la formation</div>
+                <div class="cadre_tab_rfn formation_table_info_zone">
+                    <table id="formation_table_info">
+                        <tr class="header">
+                            <th>Caractéristiques</th>
+                            <th class="center">Année 1</th>
+                            <th class="center">Année 2</th>
+                            <th class="center">Année 3</th>
+                            <th class="center">Année 4</th>
+                            <th class="center">Année 5</th>
+                        </tr>
+                        <tr>
+                            <th>Nb d’heures en présentiel</th>
+                            <td>{{content.field_nb_heure_pres_annee1}}</td>
+                            <td>{{content.field_nb_heure_pres_annee2}}</td>
+                            <td>{{content.field_nb_heure_pres_annee3}}</td>
+                            <td>{{content.field_nb_heure_pres_annee4}}</td>
+                            <td>{{content.field_nb_heure_pres_annee5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Nb d’heures de didacticiel</th>
+                            <td>{{content.field_nb_heure_dida_annee1}}</td>
+                            <td>{{content.field_nb_heure_dida_annee2}}</td>
+                            <td>{{content.field_nb_heure_dida_annee3}}</td>
+                            <td>{{content.field_nb_heure_dida_annee4}}</td>
+                            <td>{{content.field_nb_heure_dida_annee5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Alternance</th>
+                            <td>{{content.field_alternance_annee1}}</td>
+                            <td>{{content.field_alternance_annee2}}</td>
+                            <td>{{content.field_alternance_annee3}}</td>
+                            <td>{{content.field_alternance_annee4}}</td>
+                            <td>{{content.field_alternance_annee5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Type de contrat d'alternance</th>
+                            <td>{{content.field_type_de_contrat_d_alterna1}}</td>
+                            <td>{{content.field_type_de_contrat_d_alterna2}}</td>
+                            <td>{{content.field_type_de_contrat_d_alterna3}}</td>
+                            <td>{{content.field_type_de_contrat_d_alterna4}}</td>
+                            <td>{{content.field_type_de_contrat_d_alterna5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Fréquence d'alternance</th>
+                            <td>{{content.field_frequence_d_alternance1}}</td>
+                            <td>{{content.field_frequence_d_alternance2}}</td>
+                            <td>{{content.field_frequence_d_alternance3}}</td>
+                            <td>{{content.field_frequence_d_alternance4}}</td>
+                            <td>{{content.field_frequence_d_alternance5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Nb de mois de stage en entreprise</th>
+                            <td>{{content.field_nb_mois_en_entreprise}}</td>
+                            <td>{{content.field_nb_mois_en_entreprise2}}</td>
+                            <td>{{content.field_nb_mois_en_entreprise3}}</td>
+                            <td>{{content.field_nb_mois_en_entreprise4}}</td>
+                            <td>{{content.field_nb_mois_en_entreprise5}}</td>
+                        </tr>
+                        <tr>
+                            <th>Période du stage en entreprise</th>
+                            <td>{{content.field_periode_en_entreprise}}</td>
+                            <td>{{content.field_periode_en_entreprise2}}</td>
+                            <td>{{content.field_periode_en_entreprise3}}</td>
+                            <td>{{content.field_periode_en_entreprise4}}</td>
+                            <td>{{content.field_periode_en_entreprise5}}</td>
+                        </tr>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="rfn_modalite_acces_forma">
+                <div class="title_tab_rfn">Modalités d'accès à la formation</div>
+                <div class="data_modalite_acces">
+                    <div class="rfn_field_large">{{ content.field_niveau_d_etude_prerequis }}</div>
+                    <div class="rfn_field_large">{{ content.field_admission }}</div>
+                    <div class="rfn_field full-width">{{ content.field_precisions }}</div>
+                    <div class="rfn_field full-width">{{ content.field_savoir_faire_prerequis }}</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="rfn_deroulement_formation">
+                <div class="title_tab_rfn">Contacts</div>
+                <div class="cadre_tab_rfn formation_table_info_zone">
+                    <table id="formation_table_info">
+                        <tr>
+                            <th>Contacts</th>
+                            <th class="center">Nom</th>
+                            <th class="center">Téléphone</th>
+                            <th class="center">Mail</th>
+                        </tr>
+                        <tr>
+                            <th>Relation Entreprises</th>
+                            <td>{{ content.field_prenom_relation_entreprise }}{{ content.field_nom_relation_entreprises }}</td>
+                            <td>{{ content.field_telephone_relation_entrepr }}</td>
+                            <td>{{ content.field_mail }}</td>
+                        </tr>
+                        <tr>
+                            <th>Infos et Inscriptions</th>
+                            <td>{{ content.field_prenom_info_inscription }}{{ content.field_nom_infos_inscription }}</td>
+                            <td>{{ content.field_te }}</td>
+                            <td>{{content.field_mail_info_inscription}}</td>
+                        </tr>
+                        <tr>
+                            <th>Gestionnaire Stage / Alternance</th>
+                            <td>{{ content.field_prenom_gestionnaire_stage }}{{ content.field_nom_gestionnaire_stage }}</td>
+                            <td>{{ content.field_t }}</td>
+                            <td>{{content.field_mail_gestionnaire_stage}}</td>
+                        </tr>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            {# Fin ajout tableau steph #}
+
+
+        </div>
+
+    </article>
+</div>

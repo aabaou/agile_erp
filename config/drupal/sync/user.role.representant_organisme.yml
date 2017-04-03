@@ -1,0 +1,15 @@
+uuid: 4ea06d95-9fbd-4a35-bc90-15f0da65725e
+langcode: fr
+status: true
+dependencies: {  }
+id: representant_organisme
+label: 'Représentant Organisme'
+weight: -2
+is_admin: null
+permissions:
+  1: 'view gestion in toolbar'
+  2: 'edit own organisme content'
+  3: 'view own organisme content'
+  5: 'use text format html_simple_tous_les_roles'
+  6: 'access user profiles'
+  7: 'access user contact forms'

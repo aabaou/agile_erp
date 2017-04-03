@@ -1,0 +1,8 @@
+uuid: 3630e82d-7f0b-4ec6-a6ec-39a192301d4f
+langcode: fr
+status: true
+dependencies: {  }
+id: menu-user-role
+label: 'Menu User Role'
+description: ''
+locked: false

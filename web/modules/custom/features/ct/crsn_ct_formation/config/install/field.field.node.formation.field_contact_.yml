@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_
+    - node.type.formation
+id: node.formation.field_contact_
+field_name: field_contact_
+entity_type: node
+bundle: formation
+label: Téléphone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

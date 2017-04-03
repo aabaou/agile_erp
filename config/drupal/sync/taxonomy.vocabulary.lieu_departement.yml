@@ -1,0 +1,11 @@
+uuid: f7c93677-d385-49a1-a9a3-62c8e2b83e50
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i0nkZ7IyXo2NCzZDJf_43h1yAwd5KqlHwdaGpUyzsm4
+name: 'Lieu : Département'
+vid: lieu_departement
+description: 'Département où se trouve la formation'
+hierarchy: 0
+weight: 0

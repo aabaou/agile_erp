@@ -1,0 +1,9 @@
+uuid: b6089855-39f4-45a1-a6c7-a3f37a612d97
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie d''entreprise'
+vid: categorie_d_entreprise
+description: ''
+hierarchy: 0
+weight: 0

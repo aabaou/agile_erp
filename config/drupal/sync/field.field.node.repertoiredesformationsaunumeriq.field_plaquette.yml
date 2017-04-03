@@ -1,0 +1,27 @@
+uuid: 73f35349-e453-4c54-bbaf-1a09c7a6d98d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plaquette
+    - node.type.repertoiredesformationsaunumeriq
+  module:
+    - file
+id: node.repertoiredesformationsaunumeriq.field_plaquette
+field_name: field_plaquette
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Plaquette
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

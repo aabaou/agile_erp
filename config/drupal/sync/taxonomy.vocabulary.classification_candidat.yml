@@ -1,0 +1,9 @@
+uuid: c1cf684a-d728-4ca7-9205-5c450c5b8289
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Classification candidat'
+vid: classification_candidat
+description: 'Classification d''un candidat selon plusieurs critères.'
+hierarchy: 1
+weight: -10

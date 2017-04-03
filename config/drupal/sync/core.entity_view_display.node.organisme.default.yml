@@ -1,0 +1,143 @@
+uuid: 11201cdd-d180-493e-8500-c0150890b023
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.organisme.field_accepter_les_conditions
+    - field.field.node.organisme.field_activites_principales
+    - field.field.node.organisme.field_adhesion_alsace
+    - field.field.node.organisme.field_adhesion_champagne_ardenne
+    - field.field.node.organisme.field_adhesion_lorraine
+    - field.field.node.organisme.field_adresse
+    - field.field.node.organisme.field_affiliation
+    - field.field.node.organisme.field_categorie_d_organisme
+    - field.field.node.organisme.field_contact_rh
+    - field.field.node.organisme.field_date_de_modification
+    - field.field.node.organisme.field_date_decision_adhesion
+    - field.field.node.organisme.field_logo
+    - field.field.node.organisme.field_organisme_loc_etabli_entre
+    - field.field.node.organisme.field_organisme_site_web
+    - field.field.node.organisme.field_presentation
+    - field.field.node.organisme.field_raison_rejet_adhesion
+    - field.field.node.organisme.field_representant
+    - field.field.node.organisme.field_statut_de_l_organisme
+    - field.field.node.organisme.field_territoire
+    - field.field.node.organisme.field_territoires_d_intervention
+    - field.field.node.organisme.field_type_d_entreprise
+    - field.field.node.organisme.field_type_d_organisme
+    - field.field.node.organisme.field_type_entreprise
+    - node.type.organisme
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: Lu64Zk_igIvoaJtdzt7P5_Lp2KrkxYav2YdpWY2bmzc
+id: node.organisme.default
+targetEntityType: node
+bundle: organisme
+mode: default
+content:
+  field_accepter_les_conditions:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_activites_principales:
+    type: entity_reference_label
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_contact_rh:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date_decision_adhesion:
+    weight: 7
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_organisme_loc_etabli_entre:
+    weight: 11
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_organisme_site_web:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_presentation:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_representant:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_territoires_d_intervention:
+    type: entity_reference_label
+    weight: 0
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_type_d_entreprise:
+    type: entity_reference_label
+    weight: 8
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_adhesion_alsace: true
+  field_adhesion_champagne_ardenne: true
+  field_adhesion_lorraine: true
+  field_adresse: true
+  field_affiliation: true
+  field_categorie_d_organisme: true
+  field_date_de_modification: true
+  field_raison_rejet_adhesion: true
+  field_statut_de_l_organisme: true
+  field_territoire: true
+  field_type_d_organisme: true
+  field_type_entreprise: true
+  langcode: true
+  links: true

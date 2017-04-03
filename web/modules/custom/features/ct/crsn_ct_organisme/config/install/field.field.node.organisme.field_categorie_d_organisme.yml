@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie_d_organisme
+    - node.type.organisme
+    - taxonomy.vocabulary.categorie_d_organisme
+id: node.organisme.field_categorie_d_organisme
+field_name: field_categorie_d_organisme
+entity_type: node
+bundle: organisme
+label: 'Catégorie d''organisme'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorie_d_organisme: categorie_d_organisme
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

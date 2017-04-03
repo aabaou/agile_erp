@@ -1,0 +1,15 @@
+disable_messages_enable: '1'
+disable_messages_filter_by_page: 0
+disable_messages_page_filter_paths: ''
+disable_messages_enable_debug: '0'
+disable_messages_debug_visible_div: '0'
+disable_messages_ignore_patterns: "A welcome message with further instructions has been sent to your email address.\r\nUn message de bienvenue avec les instructions à suivre a été envoyé à votre adresse de courriel.\r\n"
+disable_messages_exclude_users: ''
+disable_messages_ignore_case: '1'
+disable_messages_ignore_regex:
+  - '/^A welcome message with further instructions has been sent to your email address.$/i'
+  - '/^Un message de bienvenue avec les instructions à suivre a été envoyé à votre adresse de courriel.$/i'
+  - /^$/i
+_core:
+  default_config_hash: i8jRi1xdFrnvhl-PF4yccZSKtXcGgJAWYTDmKkOMIPE
+langcode: fr

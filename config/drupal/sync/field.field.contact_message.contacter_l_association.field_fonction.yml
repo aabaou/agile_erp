@@ -1,0 +1,19 @@
+uuid: d4b50cee-94fb-499f-835e-946a44598a54
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contacter_l_association
+    - field.storage.contact_message.field_fonction
+id: contact_message.contacter_l_association.field_fonction
+field_name: field_fonction
+entity_type: contact_message
+bundle: contacter_l_association
+label: Fonction
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

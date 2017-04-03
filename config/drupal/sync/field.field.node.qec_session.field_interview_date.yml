@@ -1,0 +1,21 @@
+uuid: 5580735a-0713-40ce-8ed9-232057fba1db
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_date
+    - node.type.qec_session
+  module:
+    - datetime
+id: node.qec_session.field_interview_date
+field_name: field_interview_date
+entity_type: node
+bundle: qec_session
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

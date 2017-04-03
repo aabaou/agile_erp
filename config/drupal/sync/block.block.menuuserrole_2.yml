@@ -1,0 +1,40 @@
+uuid: 2178c616-ddf1-4288-834d-0e119e8ee9c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.menu-user-role
+  module:
+    - menu_block
+    - user
+  theme:
+    - portailcrsn
+id: menuuserrole_2
+theme: portailcrsn
+region: menu_user_role
+weight: -15
+provider: null
+plugin: 'menu_block:menu-user-role'
+settings:
+  id: 'menu_block:menu-user-role'
+  label: 'Menu User Role'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'menu-user-role:'
+  suggestion: menu_user_role
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      entreprise: entreprise
+      partenaire_emploi: partenaire_emploi
+      gestionnaire: gestionnaire
+      representant_organisme: representant_organisme
+      responsable_communication: responsable_communication
+      responsable_filiere_formation: responsable_filiere_formation
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

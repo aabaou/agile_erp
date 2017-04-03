@@ -1,0 +1,24 @@
+uuid: dc4ab547-a4dc-43a4-8643-6735c036521e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.organisme
+_core:
+  default_config_hash: IRnqjPI_qO9kFlDC91a3rukr3MYGcjf_prtsattMSFM
+id: node.organisme.promote
+field_name: promote
+entity_type: node
+bundle: organisme
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

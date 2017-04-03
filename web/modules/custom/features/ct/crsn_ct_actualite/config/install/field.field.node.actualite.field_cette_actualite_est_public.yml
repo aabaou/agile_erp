@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cette_actualite_est_public
+    - node.type.actualite
+id: node.actualite.field_cette_actualite_est_public
+field_name: field_cette_actualite_est_public
+entity_type: node
+bundle: actualite
+label: audience
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Actualité publique'
+  off_label: 'Actualité Privé'
+field_type: boolean

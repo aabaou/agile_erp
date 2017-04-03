@@ -1,0 +1,22 @@
+uuid: 3bf1f168-7184-4bf5-a144-9e3af6025031
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+_core:
+  default_config_hash: eSUxD52X-xiMBWh5YjCWpN5HtUVnWdvht4QdCGf4RT8
+id: user.field_civilite
+field_name: field_civilite
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

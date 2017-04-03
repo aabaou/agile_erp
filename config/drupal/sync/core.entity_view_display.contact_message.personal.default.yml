@@ -1,0 +1,29 @@
+uuid: 2c1c93dd-79ec-4947-9d83-3255d9216da5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_fichier_contact_files
+    - field.field.contact_message.personal.field_form_contact_nom_orga
+  module:
+    - file
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  field_fichier_contact_files:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_form_contact_nom_orga: true

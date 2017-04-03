@@ -1,0 +1,19 @@
+uuid: 47f392dd-3ccf-4f4f-9e8d-dcd95a0d774b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frequence_d_alternance5
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_frequence_d_alternance5
+field_name: field_frequence_d_alternance5
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Fréquence d''alternance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

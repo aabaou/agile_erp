@@ -1,0 +1,25 @@
+uuid: b6302a7f-a26f-47a3-b908-8d6bf0521c7f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: QJso9-jiRBhxY2ogCTJexJadyomxvex5NiD2J00UZa8
+id: node.field_acces_au_fichier_pdf_
+field_name: field_acces_au_fichier_pdf_
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

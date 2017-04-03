@@ -1,0 +1,26 @@
+uuid: 0264afd2-fa6d-4487-be54-848e2764ca5f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: J1u3I9O5HDA5Q_R2q51XDeGeMzAVNLT2wT0orNqbsas
+id: node.field_territoire
+field_name: field_territoire
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

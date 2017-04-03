@@ -1,0 +1,15 @@
+commands:
+  # Performs entities updates
+  - command: update:entities
+  # Performs modules updates
+  - command: update:execute
+    arguments:
+      module: all
+  # Clear cache
+  - command: cache:rebuild
+    arguments:
+      cache: all
+  # One time login output
+  - command: user:login:url
+    arguments:
+      user-id: 1

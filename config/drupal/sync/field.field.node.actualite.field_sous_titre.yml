@@ -1,0 +1,21 @@
+uuid: 383c8c4c-c59e-44c7-a82b-436a3833186e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sous_titre
+    - node.type.actualite
+_core:
+  default_config_hash: '-dIwBsEfo2Wv-UlBX-0prNfesQyZzIkLOuI9R36U6jo'
+id: node.actualite.field_sous_titre
+field_name: field_sous_titre
+entity_type: node
+bundle: actualite
+label: Sous-titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

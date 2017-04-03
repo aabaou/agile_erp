@@ -1,0 +1,30 @@
+uuid: 7372eed3-a6f1-4b2d-ab22-43da90ed4a10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slideshow_actualites_
+  module:
+    - system
+    - views
+  theme:
+    - portailcrsn
+id: views_block__slideshow_actualites__block_1
+theme: portailcrsn
+region: ContentFrontBottom
+weight: -14
+provider: null
+plugin: 'views_block:slideshow_actualites_-block_1'
+settings:
+  id: 'views_block:slideshow_actualites_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

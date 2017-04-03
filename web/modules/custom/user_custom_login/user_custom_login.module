@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains user_custom_login..
+ */
+
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+function user_custom_login_user_login($account) {
+
+  _redirect_condition_required_field($account,'login');
+
+
+
+}

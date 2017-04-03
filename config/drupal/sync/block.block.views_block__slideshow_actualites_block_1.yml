@@ -1,0 +1,26 @@
+uuid: 908c1302-65ca-47b7-8200-da57a64f9f8a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slideshow_actualites
+  module:
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: '-NneCr8HST8dK3I9fYvQBNB98c7nrL6yWTOUV23eR34'
+id: views_block__slideshow_actualites_block_1
+theme: bartik
+region: sidebar_first
+weight: null
+provider: null
+plugin: 'views_block:slideshow_actualites-block_1'
+settings:
+  id: 'views_block:slideshow_actualites-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

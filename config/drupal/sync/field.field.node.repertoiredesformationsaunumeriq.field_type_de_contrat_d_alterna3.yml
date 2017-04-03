@@ -1,0 +1,28 @@
+uuid: 2cc7308e-bbc2-4def-9df3-4020c886c1be
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_contrat_d_alterna3
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.type_de_contrat_d_alternance
+id: node.repertoiredesformationsaunumeriq.field_type_de_contrat_d_alterna3
+field_name: field_type_de_contrat_d_alterna3
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Type de contrat d''alternance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_de_contrat_d_alternance: type_de_contrat_d_alternance
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

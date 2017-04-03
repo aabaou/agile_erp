@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_admission
+    - node.type.repertoiredesformationsaunumeriq
+    - taxonomy.vocabulary.admission
+id: node.repertoiredesformationsaunumeriq.field_admission
+field_name: field_admission
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Admission
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      admission: admission
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

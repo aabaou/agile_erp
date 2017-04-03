@@ -1,0 +1,23 @@
+uuid: a0e41598-b14c-4afd-85dd-9f50cbcaef8d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.actualite
+  module:
+    - link
+id: node.actualite.field_url
+field_name: field_url
+entity_type: node
+bundle: actualite
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

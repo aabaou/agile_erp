@@ -1,0 +1,14 @@
+uuid: c9934e4e-8462-4f88-aaeb-9be07c6c5f27
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.responsable_communication
+  module:
+    - user
+id: user_remove_role_action.responsable_communication
+label: 'Retirer le rôle Responsable Communication aux utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: responsable_communication

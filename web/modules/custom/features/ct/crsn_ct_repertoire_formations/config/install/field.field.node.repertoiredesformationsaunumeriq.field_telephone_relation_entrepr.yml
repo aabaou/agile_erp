@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone_relation_entrepr
+    - node.type.repertoiredesformationsaunumeriq
+  module:
+    - telephone
+id: node.repertoiredesformationsaunumeriq.field_telephone_relation_entrepr
+field_name: field_telephone_relation_entrepr
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Téléphone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

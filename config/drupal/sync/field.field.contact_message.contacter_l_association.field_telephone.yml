@@ -1,0 +1,21 @@
+uuid: a20a92a6-3b9b-4605-8f00-f769d74e29b6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contacter_l_association
+    - field.storage.contact_message.field_telephone
+  module:
+    - telephone
+id: contact_message.contacter_l_association.field_telephone
+field_name: field_telephone
+entity_type: contact_message
+bundle: contacter_l_association
+label: Téléphone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

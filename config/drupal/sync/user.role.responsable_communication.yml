@@ -1,0 +1,27 @@
+uuid: e15522cf-f568-42de-9a7c-552542fe473a
+langcode: fr
+status: true
+dependencies: {  }
+id: responsable_communication
+label: 'Responsable Communication'
+weight: -1
+is_admin: null
+permissions:
+  1: 'view communication in toolbar'
+  2: 'edit any accueil_public content'
+  3: 'use text format html_simple_tous_les_roles'
+  4: 'create actualite content'
+  5: 'edit any actualite content'
+  6: 'create slide content'
+  7: 'delete any slide content'
+  8: 'delete own slide content'
+  9: 'edit any slide content'
+  10: 'edit own slide content'
+  11: 'revert slide revisions'
+  12: 'view slide revisions'
+  13: 'delete any actualite content'
+  14: 'delete own actualite content'
+  15: 'edit own actualite content'
+  16: 'view actualite revisions'
+  17: 'access user profiles'
+  18: 'access user contact forms'

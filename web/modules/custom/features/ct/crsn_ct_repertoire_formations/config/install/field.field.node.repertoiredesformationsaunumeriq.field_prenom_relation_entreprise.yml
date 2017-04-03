@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prenom_relation_entreprise
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_prenom_relation_entreprise
+field_name: field_prenom_relation_entreprise
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: Prenom
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

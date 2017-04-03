@@ -1,0 +1,11 @@
+uuid: 882b5921-d451-4426-a500-ebdd501fc966
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: beBgEb0LKur7njDZC6z7q97njrvdLJeh1Sxq791q66w
+name: Métier(s)
+vid: metier_s_
+description: 'Métier(s) visé(s) '
+hierarchy: 1
+weight: 0

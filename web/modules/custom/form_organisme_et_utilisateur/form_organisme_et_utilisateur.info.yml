@@ -1,0 +1,5 @@
+name: form_organisme_et_utilisateur
+type: module
+description: form to mix form organisme and user
+core: 8.x
+package: Custom

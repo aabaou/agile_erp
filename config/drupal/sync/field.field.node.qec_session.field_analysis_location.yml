@@ -1,0 +1,19 @@
+uuid: 7f603456-613b-4a2c-92f7-79611fdda03e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_location
+    - node.type.qec_session
+id: node.qec_session.field_analysis_location
+field_name: field_analysis_location
+entity_type: node
+bundle: qec_session
+label: Lieu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

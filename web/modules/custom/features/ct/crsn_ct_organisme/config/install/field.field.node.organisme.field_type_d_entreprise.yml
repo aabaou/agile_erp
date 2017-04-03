@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_d_entreprise
+    - node.type.organisme
+    - taxonomy.vocabulary.categorie_d_entreprise
+id: node.organisme.field_type_d_entreprise
+field_name: field_type_d_entreprise
+entity_type: node
+bundle: organisme
+label: 'Type d''entreprise'
+description: 'Une startup est une entreprise créée depuis moins de 3 ans au 1er janvier de l’année en cours, ayant moins de 10 salariés ou un Chiffre d’Affaires < 300 K€.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorie_d_entreprise: categorie_d_entreprise
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

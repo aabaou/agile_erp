@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Allows restricting access to menu items per role.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function menu_per_role_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() != 'menu_link_content') {
+    return;
+  }
+
+  $fields['menu_per_role__show_role'] = BaseFieldDefinition::create('entity_reference')
+    ->setName('menu_per_role__show_role')
+    ->setTargetEntityTypeId('menu_link_content')
+    ->setLabel(t('Roles able to see the menu link'))
+    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+    ->setSetting('target_type', 'user_role')
+    ->setDisplayOptions('form', [
+      'type' => 'options_buttons',
+    ]);
+
+  $fields['menu_per_role__hide_role'] = BaseFieldDefinition::create('entity_reference')
+    ->setName('menu_per_role__hide_role')
+    ->setTargetEntityTypeId('menu_link_content')
+    ->setLabel(t('Roles able to not see the menu link'))
+    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+    ->setSetting('target_type', 'user_role')
+    ->setDisplayOptions('form', [
+      'type' => 'options_buttons',
+    ]);
+}

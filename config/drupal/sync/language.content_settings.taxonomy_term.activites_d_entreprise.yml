@@ -1,0 +1,13 @@
+uuid: ddfc9a6d-a43a-49a4-a43b-596e27785a54
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.activites_d_entreprise
+_core:
+  default_config_hash: v_Djf0_hUJPcsVANTqx0G-zU7JZqFPfPY-NLULpAjqM
+id: taxonomy_term.activites_d_entreprise
+target_entity_type_id: taxonomy_term
+target_bundle: activites_d_entreprise
+default_langcode: site_default
+language_alterable: false

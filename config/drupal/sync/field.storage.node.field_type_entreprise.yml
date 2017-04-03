@@ -1,0 +1,22 @@
+uuid: 5d608d48-d752-4958-8f00-e27f99a9d882
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: 4g3igriIjdbbJdxqKhXNffm8j7HuMorjK7JmgTlxV84
+id: node.field_type_entreprise
+field_name: field_type_entreprise
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 7
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

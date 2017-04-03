@@ -1,0 +1,22 @@
+/* css du texte de la page "En savoir plus" */
+<<<<<<< HEAD
+.contextual-region.accueil-public.is-promoted.full.clearfix .content .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
+=======
+body.page-node-type-accueil-public div.field--name-body {
+  font-family: "Lucida COnsole";
+}
+.field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
+>>>>>>> 210f3fde9536b268b3beb9fb928c893721c6f8bb
+  text-align: center;
+  border-style: solid;
+  border-color: #a8c80c;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contextual-region.accueil-public.is-promoted.full.clearfix .content .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field ul {
+  text-align: left;
+}
+

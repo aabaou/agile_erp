@@ -1,0 +1,21 @@
+uuid: 4cdae1ee-dcdb-4283-93d9-8c871192a494
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_end
+    - node.type.application_channel
+  module:
+    - datetime
+id: node.application_channel.field_date_end
+field_name: field_date_end
+entity_type: node
+bundle: application_channel
+label: 'Date de fin'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

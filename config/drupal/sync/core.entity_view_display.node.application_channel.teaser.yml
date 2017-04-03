@@ -1,0 +1,26 @@
+uuid: af2bd389-82c3-41c3-a383-a87a9103d72c
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.application_channel.field_application_channel_loc
+    - field.field.node.application_channel.field_application_channel_status
+    - field.field.node.application_channel.field_date_end
+    - field.field.node.application_channel.field_date_start
+    - node.type.application_channel
+  module:
+    - user
+id: node.application_channel.teaser
+targetEntityType: node
+bundle: application_channel
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_application_channel_loc: true
+  field_application_channel_status: true
+  field_date_end: true
+  field_date_start: true
+  langcode: true

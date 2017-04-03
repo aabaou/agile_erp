@@ -1,0 +1,13 @@
+uuid: 095a7496-a3ce-4788-a205-5ec629902ab9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.statut_organisme
+_core:
+  default_config_hash: mKmwQ91FmAjJwHFRoApTet-1okd59ljckDdLcFtVV14
+id: taxonomy_term.statut_organisme
+target_entity_type_id: taxonomy_term
+target_bundle: statut_organisme
+default_langcode: site_default
+language_alterable: false

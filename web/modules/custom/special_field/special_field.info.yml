@@ -1,0 +1,11 @@
+
+
+name: Special Field
+description: Module for special Field
+package: Custom
+
+type: module
+core: 8.x
+libraries:
+  - special_field/special_field
+

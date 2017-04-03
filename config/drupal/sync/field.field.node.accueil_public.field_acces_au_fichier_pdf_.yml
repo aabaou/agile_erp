@@ -1,0 +1,29 @@
+uuid: 96c2c551-22d4-4c7c-ab06-6f4690703073
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acces_au_fichier_pdf_
+    - node.type.accueil_public
+  module:
+    - file
+_core:
+  default_config_hash: jWr8VnYI0ebIezSAl4ewtXWIhxYN1fDzVrYGxtI3aIQ
+id: node.accueil_public.field_acces_au_fichier_pdf_
+field_name: field_acces_au_fichier_pdf_
+entity_type: node
+bundle: accueil_public
+label: 'Pour en savoir plus:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

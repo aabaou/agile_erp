@@ -1,0 +1,22 @@
+uuid: b8232dfb-3225-48e9-98a3-7609b932665f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.application_channel
+id: node.application_channel.promote
+field_name: promote
+entity_type: node
+bundle: application_channel
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

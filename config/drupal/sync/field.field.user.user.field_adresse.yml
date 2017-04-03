@@ -1,0 +1,22 @@
+uuid: 94b7a6b3-bea4-4e01-baa6-00dbf329df39
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_adresse
+  module:
+    - user
+_core:
+  default_config_hash: jjY4ylOg426A187kK4K2dl5HZF5h6I67gMrPWEmD2m4
+id: user.user.field_adresse
+field_name: field_adresse
+entity_type: user
+bundle: user
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

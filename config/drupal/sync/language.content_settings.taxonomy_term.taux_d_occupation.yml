@@ -1,0 +1,11 @@
+uuid: 7db1ed37-900c-4ad4-b900-bc36b4ff4872
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taux_d_occupation
+id: taxonomy_term.taux_d_occupation
+target_entity_type_id: taxonomy_term
+target_bundle: taux_d_occupation
+default_langcode: site_default
+language_alterable: false

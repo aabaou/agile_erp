@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_moyen_de_stagiaires
+    - node.type.repertoiredesformationsaunumeriq
+id: node.repertoiredesformationsaunumeriq.field_nombre_moyen_de_stagiaires
+field_name: field_nombre_moyen_de_stagiaires
+entity_type: node
+bundle: repertoiredesformationsaunumeriq
+label: 'Nb moyen stagiaires'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,11 @@
+uuid: 35b4f21d-b3d7-44ad-be00-c9557a0a658d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: N6C2F5JKAYkZVJZ9dYC95dzuWwouKuT-tzdbchevnnA
+name: 'Activités d''entreprise'
+vid: activites_d_entreprise
+description: ''
+hierarchy: 0
+weight: 0

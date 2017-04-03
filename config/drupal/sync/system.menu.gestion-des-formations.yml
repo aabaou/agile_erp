@@ -1,0 +1,8 @@
+uuid: f46fd5c4-1762-4fa0-baed-1785111aae8c
+langcode: fr
+status: true
+dependencies: {  }
+id: gestion-des-formations
+label: 'Gestion des formations'
+description: ''
+locked: false

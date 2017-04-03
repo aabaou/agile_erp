@@ -1,0 +1,9 @@
+uuid: 3f7af145-a5ac-457e-a6bf-23d930f8c7b9
+langcode: fr
+status: true
+dependencies: {  }
+name: Mois
+vid: mois
+description: 'Mois de l''année'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,8 @@
+uuid: e5f5d9e3-421d-41cc-9d89-b83a5c1fce56
+langcode: fr
+status: true
+dependencies: {  }
+id: formation
+label: 'Répertoire  des Formations'
+description: 'Menu des responsables formation/gestionnaire.'
+locked: false

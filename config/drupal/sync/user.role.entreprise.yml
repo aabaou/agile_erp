@@ -1,0 +1,12 @@
+uuid: c7d4fda6-ac1d-4e0c-b900-c279e653fe83
+langcode: fr
+status: true
+dependencies: {  }
+id: entreprise
+label: 'Recruteur conseil'
+weight: -7
+is_admin: null
+permissions:
+  - 'use text format html_simple_tous_les_roles'
+  - 'access user profiles'
+  - 'access user contact forms'

@@ -1,0 +1,80 @@
+/* css pour le carousel partenaire */
+
+@greylight: #cccccc;
+@green: #a8c80c;
+
+/* Aligner les logos des partenaires */
+
+.footer{
+  .partenaire-slider-footer {
+    float: left;
+    margin: 10px;
+    width: 19%;
+  }
+  .partenaire-slider-footer:first-child{
+    width: 35%
+  }
+}
+
+/* Centrer le bandeau des partenaires */
+#partenaire-slider-center {
+  text-align: center;
+}
+
+/* Mise en forme des titres du bandeau partenaire */
+.footer {
+  .block-title {
+    color: @green;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: solid @green;
+    vertical-align: top;
+  }
+}
+
+.footer .region-footer {
+  background-color: @greylight;
+
+  /* Partenaires Soutien tous niveaux sauf platinium */
+  #block-views-block-partenaire-block-1 {
+    background-color: white;
+  }
+
+  /* Partenaires Soutien platinium */
+  #block-views-block-partenaire-block-2 {
+    background-color: white;
+
+  }
+
+  /* Partenaires Emploi */
+  #block-views-block-partenaire-block-3 {
+    background-color: white;
+  }
+  /* Partenaires Formation */
+  #block-views-block-partenaire-block-4 {
+    background-color: white;
+
+  }
+}
+
+#block-portailcrsn-footer {
+  clear: both;
+}
+
+#partenaire-slider-center {
+  .view-partenaire {
+    .views_slideshow_cycle_teaser_section, .img-responsive {
+      margin: auto;
+    }
+  }
+}
+#partenaire-slider-center {
+  .partenaire-slider-footer:first-child {
+    .view-partenaire {
+      a, .field-content {
+        width: 390px;
+      }
+    }
+  }
+}

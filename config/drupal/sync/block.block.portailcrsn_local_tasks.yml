@@ -1,0 +1,22 @@
+uuid: 138c4718-cb60-4108-b400-aba8f25d6062
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - portailcrsn
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: portailcrsn_local_tasks
+theme: portailcrsn
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
