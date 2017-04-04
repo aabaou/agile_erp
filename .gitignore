@@ -31,7 +31,7 @@
 vendor
 
 # Ignore bin
-/bin/*
+#/bin/*
 
 # Ignore local doc generated into public repository
 /web/docs
