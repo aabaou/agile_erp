@@ -1,0 +1,58 @@
+/**
+ * @file: Set styles used for the competition page.
+ */
+
+.path-competition {
+  height: 100%;
+  background: $blue05;
+
+  #priob-lucky-number-form {
+    text-align: center;
+    font-family: $brillbolditalic;
+    color: $blue04;
+    font-size: 1.2em;
+
+    .form-header {
+      margin: 30px 0;
+
+      hr {
+        border-color: $blue06;
+      }
+
+      .big-white {
+        color: $white;
+        font-size: 1.3em;
+      }
+
+      .scans-counter {
+        font-family: $opensans;
+        color: $white;
+        font-size: 3em;
+      }
+    }
+
+    #edit-luckynumber {
+      font-family: $opensans;
+      color: $gray02;
+      text-align: center;
+    }
+
+    #edit-check {
+      background: $blue04;
+      width: 100%;
+      border: none;
+      font-size: 1.2em;
+      color: $white;
+    }
+  }
+
+  .form-footer {
+    text-align: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+      margin: 15px;
+    }
+  }
+}

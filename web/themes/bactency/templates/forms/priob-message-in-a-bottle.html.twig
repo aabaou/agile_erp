@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the message in a bottle form.
+ *
+ * Available variables:
+ * - form: The form element.
+ *
+ * @ingroup templates
+ */
+#}
+
+{{ attach_library('bactency/priob-miab') }}
+
+<form{{ attributes }}>
+    <div class="form-message">
+        <span class="big-white">{% trans %}Leave a message{% endtrans %}</span><br />
+        <span>{% trans %}to your friends!{% endtrans %}</span>
+        <div class="field-message">{{ form.message }}</div>
+
+        <div class="particulars hidden">
+            <div class="left">
+                {{ form.particulars.authorFirstName }}
+                {{ form.particulars.authorLastName }}
+            </div>
+            <div class="right">
+                {{ form.particulars.authorNickname }}
+                {{ form.particulars.authorEmail }}
+            </div>
+        </div>
+
+        {{ form|without('message', 'particulars', 'secret', 'actions', 'result') }}
+
+        {{ form.actions['submit-message'] }}
+        <hr>
+        <span class="big-white">{% trans %}Get my message{% endtrans %}</span>
+        <div class="field-secret">{{ form.secret }}</div>
+        {{ form.actions['submit-secret'] }}
+    </div>
+</form>
+
+{% if form.result is defined %}
+    <div class="form-footer">
+        {{ form.result }}
+    </div>
+{%  endif %}

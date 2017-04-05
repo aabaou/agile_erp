@@ -1,0 +1,175 @@
+/**
+ * @file: Set styles used for the "Live the moment" gallery.
+ */
+
+.path-live-the-moment {
+  height: 100%;
+  background: $blue05;
+
+  .main-container {
+    padding-bottom: 75px;
+
+    .region-content {
+      margin-top: 15px;
+
+      #priob-live-the-moment-form {
+        width: 100%;
+
+        .form-upload {
+          float: left;
+          width: 50%;
+          padding: 1px;
+
+          label {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            cursor: pointer;
+            background: $white;
+
+            img {
+              width: 33%;
+              height: 33%;
+              margin: 33%;
+            }
+          }
+
+          input {
+            display: none;
+          }
+        }
+      }
+
+      .product-image {
+        float: left;
+        width: 50%;
+        padding-bottom: 50%;
+        position: relative;
+        overflow: hidden;
+
+        .field-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 1px;
+          height: 100%;
+          width: 100%;
+
+          .field-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+
+              &:hover, &:focus, &:visited {
+                outline: none;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .field-label {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: $white;
+          padding: 1px;
+
+          a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          .field-text {
+            padding: 0 5px;
+            background: $transblack01;
+            font-size: 0.7em;
+
+            span {
+              color: $blue04;
+            }
+          }
+        }
+      }
+
+      .randomized-image {
+        margin-bottom: 20px;
+      }
+
+      .form-footer, .footer {
+        clear: both;
+        height: 60px;
+        text-align: right;
+        width: 100%;
+        background: $white;
+        padding: 0;
+
+        a {
+          margin-right: 15px;
+          padding: 0;
+          border: none;
+          background: none;
+          box-shadow: none;
+          text-shadow: none;
+          color: $blue02;
+          text-transform: uppercase;
+          font-family: $opensans;
+          font-size: 1.3em;
+          font-weight: 700;
+          text-decoration: none;
+          display: block;
+          line-height: 60px;
+        }
+      }
+
+      .particulars {
+        clear: both;
+        display: block;
+        overflow: hidden;
+
+        .data {
+          width: 50%;
+          float: left;
+          padding: 1px;
+        }
+
+        .description {
+          width: 50%;
+          float: right;
+          padding: 1px;
+
+          #edit-submit {
+            font-family: $brillbolditalic;
+            background: $blue04;
+            width: 100%;
+            border: none;
+            font-size: 1.2em;
+            color: $white;
+            margin: 15px 0;
+          }
+        }
+      }
+
+      #show-random {
+        position: fixed;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0px;
+        right: 0px;
+      }
+    }
+  }
+}

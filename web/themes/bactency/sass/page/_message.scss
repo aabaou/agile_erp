@@ -1,0 +1,103 @@
+/**
+ * @file: Set styles used for the "Message in a bottle" page.
+ */
+
+.path-message-in-a-bottle {
+  height: 100%;
+  background: $blue05;
+
+  #priob-message-in-a-bottle-form {
+    font-family: $brillbolditalic;
+    color: $blue04;
+    font-size: 1.2em;
+
+    .particulars {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      margin: 20px 0;
+
+      .left {
+        width: 50%;
+        float: left;
+        padding: 1px;
+      }
+
+      .right {
+        width: 50%;
+        float: right;
+        padding: 1px;
+      }
+    }
+
+    .form-message {
+      margin-bottom: 20px;
+
+      hr {
+        border-color: $blue06;
+      }
+
+      .big-white {
+        color: $white;
+        font-size: 1.3em;
+      }
+
+      .field-message {
+        margin: 10px 0;
+
+        #edit-message {
+          font-family: $opensans;
+          color: $gray02;
+        }
+      }
+
+      .field-secret {
+        margin: 10px 0;
+
+        #edit-secret {
+          font-family: $opensans;
+          color: $gray02;
+        }
+      }
+
+      #edit-submit-message,
+      #edit-submit-secret {
+        background: $blue04;
+        width: 100%;
+        border: none;
+        font-size: 1.2em;
+        color: $white;
+        margin: 0;
+      }
+    }
+  }
+
+  .form-footer {
+    margin-bottom: 30px;
+    border: 1px solid $white;
+    padding: 20px 20px 0;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .header {
+          color: $blue04;
+          font-size: 0.8em;
+        }
+
+        .message {
+          color: $white;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

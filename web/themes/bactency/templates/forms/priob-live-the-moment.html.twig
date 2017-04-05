@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the live the moment form.
+ *
+ * Available variables:
+ * - form: The form element.
+ *
+ * @ingroup templates
+ */
+#}
+
+{{ attach_library('bactency/priob-ltm') }}
+
+<form{{ attributes }}>
+    <div class="particulars hidden">
+        <div class="data">
+            {{ form|without('image', 'pictures', 'imageDescription', 'submit') }}
+        </div>
+        <div class="description">
+            {{ form|without('image', 'pictures', 'particulars') }}
+        </div>
+    </div>
+
+    <div class="form-upload">
+        <label for="edit-image" class="control-label">
+            <img src="/{{ base_path ~ directory }}/images/gallerie-photo-circle.svg" />
+        </label>
+        {{ form.image }}
+    </div>
+
+    {% for image in form.pictures['#value'] %}
+        <div class="field-wrap product-image">
+            <div class="field-content">
+                <div class="field-image mfp-item" style="background-image: url({{ image.imageUrl }});">
+                    <a class="popup" href="{{ image.imageUrl }}" title="{{ image.authorFirstName }} {{ image.authorLastName }}{% if image.location != '-' %}- {{ image.location }}{% endif %} - {{ image.creationDate|date('d/m/y') }}">&nbsp;</a>
+                </div>
+            </div>
+            <div class="field-label">
+                <div class="field-text">
+                    <strong>{{ image.authorFirstName }} {{ image.authorLastName }}</strong><br />
+                    {{ image.location }} <span>{{ image.creationDate|date('d/m/y') }}</span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</form>
+
+<div id="show-random" class="form-footer" style="position: fixed; display: none;">
+    <a href="{{ path('priob_random', {'code': form.code['#value']}) }}" class="button">{{ 'Show random'|t }}</a>
+</div>
