@@ -1,0 +1,20 @@
+uuid: 996f28ba-e4b4-478d-9ee7-6ac0916ed447
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bactency
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bactency_local_actions
+theme: bactency
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

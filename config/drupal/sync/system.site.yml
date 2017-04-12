@@ -1,11 +1,11 @@
 uuid: d74caedc-cdeb-485d-9401-1d3c898a1a1c
-name: 'Numeric Emploi Grand Est'
-mail: donotreply.ge@numeric-emploi.org
+name: 'Drupency for Drupal 8 starterkit'
+mail: stephane.brichler@actency.fr
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/13
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr

@@ -1,5 +1,0 @@
-services:
-  actency_module:
-    class: '\Drupal\actency_module\EventSubscriber\ActencySubscriber'
-    tags:
-      - { name: 'event_subscriber' }

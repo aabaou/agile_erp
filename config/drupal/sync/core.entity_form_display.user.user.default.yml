@@ -22,7 +22,6 @@ dependencies:
   module:
     - field_group
     - image
-    - path
     - telephone
     - user
 third_party_settings:
@@ -34,31 +33,29 @@ third_party_settings:
         - field_nom
         - field_prenom
         - field_fonction
-        - user_picture
       parent_name: ''
       weight: 1
       label: 'Compte utilisateur'
-      format_type: tab
+      format_type: fieldset
       format_settings:
-        formatter: closed
         description: ''
         classes: ''
         id: ''
         required_fields: true
     group_coordonnees_indiv:
       children:
+        - user_picture
         - field_telephone_mobile
         - field_telephone_fixe
       parent_name: ''
       weight: 2
       label: 'Coordonnées individuelles'
-      format_type: tab
+      format_type: fieldset
       format_settings:
         description: ''
         classes: ''
         id: ''
         required_fields: true
-        formatter: closed
     group_lieu_travail:
       children:
         - field_nom_du_site
@@ -69,22 +66,20 @@ third_party_settings:
       parent_name: ''
       weight: 3
       label: 'Lieu de travail habituel'
-      format_type: tab
+      format_type: fieldset
       format_settings:
         description: ''
         classes: ''
         id: ''
         required_fields: true
-        formatter: closed
     group_caracteristiques_contact:
       children:
         - field_organisme
       parent_name: ''
       weight: 4
       label: 'Caractéristiques du contact'
-      format_type: tab
+      format_type: fieldset
       format_settings:
-        formatter: closed
         description: ''
         classes: ''
         id: ''
@@ -211,9 +206,8 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 5
+    weight: 3
 hidden:
   contact: true
-  langcode: true
   language: true
   timezone: true

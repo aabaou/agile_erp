@@ -1,4 +1,4 @@
-uuid: 95104519-9904-4896-b353-933ec7d44cb8
+uuid: bb006f41-e2ef-4d69-acdc-2bcd068e229a
 langcode: fr
 status: false
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - menu_block
   theme:
-    - portailcrsn
-id: menuuserrole
-theme: portailcrsn
+    - bactency
+id: bactency_menuuserrole
+theme: bactency
 region: '-1'
-weight: -13
+weight: -7
 provider: null
 plugin: 'menu_block:menu-user-role'
 settings:

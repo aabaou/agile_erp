@@ -1,0 +1,22 @@
+uuid: 91ca3492-cc94-4c12-8563-b74d86f95448
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bactency
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bactency_breadcrumbs
+theme: bactency
+region: content
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''Ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: c0788276-4fda-4f42-9d07-5a96aff8564d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bactency
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bactency_content
+theme: bactency
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

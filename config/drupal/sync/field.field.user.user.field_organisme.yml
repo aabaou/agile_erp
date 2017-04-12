@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_organisme
-    - node.type.organisme
   module:
     - user
 _core:
@@ -22,8 +21,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      organisme: organisme
+    target_bundles: {  }
     sort:
       field: title
       direction: ASC

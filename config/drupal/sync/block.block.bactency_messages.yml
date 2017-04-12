@@ -1,17 +1,17 @@
-uuid: b3953140-d2c9-493c-9000-d99748fdf9c9
+uuid: 1617292b-e8e1-4d76-b3d6-0060caec19cb
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - portailcrsn
+    - bactency
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: portailcrsn_messages
-theme: portailcrsn
+id: bactency_messages
+theme: bactency
 region: highlighted
-weight: -12
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

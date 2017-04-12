@@ -1,9 +1,0 @@
-uuid: 75d8ae07-e082-4fbb-a9f5-45416f6b68a8
-langcode: fr
-status: true
-dependencies: {  }
-id: referent_competences
-label: 'Référent compétences'
-weight: 3
-is_admin: null
-permissions: {  }

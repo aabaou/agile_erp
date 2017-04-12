@@ -6,7 +6,6 @@ dependencies:
     - system.menu.menu-user-role
   module:
     - menu_block
-    - user
   theme:
     - portailcrsn
 id: menuuserrole_2
@@ -25,16 +24,4 @@ settings:
   expand: 1
   parent: 'menu-user-role:'
   suggestion: menu_user_role
-visibility:
-  user_role:
-    id: user_role
-    roles:
-      entreprise: entreprise
-      partenaire_emploi: partenaire_emploi
-      gestionnaire: gestionnaire
-      representant_organisme: representant_organisme
-      responsable_communication: responsable_communication
-      responsable_filiere_formation: responsable_filiere_formation
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
+visibility: {  }

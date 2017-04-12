@@ -1,8 +1,0 @@
-uuid: e024de07-c5c4-4846-ad00-c93c0920c509
-langcode: fr
-status: true
-dependencies: {  }
-id: menu-presentation-de-l-asso
-label: 'Menu présentation de l''association'
-description: 'En savoir plus, Annuaire des membres, Adhérer'
-locked: false

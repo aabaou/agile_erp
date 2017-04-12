@@ -1,6 +1,0 @@
-form_organisme_et_utilisateur:
-  version: 1
-  js:
-    js/form_organisme_et_utilisateur.js: {}
-  dependencies:
-    - core/jquery

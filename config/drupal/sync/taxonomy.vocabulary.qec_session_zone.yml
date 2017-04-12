@@ -1,9 +1,0 @@
-uuid: 82f886cd-fb95-4e33-a266-b9ddb905c3fd
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Bassin d''emploi de session QEC'
-vid: qec_session_zone
-description: ''
-hierarchy: 0
-weight: 0

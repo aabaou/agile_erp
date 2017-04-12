@@ -1,12 +1,9 @@
 module:
-  actency_module: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
   backup_migrate: 0
   block: 0
-  block_annuaire_des_formations: 0
-  block_annuaire_des_membres: 0
   block_content: 0
   breakpoint: 0
   captcha: 0
@@ -17,7 +14,6 @@ module:
   config_update: 0
   contact: 0
   contextual: 0
-  csv_serialization: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -39,7 +35,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  form_organisme_et_utilisateur: 0
   help: 0
   history: 0
   image: 0
@@ -55,18 +50,14 @@ module:
   nocurrent_pass: 0
   node: 0
   options: 0
-  organisme: 0
   page_cache: 0
   path: 0
   quickedit: 0
   rdf: 0
   reroute_email: 0
-  rest: 0
   search: 0
-  serialization: 0
   shortcut: 0
   simple_mail: 0
-  special_field: 0
   stage_file_proxy: 0
   system: 0
   taxonomy: 0
@@ -80,8 +71,6 @@ module:
   twig_field_value: 0
   update: 0
   user: 0
-  user_custom_login: 0
-  views_data_export: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
@@ -96,6 +85,7 @@ theme:
   seven: 0
   bootstrap: 0
   portailcrsn: 0
+  bactency: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: fr

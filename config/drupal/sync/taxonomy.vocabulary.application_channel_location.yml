@@ -1,9 +1,0 @@
-uuid: f3d2d6dc-585d-4603-86bd-9d4184fc1162
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Lieu de canal de candidature'
-vid: application_channel_location
-description: ''
-hierarchy: 0
-weight: 0

@@ -1,9 +1,0 @@
-uuid: 57a2ecdd-9725-421a-ba56-10656cb3257d
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Statut des canaux de candidatures'
-vid: application_channel_status
-description: ''
-hierarchy: 0
-weight: 0

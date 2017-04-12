@@ -1,0 +1,25 @@
+uuid: e43da1d8-3cee-4b2f-bb47-7eb4a4875084
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bactency
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: bactency_branding
+theme: bactency
+region: '-1'
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

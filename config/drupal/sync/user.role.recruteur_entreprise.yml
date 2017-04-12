@@ -1,9 +1,0 @@
-uuid: 7e0bfdeb-2aa1-4e29-80a7-7d182dc977b6
-langcode: fr
-status: true
-dependencies: {  }
-id: recruteur_entreprise
-label: 'Recruteur entreprise'
-weight: 4
-is_admin: null
-permissions: {  }

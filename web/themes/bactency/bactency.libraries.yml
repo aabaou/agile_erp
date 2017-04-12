@@ -18,16 +18,16 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
-magnific-popup:
-  js:
-    js/magnific-popup.js: {}
-    /libraries/magnific-popup/dist/jquery.magnific-popup.min.js: {minified: true}
-  css:
-    base:
-      /libraries/magnific-popup/dist/magnific-popup.css: {}
-  dependencies:
-    - core/jquery
-    - core/jquery.once
+#magnific-popup:
+#  js:
+#    js/magnific-popup.js: {}
+#    /libraries/magnific-popup/dist/jquery.magnific-popup.min.js: {minified: true}
+#  css:
+#    base:
+#      /libraries/magnific-popup/dist/magnific-popup.css: {}
+#  dependencies:
+#    - core/jquery
+#    - core/jquery.once
 
 priob-ltm:
   js:

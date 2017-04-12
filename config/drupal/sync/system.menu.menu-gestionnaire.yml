@@ -1,8 +1,0 @@
-uuid: f082bd10-9ab3-4654-9533-ba7cee38c86b
-langcode: fr
-status: true
-dependencies: {  }
-id: menu-gestionnaire
-label: 'Gestion administrative'
-description: ''
-locked: false
