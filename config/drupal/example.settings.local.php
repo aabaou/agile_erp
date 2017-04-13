@@ -134,5 +134,5 @@ $config_directories['local'] = $app_ground . '/config/drupal/local';
  * Files configurations.
  */
 $settings['file_public_base_url'] = 'http://***DOMAIN***/files';
-$settings['file_public_path'] = $app_ground . '/data/files/public';
+$settings['file_public_path'] = $app_ground . '/web/sites/default/files';
 $settings['file_private_path'] = $app_ground . '/data/files/private';
