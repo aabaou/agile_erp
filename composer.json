@@ -7,40 +7,8 @@
     "prefer-stable": true,
     "authors": [
         {
-          "name": "Manidrim",
-          "role": "Developer"
-        },
-        {
-          "name": "Maxime001",
-          "role": "Developer"
-        },
-        {
-          "name": "NicolasTS",
-          "role": "Developer"
-        },
-        {
-          "name": "Stéphane Brichler (Brichler67)",
-          "email": "stephane.brichler@actency.fr",
-          "role": "Developer"
-        },
-        {
-          "name": "Ruben Petrosjan",
-          "email": "ruben.petrosjan@actency.fr",
-          "role": "Developer"
-        },
-        {
-          "name": "Steven Heumann",
-          "email": "steven.heumann@actency.fr",
-          "role": "Lead developer"
-        },
-        {
-          "name": "Adrien Engeln (Soryuk)",
-          "email": "adrien.engeln@actency.fr",
-          "role": "Lead developer"
-        },
-        {
-          "name": "Nicolas Loye (nicoloye)",
-          "email": "nicolas.loye@actency.fr",
+          "name": "John Doe",
+          "email": "john.doe@example.fr",
           "role": "Developer"
         }
     ],
