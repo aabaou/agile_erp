@@ -4,10 +4,6 @@ status: true
 dependencies:
   module:
     - contact
-    - field_permissions
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: contact_message.field_form_contact_nom_orga
 field_name: field_form_contact_nom_orga
 entity_type: contact_message

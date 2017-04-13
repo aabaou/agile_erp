@@ -20,82 +20,9 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - field_group
     - image
     - telephone
     - user
-third_party_settings:
-  field_group:
-    group_compte_utilisateur:
-      children:
-        - account
-        - field_civilite
-        - field_nom
-        - field_prenom
-        - field_fonction
-      parent_name: ''
-      weight: 1
-      label: 'Compte utilisateur'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
-    group_coordonnees_indiv:
-      children:
-        - user_picture
-        - field_telephone_mobile
-        - field_telephone_fixe
-      parent_name: ''
-      weight: 2
-      label: 'Coordonnées individuelles'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
-    group_lieu_travail:
-      children:
-        - field_nom_du_site
-        - field_territoire
-        - field_adresse
-        - field_code_postal
-        - field_ville
-      parent_name: ''
-      weight: 3
-      label: 'Lieu de travail habituel'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
-    group_caracteristiques_contact:
-      children:
-        - field_organisme
-      parent_name: ''
-      weight: 4
-      label: 'Caractéristiques du contact'
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
-    group_user_administration:
-      children:
-        - field_user_validation
-      parent_name: ''
-      weight: 0
-      label: Administration
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
 id: user.user.default
@@ -209,5 +136,6 @@ content:
     weight: 3
 hidden:
   contact: true
+  langcode: true
   language: true
   timezone: true

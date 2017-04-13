@@ -1,5 +1,0 @@
-origin: 'http://qa.portail-crsn.actency.fr'
-origin_dir: sites/default/files
-use_imagecache_root: 0
-hotlink: 0
-langcode: fr

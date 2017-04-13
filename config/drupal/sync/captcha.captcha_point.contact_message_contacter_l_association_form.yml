@@ -1,7 +1,0 @@
-uuid: b3fc5000-4d96-4b54-a300-dde7c1b561e3
-langcode: fr
-status: true
-dependencies: {  }
-formId: contact_message_contacter_l_association_form
-captchaType: image_captcha/Image
-label: contact_message_contacter_l_association_form
