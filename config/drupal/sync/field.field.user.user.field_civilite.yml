@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_civilite
-    - taxonomy.vocabulary.civilite
   module:
     - user
 _core:
@@ -22,8 +21,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      civilite: civilite
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false

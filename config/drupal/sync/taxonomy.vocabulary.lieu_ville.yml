@@ -1,9 +1,0 @@
-uuid: 150ef97c-5195-4fa3-a43e-6219a268c510
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Lieu : Ville'
-vid: lieu_ville
-description: 'Ville où se trouve la formation'
-hierarchy: 0
-weight: 0

@@ -1,9 +1,0 @@
-uuid: 4c96c0d3-9a31-40f1-a2d2-fe78686cfaf7
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Réponse Oui/Non'
-vid: reponse_oui_non
-description: ''
-hierarchy: 0
-weight: 0

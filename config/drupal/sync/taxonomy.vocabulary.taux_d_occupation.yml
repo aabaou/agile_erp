@@ -1,9 +1,0 @@
-uuid: d833f13a-a42a-4b82-9802-0268d448fec2
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Taux de disponibilité'
-vid: taux_d_occupation
-description: ''
-hierarchy: 0
-weight: 0

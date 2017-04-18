@@ -1,9 +1,0 @@
-uuid: 25daa06c-49a2-4c43-9443-67e4e77b7508
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Type de poste recherché'
-vid: type_de_poste_recherche
-description: ''
-hierarchy: 0
-weight: 0

@@ -1,9 +1,0 @@
-uuid: fe5c1c80-c5b2-428f-befb-cc6678cdda88
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Statut de session QEC'
-vid: qec_session_status
-description: ''
-hierarchy: 0
-weight: 0

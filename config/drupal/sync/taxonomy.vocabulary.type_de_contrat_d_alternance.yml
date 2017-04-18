@@ -1,9 +1,0 @@
-uuid: aaef4676-ce7b-434a-a3ea-0cac05143895
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Type de contrat d''alternance'
-vid: type_de_contrat_d_alternance
-description: ''
-hierarchy: 0
-weight: 0

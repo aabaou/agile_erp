@@ -1,9 +1,0 @@
-uuid: 58defd1f-406d-47a7-9903-3cbfacf368f1
-langcode: fr
-status: true
-dependencies: {  }
-name: Situation
-vid: situation
-description: 'Descriptif de la situation actuelle d''un candidat.'
-hierarchy: 1
-weight: -9

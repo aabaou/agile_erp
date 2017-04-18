@@ -1,9 +1,0 @@
-uuid: 7fb67f0e-f7dd-4c05-b62e-892798186164
-langcode: fr
-status: true
-dependencies: {  }
-name: Admission
-vid: admission
-description: ''
-hierarchy: 0
-weight: 0
