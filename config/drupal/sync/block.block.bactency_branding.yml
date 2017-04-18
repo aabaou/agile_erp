@@ -1,6 +1,6 @@
-uuid: e43da1d8-3cee-4b2f-bb47-7eb4a4875084
+uuid: da23d6f8-de6a-41bb-abd0-bd88f28f3468
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: bactency_branding
 theme: bactency
-region: '-1'
-weight: -3
+region: header
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

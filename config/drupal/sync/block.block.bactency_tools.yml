@@ -1,6 +1,6 @@
-uuid: 36bdb93c-ec62-4400-89ec-4a92bdece3c4
+uuid: 5208c256-d7b6-4412-9831-73ad17b2b8f6
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.tools
@@ -12,13 +12,13 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: bactency_tools
 theme: bactency
-region: '-1'
-weight: -6
+region: sidebar_first
+weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Outils
+  label: Tools
   provider: system
   label_display: visible
   level: 1

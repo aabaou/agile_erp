@@ -1,4 +1,4 @@
-uuid: 310a55cb-eaac-4d45-9bd1-0da341ab07bf
+uuid: ae32de9c-82f4-4afe-99ba-326b30e455c6
 langcode: fr
 status: true
 dependencies:
@@ -12,13 +12,13 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: bactency_footer
 theme: bactency
-region: footer
-weight: -8
+region: navigation
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Menu Pied de page'
+  label: 'Footer menu'
   provider: system
   label_display: '0'
   level: 1

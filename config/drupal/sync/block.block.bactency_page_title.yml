@@ -1,6 +1,6 @@
-uuid: 52267c9e-5b11-4203-a99a-2c140c9e553b
+uuid: 2c72b6cb-5d6f-43a5-9730-4ce0b249f712
 langcode: fr
-status: false
+status: true
 dependencies:
   theme:
     - bactency
@@ -8,13 +8,13 @@ _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: bactency_page_title
 theme: bactency
-region: '-1'
-weight: -2
+region: content
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Titre de page'
+  label: 'Page title'
   provider: core
   label_display: '0'
 visibility: {  }

@@ -1,4 +1,4 @@
-uuid: c0788276-4fda-4f42-9d07-5a96aff8564d
+uuid: a643c084-8597-415a-b38e-f3a415708041
 langcode: fr
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: bactency_content
 theme: bactency
 region: content
-weight: -7
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Contenu de la page principale'
+  label: 'Main page content'
   provider: system
   label_display: '0'
 visibility: {  }

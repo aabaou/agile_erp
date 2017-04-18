@@ -1,4 +1,4 @@
-uuid: 1617292b-e8e1-4d76-b3d6-0060caec19cb
+uuid: 8d401d75-7d38-4dce-bc4b-121086eff93b
 langcode: fr
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: bactency_messages
 theme: bactency
 region: highlighted
-weight: -8
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Messages de statut'
+  label: 'Status messages'
   provider: system
   label_display: '0'
 visibility: {  }

@@ -1,6 +1,6 @@
-uuid: af31aedc-4cc1-4f72-b17f-72a65840708e
+uuid: 9de124a6-6f58-4235-8fe1-3e840cb87034
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - search
@@ -10,13 +10,13 @@ _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: bactency_search
 theme: bactency
-region: '-1'
-weight: -4
+region: sidebar_first
+weight: -1
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Rechercher
+  label: Search
   provider: search
   label_display: visible
 visibility: {  }

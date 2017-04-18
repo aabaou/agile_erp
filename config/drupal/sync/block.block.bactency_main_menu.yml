@@ -1,4 +1,4 @@
-uuid: 3f8afe1a-de4d-45a0-b38c-4a4e6fa673a4
+uuid: e333b351-58c9-4815-80ff-67cce203e9a3
 langcode: fr
 status: true
 dependencies:
@@ -9,16 +9,16 @@ dependencies:
   theme:
     - bactency
 _core:
-  default_config_hash: 7i33zpy7GVW9TPtVczpGKb7bpUaoNbmvsPrb52sGDJY
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: bactency_main_menu
 theme: bactency
-region: navigation_collapsible
-weight: -8
+region: navigation
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Navigation principale'
+  label: 'Main navigation'
   provider: system
   label_display: '0'
   level: 1
