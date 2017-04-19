@@ -121,12 +121,6 @@ if [ $noComposer = 0 ]; then
   displayOperation "Starting composer update"
   composer update $verbose
 
-  # Project specific composer action.
-  changeDir web/modules/backup_migrate
-  displayOperation "Starting composer update for backup and migrate module"
-  composer update $verbose
-
-  changeDir ../../
 else
   displayWarning "Skipping composer operations (fast mode)"
 fi
