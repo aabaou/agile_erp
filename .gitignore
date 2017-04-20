@@ -10,7 +10,15 @@
 
 # Ignore Drupal's file directory
 /web/sites/*/files
-/data
+#/data
+#!/data/files/private/.gitkeep
+#!/data/files/private/.htaccess
+#!/data/files/public/.gitkeep
+#!/data/files/public/.htaccess
+
+/data/db/*
+/data/files/private/*
+/data/files/public/*
 !/data/files/private/.gitkeep
 !/data/files/private/.htaccess
 !/data/files/public/.gitkeep
