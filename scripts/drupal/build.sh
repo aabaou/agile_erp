@@ -53,12 +53,12 @@ if [[ ! -f index.php && ! -d core ]]; then
 fi
 
 # Require settings file to process the build.
-if [[ ! -f ../config/drupal/settings.local.php && ! -f ../config/drupal/settings.travis.php ]]; then
-  displayError "Please setup settings file before proceeding !"
-  echo "Here is a hash salt example for you to initialize your settings:"
-  drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";' $verbose
-  exit 1;
-fi
+#if [[ ! -f ../config/drupal/settings.local.php && ! -f ../config/drupal/settings.travis.php ]]; then
+#  displayError "Please setup settings file before proceeding !"
+#  echo "Here is a hash salt example for you to initialize your settings:"
+#  drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";' $verbose
+#  exit 1;
+#fi
 
 # Initialize available options.
 noComposer=0
@@ -110,7 +110,7 @@ fi
   
 # Composer operations.
 if [ $noComposer = 0 ]; then
-  changeDir ..
+  cd ..
 
   # Update the autoload classes, this is sometimes required
   # if the project has been installed and some files has been deleted.
@@ -120,7 +120,9 @@ if [ $noComposer = 0 ]; then
   # Installing composer packages.
   displayOperation "Starting composer update"
   composer update $verbose
-
+  
+  cd web
+  
 else
   displayWarning "Skipping composer operations (fast mode)"
 fi
@@ -128,7 +130,7 @@ fi
 # Init Drupal console.
 if [ $noConsole = 0 ]; then
   displayOperation "Initialize Drupal console"
-  ./../vendor/bin/drupal init --override --no-interaction $verbose
+  ../vendor/bin/drupal init --override --no-interaction $verbose
 
   source "$HOME/.console/console.rc" 2>/dev/null
 else
@@ -141,11 +143,11 @@ if [ $noBackup = 0 ]; then
 
   # Only backup things if there is a previous working instance.
   date=$(date +%Y%m%d%H%M%S)
-  if ./../vendor/bin/drupal database:dump --gz --file="../data/db/local-$date.sql" | grep -q "is not a valid command name"; then
+  if ../vendor/bin/drupal database:dump --gz --file="../data/db/local-$date.sql" | grep -q "is not a valid command name"; then
     displayWarning "Skipping backup (nothing to dump)"
   else
     displaySuccess " The database was dumped at \"../data/db/local-$date.sql.gz\""
-    ./../vendor/bin/drupal config:export --directory=../config/drupal/local $verbose
+    ../vendor/bin/drupal config:export --directory=../config/drupal/local $verbose
   fi
 else
   displayWarning "Skipping backup (fast/noBackup mode)"
@@ -154,7 +156,10 @@ fi
 # If a dump is passed as option, install the website with it.
 if [ $dump != 0 ]; then
   displayOperation "Building site from \"../data/db/$dump\""
-  ./../vendor/bin/drupal site:install --db-file=../data/db/$dump --no-interaction --force $verbose
+  #./vendor/bin/drupal site:install --db-file=../data/db/$dump --no-interaction --force $verbose
+  drush sql-drop
+  #../vendor/bin/drush sql-cli < ../data/db/$dump
+  zcat ../data/db/$dump | ../vendor/bin/drush sql-cli
 else
   # Test of the config_installer profile. Not working, leaving code for history.
   #./../vendor/bin/drupal site:install config_installer --account-name="admin" --account-mail="admin@actency.fr" --no-interaction --force $verbose
@@ -164,10 +169,10 @@ else
 
   # IDK why but install via drupal console still bug with Travis, perfoming it with drush, leaving code for history.
   #  ./../vendor/bin/drupal site:install standard --no-interaction --force $verbose
-  ./../vendor/bin/drush site-install --yes $verbose
+  ../vendor/bin/drush site-install --yes $verbose
 
   # Clear cache
-  ./../vendor/bin/drupal cr all $verbose
+  ../vendor/bin/drupal cr all $verbose
 
   # If no configuration files are available in the folder, stop the process here.
   if [[ ! $(ls -A ../config/drupal/$conf) ]]; then
@@ -187,23 +192,23 @@ else
 
     # Pushing UUID into the current instance.
     displaySuccess " Pushing site UUID into the current instance."
-    ./../vendor/bin/drupal config:override system.site uuid "$siteId" $verbose
+    ../vendor/bin/drupal config:override system.site uuid "$siteId" $verbose
 
     # Removing default shortcut links, this is mandatory for the importation to be done.
     # More details here: https://www.drupal.org/node/2583113
     # @todo: Remove this when the issue is fixed on drupal.org.
     displaySuccess " Removing default shortcut links to ensure a proper importation."
     displaySuccess " This is a community fix, see https://www.drupal.org/node/2583113)."
-    ./../vendor/bin/drupal entity:delete shortcut_set default $verbose
+    ../vendor/bin/drupal entity:delete shortcut_set default $verbose
 
     displaySuccess " Importing configuration from \"$conf\""
-    ./../vendor/bin/drupal config:import --directory=../config/drupal/$conf --no-interaction $verbose
+    ../vendor/bin/drupal config:import --directory=../config/drupal/$conf --no-interaction $verbose
   fi
 fi
 
 # Rebuild site.
 displayOperation "Performing post-build operations"
-./../vendor/bin/drupal chain --file=$POSTBUILDFILE -y $verbose
+../vendor/bin/drupal chain --file=$POSTBUILDFILE -y $verbose
 
 # Display execution time.
 duration=$SECONDS
