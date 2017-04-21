@@ -56,7 +56,7 @@ if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.se
     
 	# Password user 
 	# default value 
-	passtmp=$(grep MYSQL_ROOT_PASSWORD ../docker-compose.yml | head -1)
+	passtmp=$(grep MYSQL_PASSWORD ../docker-compose.yml | head -1)
 	passDocker=$(echo $passtmp | cut -d'=' -f2)			
 	pass=$passDocker
 	read -e -i "$pass" -p "Login password  ? " input

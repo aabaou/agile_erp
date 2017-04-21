@@ -113,7 +113,7 @@ $settings['skip_permissions_hardening'] = TRUE;
 // the script will generate an example hash salt for you.
 $settings['hash_salt'] = '***GENERATE SALT***';
 $settings['trusted_host_patterns'] = array(
-  '^priob\.loc$',
+  '^***PRIOB***\.***LOC***$',
 );
 
 $databases['default']['default'] = array (
