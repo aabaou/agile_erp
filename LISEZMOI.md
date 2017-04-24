@@ -1,4 +1,4 @@
-#Starterkit pour Drupal 8
+# Starterkit pour Drupal 8
 
 
 Ce starterkit a pour objectif de faciliter l'installation et la configuration de Drupal 8 pour un nouveau projet. Cette installation et configuration peut s'effectuer de manière automatique via l'utilisation des scripts shell du projet.
@@ -7,8 +7,8 @@ Ce starterkit utilise par défaut le thème Bactency (thème enfant du thème Bo
 
 
 1. [Git - Récupèration du starterkit](#git)
-2. [Lancement du starterkit](config/drupal/LISEZMOI.md)
-3. [Utilisation et options du build.sh](config/drupal/LISEZMOI.md)
+2. [Lancement du starterkit](scripts/drupal/LISEZMOI.md)
+3. [Utilisation et options du build.sh](scripts/drupal/LISEZMOI.md)
 3. [Importer -Sauvegarder une base de données](data/LISEZMOI.md)
 4. [Aliases drush]()
 5. [Aliases drupal console]()

@@ -2,7 +2,7 @@
 1. [Lancement du starterkit avec install.sh](#install.sh)
 2. [Utilisation du build.sh](#build.sh)
 
-##Lancement du starterkit avec install.sh <a id="install.sh"></a>
+## Lancement du starterkit avec install.sh <a id="install.sh"></a>
 Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manière suivante :
 
 1. Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet,
@@ -11,7 +11,7 @@ Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manièr
 ### Modification du fichier docker-compose.yml
 Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet afin qu’il corresponde à votre configuration locale.
 
-````
+````php
 version: '2'
 services:
   # web with xdebug - actency images
@@ -133,7 +133,7 @@ Sans paramètre, ce script  :
 - Installe un Drupal vierge
 
 
-###Exécution du script
+### Exécution du script
 Pour utiliser ce script, vous devez être dans le répertoire web de votre projet.
 
 Pour exécuter le script, lancer la commande :
