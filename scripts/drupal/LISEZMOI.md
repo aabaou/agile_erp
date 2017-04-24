@@ -76,11 +76,11 @@ Placez-vous dans le dossier web de votre projet Drupal et lancer la commande  `b
 
 Suivez les instructions.
 
-#### Que fait ce script?
+#### Que fait ce script ?
 
 Ce script s'occupe de :
 - lancer l'installation des dépendances du projet
-- Génèrer un salt
+- Génèrer un hash salt
 - Créer le fichier `settings.local.php` dans le dossier `config/drupal` avec les informations de la bases de données et le nom de domaine que l'utilisateur aura renseigné dans le terminal lors du lancement du script. 
 - Modifier le fichier settings.php dans sites/default/settings.php afin qu’il inclus le fichier settings.local.php
 

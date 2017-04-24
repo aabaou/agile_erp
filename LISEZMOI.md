@@ -25,7 +25,7 @@ Puis taper la commande `git checkout feature/DR8-1` afin de vous positionner dan
 
 Placer vous dans votre dossier et lancer le starterkit.
 
-##Contact
+## Contact
 - Nicolas Loye (nicolas.loye@actency.fr)
 
 Développé par : Actency

@@ -16,7 +16,7 @@ voir [lancement du starterkit](../../scripts/drupal/LISEZMOI.md).
 2. Nommer la copie settings.local.php
 3. Adapter le fichier à votre configuration locale.
 
-````
+````php
 /**
  * System configurations.
  */
