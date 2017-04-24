@@ -36,7 +36,7 @@ if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.se
     
 	
 	# Database name	
-    # default value
+    # The default value is the value in the file docker-compose.yml
 	databasetmp=$(grep MYSQL_DATABASE ../docker-compose.yml | head -1)
 	databaseDocker=$(echo $databasetmp | cut -d'=' -f2)			
 	database=$databaseDocker
@@ -46,7 +46,7 @@ if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.se
 
 	
 	# User name 
-	# default value  
+	# The default value is the value in the file docker-compose.yml  
 	usertmp=$(grep MYSQL_USER ../docker-compose.yml | head -1)
 	userDocker=$(echo $usertmp | cut -d'=' -f2)			
 	user=$userDocker
@@ -55,7 +55,7 @@ if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.se
 	sed -ie "s/\*\*\*USERNAME\*\*\*/${user}/g" ../config/drupal/settings.local.php
     
 	# Password user 
-	# default value 
+	# The default value is the value in the file docker-compose.yml 
 	passtmp=$(grep MYSQL_PASSWORD ../docker-compose.yml | head -1)
 	passDocker=$(echo $passtmp | cut -d'=' -f2)			
 	pass=$passDocker
@@ -64,7 +64,7 @@ if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.se
 	sed -ie "s/\*\*\*PASSWORD\*\*\*/${pass}/g" ../config/drupal/settings.local.php
 
 	# Domain name
-	# default value  
+	# The default value is the value in the file docker-compose.yml  
 	domaintmp=$(grep SERVERNAME ../docker-compose.yml | head -1)
 	domainDocker=$(echo $domaintmp | cut -d'=' -f2)			
 	domain=$domainDocker
@@ -113,17 +113,26 @@ fi
 
 
 # Generating the database
-displayOperation "Generating the database"
-displayWarning "Place your sql file in data / db."
-read -p "What is the name of the sql file (example: example.sql.gz)  ? " filesql
+read -p "Do you want to import a database (y/n)? " -n 1 -r
+echo
+
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+   displayWarning "Place your sql file in data/db."
+   read -p "What is the name of the sql file (example: example.sql.gz)  ? " filesql
 
 
-if [[ ${filesql: -7} = '.sql.gz' ]]; then
-   bash ../scripts/drupal/build.sh --nc --nb --dump="${filesql}"
+   if [[ ${filesql: -7} = '.sql.gz' ]]; then
+       displayOperation "Importing the database"
+       bash ../scripts/drupal/build.sh --nc --nb --dump="${filesql}"
  
+   else
+       displayError "Your file does not have the right extension"
+   fi
+   
 else
-    displayError "Your file does not have the right extension"
-fi
+    displayOperation "Generating a new database"
+    bash ../scripts/drupal/build.sh --nc --nb    
+fi 
 
 
 
