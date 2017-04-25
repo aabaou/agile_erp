@@ -11,6 +11,8 @@ Il est ainsi hors des fichiers servis par le serveur web en surchargeant le chem
 Le fichier settings.local.php contient les informations de la base de données, le nom de domaine et le hash salt. Ce fichier sera généré par le script install.sh à partir du fichier example.settings.local.php.
 
 voir [lancement du starterkit](../../scripts/drupal/LISEZMOI.md).
+
+[Retourner au sommaire du projet](../../LISEZMOI.md)
 ## Création manuelle du fichier settings.local.php
 1. Copier le fichier example.settings.local.php
 2. Nommer la copie settings.local.php
@@ -46,3 +48,5 @@ $settings['file_public_path'] = $app_ground . '/web/sites/default/files';
 $settings['file_private_path'] = $app_ground . '/data/files/private';
 ````
 Le fichier settings.travis.php sera utilisé pour les tests
+
+[Retourner au sommaire du projet](../../LISEZMOI.md)

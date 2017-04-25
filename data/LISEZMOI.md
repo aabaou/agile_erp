@@ -9,8 +9,9 @@ Pour pouvoir importer une base de données:
 # Sauvegarder une base de données
 
 1. Créer un dossier db (dans le dossier data).
-2. Exectuter le script build.sh `../scripts/drupal/build.sh`
+2. Executer le script build.sh `../scripts/drupal/build.sh`
 
 
 Voir les [scripts shell](../scripts/drupal/LISEZMOI.md)
+
 [Retourner au sommaire du projet](../LISEZMOI.md)

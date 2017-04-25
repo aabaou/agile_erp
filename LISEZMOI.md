@@ -10,7 +10,7 @@ Ce starterkit utilise par défaut le thème Bactency (thème enfant du thème Bo
 2. [Lancement du starterkit](scripts/drupal/LISEZMOI.md)
 3. [Utilisation et options du build.sh](scripts/drupal/LISEZMOI.md)
 3. [Importer -Sauvegarder une base de données](data/LISEZMOI.md)
-4. [Aliases drush]()
+4. [Aliases drush](bin/drush/LISEZMOI.md)
 5. [Aliases drupal console]()
 
 ## Git <a id="git"></a>

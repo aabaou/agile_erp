@@ -1,50 +1,32 @@
-# drup8cy
-Drupency for Drupal 8 starterkit
+# Starterkit for Drupal 8
 
-## Docker Box usage
+This starterkit aims to facilitate the installation and configuration of Drupal 8 for a new project. This installation and configuration can be done automatically using the shell scripts of the project.
 
-Just copy the docker-compose.yml.dist file and paste as docker-compose.yml, then
-- adapt local file parameters to match with your local setup
-- run `docker-compose up`
-- run `go [web-docker-container-id] bash`
+This starterkit uses by default the theme Bactency (child theme of the Bootstrap3 theme).
 
-## Local settings file
 
-You can use your own local settings file to override any configuration available.
-To do so just create a `settings.local.php` file in `config/drupal/` from `config/drupal/example.settings.local.php` with the wanted overrides you can use bash script **test4.sh**.
-Here is an example :
+1. [Git - Recovering the starterkit](#git)
+2. [Launch of the starterkit](scripts/drupal/README.md)
+3. [Build.sh use and options](scripts/drupal/README.md)
+3. [Import - Save a database](data/README.md)
+4. [Drush aliases](bin/drush/README.md)
+5. [Drupal console aliases ]()
 
-```php
-/**
- * System configurations.
- */
-// If you run the build script before creating your local settings file,
-// the script will generate an example hash salt for you.
-// If you use test4 script it will ask you questions in order to automatically generate "settings.local.php". 
-$settings['hash_salt'] = '***GENERATE SALT***';
-$settings['trusted_host_patterns'] = array(
-  '^***PRIOB***\.***LOC***$',
-);
+## Git <a id="git"></a>
+The project code is DR8. Any branch created for this project should be named `feature/DR8-XXX` (where XXX is the number of the ticket).
+All commits messages should be prefixed with `DR8-XXX` (where XXX is the number of the ticket) and be clear about the task that has been done.
 
-$databases['default']['default'] = array (
-  'database' => '***DATABASE***',
-  'username' => '***USERNAME***',
-  'password' => '***PASSWORD***',
-  'prefix' => '',
-  'host' => 'mysql',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+### Recover starterkit from Github
 
-$config_directories['sync'] = $app_ground . '/config/drupal/sync';
-$config_directories['local'] = $app_ground . '/config/drupal/local';
+Clone the starterkit by running the command `git clone git@github.com:Actency/drup8cy.git project_name` where `project_name` is the name of your directory that will contain the project.
 
-/**
- * Files configurations.
- */
-$settings['file_public_base_url'] = 'http://***DOMAIN***/files';
-$settings['file_public_path'] = $app_ground . '/data/files/public';
-$settings['file_private_path'] = $app_ground . '/data/files/private';
+Then, run `git checkout feature/DR8-XXX` (où XXX est le numéro du ticket) to position yourself in the right branch of git.
 
-```
+Place yourself in your folder and start the starterkit.
+
+## Contact
+- Nicolas Loye (nicolas.loye@actency.fr)
+- Stéphanie Trendel (Stephanie.Trendel@actency.fr)
+- Stéphane Brichler (stephane.brichler@actency.fr)
+
+Developed by : Actency
