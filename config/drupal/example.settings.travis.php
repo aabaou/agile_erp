@@ -110,7 +110,7 @@ $settings['skip_permissions_hardening'] = TRUE;
  * System configurations.
  */
 $databases['default']['default'] = array (
-  'database' => 'numericemploi',
+  'database' => '***DATABASE***',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
@@ -123,9 +123,9 @@ $databases['default']['default'] = array (
 $config_directories['sync'] = $app_ground . '/config/drupal/sync';
 $config_directories['local'] = $app_ground . '/config/drupal/local';
 
-$settings['hash_salt'] = 'sykWnT4k0RSVKooFVDBDdOcF61jXf-qzrVsWSWpp54c5F4ZgmjOHEznpkUzJbFN7H-zv4f9avA';
+$settings['hash_salt'] = '***GENERATE SALT***';
 $settings['trusted_host_patterns'] = array(
-  '^numeric-emploi\.loc$',
+  '^***PRIOB***\.***LOC***$',
 );
 
 /**
