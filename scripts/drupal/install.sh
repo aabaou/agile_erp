@@ -140,7 +140,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
    if [[ ${filesql: -7} = '.sql.gz' ]]; then
        displayOperation "Importing the database"
-       #bash ../scripts/drupal/build.sh --nc --nb --dump="${filesql}"
+       bash ../scripts/drupal/build.sh --nc --nb --dump="${filesql}"
  
    else
        displayError "Your file does not have the right extension"
@@ -148,7 +148,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
    
 else
     displayOperation "Generating a new database"
-    #bash ../scripts/drupal/build.sh --nc --nb    
+    bash ../scripts/drupal/build.sh --nc --nb    
 fi 
 
 
