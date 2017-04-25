@@ -1,4 +1,4 @@
-# Shell Scripts
+# Shell Scripts <a id="shellscripts"></a>
 1. [Lancement du starterkit avec install.sh](#install.sh)
 2. [Utilisation du build.sh](#build.sh)
 
@@ -65,14 +65,16 @@ services:
       - "8025:8025"
 ````
 - remplacer `example` et `path` par votre configuration locale
-- lancer la commande `docker-compose up`
-- lancer la commande `go [nom_container_web_1] bash`
+- lancer la commande `docker-compose up` ou son aliase `dcup`
+
+RQ: En cas de modification d'une configuration avancée du fichier docker-compose.yml il est parfois nécessaire de recréer les containers pour que la modification soit prise en compte. Dans ce cas lancez la commande suivante : `dcup --force-recreate`
+- lancer la commande `go [nom_container_web_1] bash`. Cette commande permet d'entrer dans le container `nom_container_web_1`.
 
 
 ### Lancer le script install.sh
 
 
-Placez-vous dans le dossier web de votre projet Drupal et lancer la commande  `bash ../scprits/drupal/install.sh`.
+Placez-vous dans le dossier web de votre projet Drupal et lancer la commande  `bash ../scripts/drupal/install.sh`.
 
 Suivez les instructions.
 
@@ -80,9 +82,9 @@ Suivez les instructions.
 
 Ce script s'occupe de :
 - lancer l'installation des dépendances du projet
-- Génèrer un hash salt
+- Génèrer un hash salt utilisé par Drupal pour la génération d'uuid. La mécanique de génération est celle utilisée par Drupal de façon standard.
 - Créer le fichier `settings.local.php` dans le dossier `config/drupal` avec les informations de la bases de données et le nom de domaine que l'utilisateur aura renseigné dans le terminal lors du lancement du script. 
-- Modifier le fichier settings.php dans sites/default/settings.php afin qu’il inclus le fichier settings.local.php
+- Modifier le fichier settings.php dans sites/default/settings.php afin qu’il inclut le fichier settings.local.php
 
 ```php
 $app_ground = explode('/', $app_root);
@@ -122,6 +124,9 @@ $options['uri'] = "http://***URI***";
 
 - Installer le site ou le construire à partir d'un fichier sql importé
 
+[Retourner au sommaire de la page](#shellscripts)
+
+[Retourner au sommaire du projet](../../LISEZMOI.md)
 ## Utilisation du build.sh <a id="build.sh"></a>
 
 Ce script est utilisé dans le script install.sh, mais peut également être utilisé séparément avec différentes options.
@@ -160,3 +165,7 @@ Exemples:
 **Combinaison de plusieurs options :** ../scripts/drupal/build.sh --fast --dump="example.sql.gz"
 
 Si vous importez votre base de données depuis un dump, penser à faire un `drush config-import sync –y` pour ré-importer les dernières configs versionnées.
+
+[Retourner au sommaire de la page](#shellscripts)
+
+[Retourner au sommaire du projet](../../LISEZMOI.md)

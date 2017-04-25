@@ -1,4 +1,4 @@
-# Shell Scripts
+# Shell Scripts <a id="shellscripts"></a>
 1. [Launch of starterkit with install.sh](#install.sh)
 2. [Use of the build.sh](#build.sh)
 
@@ -65,14 +65,16 @@ services:
       - "8025:8025"
 ````
 - Replace `example` and` path` with your local configuration
-- run `docker-compose up`
-- run `go [nom_container_web_1] bash`
+- run `docker-compose up` or this aliase `dcup`
+
+When you modify the docker-compose.yml file, it is sometimes necessary to recreate the containers for the changes to taken effect. In this case run the command: `dcup --force-recreate`
+- run `go [container_name_web_1] bash`. This command is used to enter in the container `container_name_web_1`.
 
 
 ### Launch the install.sh script
 
 
-Go to the web folder of your Drupal project and run the command  `bash ../scprits/drupal/install.sh`.
+Go to the web folder of your Drupal project and run the command  `bash ../scripts/drupal/install.sh`.
 
 Follow the instructions.
 
@@ -80,7 +82,7 @@ Follow the instructions.
 
 This script :
 - starts the installation of the project dependencies
-- create a hash salt
+- create a hash salt used by Drupal for the generation of uuid. The generation mechanics is the one used by Drupal in a standard way.
 - create `settings.local.php` file in the `config/drupal` with the information of the database and the domain name that the user will have specified in the terminal when the script is launched.
 - modify the `settings.php` file in `sites/default/settings.php` to include the `settings.local.php` file
 
@@ -122,6 +124,10 @@ $options['uri'] = "http://***URI***";
 
 - Install the site or build it from an imported sql file
 
+[Back to the top of the page](#shellscripts)
+
+[Return to project summary](../../README.md)
+
 ## Use of the build.sh <a id="build.sh"></a>
 
 This script is used in the install.sh script, but can also be used separately with different options.
@@ -160,3 +166,7 @@ Exemples:
 **Combination of several options :** ../scripts/drupal/build.sh --fast --dump="example.sql.gz"
 
 If you are importing your database from a dump, do a `drush config-import sync -y` to re-import the latest versioned configs.
+
+[Back to the top of the page](#shellscripts)
+
+[Return to project summary](../../README.md)
