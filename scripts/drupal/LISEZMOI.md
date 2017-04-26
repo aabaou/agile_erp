@@ -1,6 +1,7 @@
 # Shell Scripts <a id="shellscripts"></a>
 1. [Lancement du starterkit avec install.sh](#install.sh)
-2. [Utilisation du build.sh](#build.sh)
+2. [Utilisation du script build.sh](#build.sh)
+3. [Utilisation du script archive.sh](#archive.sh)
 
 ## Lancement du starterkit avec install.sh <a id="install.sh"></a>
 Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manière suivante :
@@ -126,10 +127,8 @@ $options['uri'] = "http://***URI***";
 
 - Installer le site ou le construire à partir d'un fichier sql importé
 
-[Retourner au sommaire de la page](#shellscripts)
-
-[Retourner au sommaire du projet](../../LISEZMOI.md)
-## Utilisation du build.sh <a id="build.sh"></a>
+[Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)
+## Utilisation du script build.sh <a id="build.sh"></a>
 
 Ce script est utilisé dans le script install.sh, mais peut également être utilisé séparément avec différentes options.
 
@@ -168,6 +167,19 @@ Exemples:
 
 Si vous importez votre base de données depuis un dump, penser à faire un `drush config-import sync –y` pour ré-importer les dernières configs versionnées.
 
-[Retourner au sommaire de la page](#shellscripts)
+[Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)
 
-[Retourner au sommaire du projet](../../LISEZMOI.md)
+## Utilisation du script archive.sh <a id="archive.sh"></a>
+
+Pour utiliser ce script, vous devez être dans le répertoire web de votre projet.
+
+Pour exécuter le script, lancer la commande :
+- `../scripts/drupal/archive.sh` 
+- `bash ../scripts/drupal/archive.sh` (si le fichier ne s'exécute pas)
+
+Ce script effectu :
+- une sauvegarde de la base de données dans le dossier `data/db`. Le fichier généré se nomme `dump-[data].gz` où `date` est la date à laquelle le fichier a été généré.
+- compresse tous les dossiers nécessaires au site. Les dossiers `data/db` et `config/drupal/local` sont exclus de l'archive à l'exeption du fichier `dump-[date].gz` généré par le script. Le fichier d'archive se nomme `archive-[date].tar.gz` où `date` est la date à laquelle le fichier a été généré.
+Le fichier `archive-[date].tar.gz` est généré à la racine du projet.
+
+[Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)
