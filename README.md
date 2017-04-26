@@ -20,7 +20,7 @@ All commits messages should be prefixed with `DR8-XXX` (where XXX is the number 
 
 Clone the starterkit by running the command `git clone git@github.com:Actency/drup8cy.git project_name` where `project_name` is the name of your directory that will contain the project.
 
-Then, run `git checkout feature/DR8-XXX` (où XXX est le numéro du ticket) to position yourself in the right branch of git.
+Then, run `git checkout feature/DR8-XXX` (where XXX is the number of the ticket) to position yourself in the right branch of git.
 
 Place yourself in your folder and start the starterkit.
 

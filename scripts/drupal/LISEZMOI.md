@@ -65,10 +65,12 @@ services:
       - "8025:8025"
 ````
 - remplacer `example` et `path` par votre configuration locale
-- lancer la commande `docker-compose up` ou son aliase `dcup`
+- lancer la commande `docker-compose up` ou son alias `dcup` pour lancer les containers
 
-RQ: En cas de modification d'une configuration avancée du fichier docker-compose.yml il est parfois nécessaire de recréer les containers pour que la modification soit prise en compte. Dans ce cas lancez la commande suivante : `dcup --force-recreate`
+Rq: En cas de modification d'une configuration avancée du fichier docker-compose.yml il est parfois nécessaire de recréer les containers pour que la modification soit prise en compte. Dans ce cas lancez la commande suivante : `dcup --force-recreate`
 - lancer la commande `go [nom_container_web_1] bash`. Cette commande permet d'entrer dans le container `nom_container_web_1`.
+
+Rq : Si vous avez un doute sur le nom du container, vous pouvez lancer la commande `docker ps`. Cette commande liste les containers.
 
 
 ### Lancer le script install.sh

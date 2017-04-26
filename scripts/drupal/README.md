@@ -65,11 +65,12 @@ services:
       - "8025:8025"
 ````
 - Replace `example` and` path` with your local configuration
-- run `docker-compose up` or this aliase `dcup`
+- run `docker-compose up` or this alias `dcup` to launch containers
 
-When you modify the docker-compose.yml file, it is sometimes necessary to recreate the containers for the changes to taken effect. In this case run the command: `dcup --force-recreate`
+Note : When you modify the docker-compose.yml file, it is sometimes necessary to recreate the containers for the changes to taken effect. In this case run the command: `dcup --force-recreate`
 - run `go [container_name_web_1] bash`. This command is used to enter in the container `container_name_web_1`.
 
+Note : If you are unsure of the container name, you can run the `docker ps` command. This command lists the containers.
 
 ### Launch the install.sh script
 
