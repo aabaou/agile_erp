@@ -138,7 +138,9 @@ fi
 
 
 # Generating the database
-mkdir ../data/db
+if [[ ! -d ../data/db ]];then
+	mkdir ../data/db   
+fi
 
 read -p "Do you want to import a database (y/n)? " -n 1 -r
 echo
