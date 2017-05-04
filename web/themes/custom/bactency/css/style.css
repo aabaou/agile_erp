@@ -8355,7 +8355,6 @@ div[role="heading"] {
 
 .path-frontpage .main-container,
 .path-code .main-container {
-  background: url("../images/../images/code-bg.jpg") top center;
   background-size: cover;
   height: 100%;
 }
