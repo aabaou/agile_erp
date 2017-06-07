@@ -1,0 +1,8 @@
+name: 'Actency events link ''Back to all events'''
+description: 'Provides a custom block with a link "back to all events".'
+type: module
+core: 8.x
+dependencies:
+  - act_events
+version: 8.x-1.0
+

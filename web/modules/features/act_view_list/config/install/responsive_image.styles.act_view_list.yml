@@ -1,0 +1,24 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.act_158x105
+    - image.style.act_190x127
+    - image.style.act_213x142
+    - image.style.act_737x491
+id: act_view_list
+label: 'View list'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 1200px) 190px, (min-width: 992px) 213px, (min-width: 768px) 158px, 737px'
+      sizes_image_styles:
+        - act_158x105
+        - act_190x127
+        - act_213x142
+        - act_737x491
+breakpoint_group: responsive_image
+fallback_image_style: act_737x491

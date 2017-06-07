@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_737x491
+label: 737x491
+effects:
+  819c29d9-5fcf-4ab9-9e80-6abcd6c34b3d:
+    uuid: 819c29d9-5fcf-4ab9-9e80-6abcd6c34b3d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 737
+      height: 491

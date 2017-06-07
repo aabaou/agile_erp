@@ -1,0 +1,11 @@
+name: 'Actency events list with highlight'
+description: 'Provides a list view of events with highlight.'
+type: module
+core: 8.x
+dependencies:
+  - act_events
+  - act_view_list
+  - act_view_list_highlight
+  - smart_trim
+  - views
+version: 8.x-1.0

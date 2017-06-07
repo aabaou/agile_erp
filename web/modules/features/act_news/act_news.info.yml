@@ -1,0 +1,21 @@
+name: 'Actency news'
+description: 'Provides basic system of news.'
+type: module
+core: 8.x
+dependencies:
+  - act_view_default
+  - act_path
+  - block
+  - field
+  - filter
+  - image
+  - language
+  - menu_ui
+  - node
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0

@@ -1,0 +1,4 @@
+excluded:
+  - image.style.act_270x180
+  - responsive_image.styles.act_view_grid
+required: true

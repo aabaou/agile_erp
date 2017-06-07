@@ -1,0 +1,71 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.act_events_list_mini
+    - field.field.node.act_events.body
+    - field.field.node.act_events.field_act_end_date
+    - field.field.node.act_events.field_act_events_picture
+    - field.field.node.act_events.field_act_start_date
+    - node.type.act_events
+    - responsive_image.styles.act_view_list_mini
+  module:
+    - datetime
+    - responsive_image
+    - smart_trim
+    - user
+id: node.act_events.act_events_list_mini
+targetEntityType: node
+bundle: act_events
+mode: act_events_list_mini
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 4
+    settings:
+      trim_length: '100'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings: {  }
+    region: content
+  field_act_end_date:
+    weight: 2
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_act_events_picture:
+    weight: 3
+    label: hidden
+    settings:
+      responsive_image_style: act_view_list_mini
+      image_link: content
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_act_start_date:
+    weight: 1
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

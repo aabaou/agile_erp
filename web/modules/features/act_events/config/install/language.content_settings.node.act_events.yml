@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.act_events
+id: node.act_events
+target_entity_type_id: node
+target_bundle: act_events
+default_langcode: site_default
+language_alterable: false

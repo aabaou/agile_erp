@@ -1,0 +1,10 @@
+views_news_grid:
+  js:
+    js/views-news-grid.js: {}
+  dependencies:
+    - core/jquery
+
+views_news:
+  css:
+      theme:
+        css/views-news.css: {}

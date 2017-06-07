@@ -1,0 +1,5 @@
+name: 'Actency view list configuration'
+description: 'Provides configuration files for list views for News and Events.'
+type: module
+core: 8.x
+version: 8.x-1.0

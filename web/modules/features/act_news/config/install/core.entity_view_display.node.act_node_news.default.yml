@@ -1,0 +1,52 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.act_node_news.body
+    - field.field.node.act_node_news.field_act_news_categories
+    - field.field.node.act_node_news.field_act_news_image
+    - node.type.act_node_news
+    - responsive_image.styles.act_default
+  module:
+    - act_news
+    - responsive_image
+    - text
+    - user
+id: node.act_node_news.default
+targetEntityType: node
+bundle: act_node_news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_act_news_categories:
+    weight: 4
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: category_formatter
+    region: content
+  field_act_news_image:
+    weight: 2
+    label: hidden
+    settings:
+      responsive_image_style: act_default
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

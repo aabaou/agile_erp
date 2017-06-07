@@ -1,0 +1,25 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.act_100x67
+    - image.style.act_158x105
+    - image.style.act_213x142
+    - image.style.act_369x246
+    - image.style.act_737x491
+id: act_view_list_mini
+label: 'View list mini'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 1200px) 100px, (min-width: 992px) 213px, (min-width: 768px) 158px, 246px'
+      sizes_image_styles:
+        - act_100x67
+        - act_158x105
+        - act_213x142
+        - act_369x246
+breakpoint_group: responsive_image
+fallback_image_style: act_737x491

@@ -1,0 +1,5 @@
+name: 'Actency view list mini configuration'
+description: 'Provides configuration files for the view displaying the last three News or Events.'
+type: module
+core: 8.x
+version: 8.x-1.0

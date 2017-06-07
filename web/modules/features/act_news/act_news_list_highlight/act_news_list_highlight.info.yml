@@ -1,0 +1,12 @@
+name: 'Actency news list with highlight'
+description: 'Provides a list view of news with highlight.'
+type: module
+core: 8.x
+dependencies:
+  - act_news
+  - act_news_config_list
+  - act_view_list
+  - act_view_list_highlight
+  - system
+  - views
+version: 8.x-1.0

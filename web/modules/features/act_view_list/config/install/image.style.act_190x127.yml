@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_190x127
+label: '190x127'
+effects:
+  331a1f93-2ee9-4627-b0ab-6281c6d84a3b:
+    uuid: 331a1f93-2ee9-4627-b0ab-6281c6d84a3b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 190
+      height: 127

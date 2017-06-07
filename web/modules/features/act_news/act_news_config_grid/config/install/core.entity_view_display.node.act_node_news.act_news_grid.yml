@@ -1,0 +1,60 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.act_news_grid
+    - field.field.node.act_node_news.body
+    - field.field.node.act_node_news.field_act_news_categories
+    - field.field.node.act_node_news.field_act_news_image
+    - node.type.act_node_news
+    - responsive_image.styles.act_view_grid
+  module:
+    - act_news
+    - user
+id: node.act_node_news.act_news_grid
+targetEntityType: node
+bundle: act_node_news
+mode: act_news_grid
+content:
+  body:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: '250'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '1'
+      more_text: 'Read more'
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings: {  }
+    type: text_formatter
+    region: content
+  field_act_news_categories:
+    weight: 6
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: category_formatter
+    region: content
+  field_act_news_image:
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: act_view_grid
+      image_link: content
+    third_party_settings: {  }
+    type: image_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

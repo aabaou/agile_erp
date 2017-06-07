@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_474x316
+label: 474x316
+effects:
+  551c4610-eb13-4a38-9fe7-85414c569115:
+    uuid: 551c4610-eb13-4a38-9fe7-85414c569115
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 474
+      height: 316

@@ -1,0 +1,44 @@
+
+.views-row{
+  text-align: justify;
+
+}
+.view-content{
+  margin-bottom: 50px;
+}
+
+.view-content h3{
+  clear:left;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.view-content h3:first-letter{
+  text-transform: uppercase;
+
+}
+
+.view-content .views-field-body{
+  margin-bottom: 20px;
+
+}
+
+.view-content .events-list .views-field-body,
+.view-content .events-highlight .views-field-body{
+  margin-top: 20px;
+}
+
+.view-content .events-list{
+  margin-bottom: 30px;
+}
+
+.view-content .events-list .views-field-title{
+  font-size:16px;
+}
+
+.view-content .events-list .views-field-field-act-events-picture,
+.view-content .events-highlight .views-field-field-act-events-picture{
+  float:left;
+  margin-right: 15px;
+
+}
+

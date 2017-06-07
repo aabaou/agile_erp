@@ -1,0 +1,32 @@
+.view-content{
+  margin-bottom: 50px;
+}
+
+.views-grid , .views-highlight, .views-list, .views-mini{
+  text-align: justify;
+}
+
+
+.views-highlight img, .views-list img{
+  float:left;
+  margin-right: 20px;
+}
+.views-mini img{
+  float:left;
+  margin-right: 5px;
+}
+
+.field--name-field-act-news-categories .field--item{
+   display: inline-block;
+ }
+
+.field--name-field-act-news-categories .field--item::before{
+  content:'-';
+}
+.field--name-field-act-news-categories .field--item:first-child::before{
+  content:'';
+}
+
+.field--name-body{
+  margin-bottom: 20px;
+}

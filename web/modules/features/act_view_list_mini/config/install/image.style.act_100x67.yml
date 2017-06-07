@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_100x67
+label: '100x67'
+effects:
+  2ff0a5d3-51ff-448a-af73-b83909e5dcde:
+    uuid: 2ff0a5d3-51ff-448a-af73-b83909e5dcde
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 67

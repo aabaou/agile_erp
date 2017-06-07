@@ -1,0 +1,10 @@
+name: 'Actency news grid'
+description: 'Provides a grid view of news (on 3 columns).'
+type: module
+core: 8.x
+dependencies:
+  - act_news
+  - act_news_config_grid
+  - act_view_grid
+  - views
+version: 8.x-1.0

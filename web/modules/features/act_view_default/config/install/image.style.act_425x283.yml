@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_425x283
+label: 425x283
+effects:
+  c83195ce-61d6-4519-a506-07eeda3c062b:
+    uuid: c83195ce-61d6-4519-a506-07eeda3c062b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 425
+      height: 283

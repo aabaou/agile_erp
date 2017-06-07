@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.act_taxonomy_news
+id: taxonomy_term.act_taxonomy_news
+target_entity_type_id: taxonomy_term
+target_bundle: act_taxonomy_news
+default_langcode: site_default
+language_alterable: false

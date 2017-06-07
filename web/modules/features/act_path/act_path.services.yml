@@ -1,0 +1,3 @@
+services:
+ act_path.path_view_news_events:
+   class: Drupal\act_path\PathServices
