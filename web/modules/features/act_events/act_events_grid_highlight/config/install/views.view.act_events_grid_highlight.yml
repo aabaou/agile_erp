@@ -382,7 +382,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: events_image_formatter
+          type: act_events_image_formatter
           settings:
             responsive_image_style: act_view_grid
             image_link: content
@@ -446,7 +446,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: events_text_formatter
+          type: act_events_text_formatter
           settings:
             trim_length: '250'
             trim_type: chars
@@ -904,7 +904,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: events_image_formatter
+          type: act_events_image_formatter
           settings:
             responsive_image_style: act_view_grid
             image_link: content
@@ -968,7 +968,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: events_text_formatter
+          type: act_events_text_formatter
           settings:
             trim_length: '400'
             trim_type: chars

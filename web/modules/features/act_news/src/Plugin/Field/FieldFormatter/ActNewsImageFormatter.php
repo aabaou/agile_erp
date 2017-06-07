@@ -13,11 +13,11 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Url;
 
 /**
- * Plugin implementation of the 'image_formatter' formatter.
+ * Plugin implementation of the 'act_news_image_formatter' formatter.
  *
  * @FieldFormatter(
- *   id = "image_formatter",
- *   label = @Translation("Image formatter"),
+ *   id = "act_news_image_formatter",
+ *   label = @Translation("Image formatter for News"),
  *   field_types = {
  *     "image"
  *   }

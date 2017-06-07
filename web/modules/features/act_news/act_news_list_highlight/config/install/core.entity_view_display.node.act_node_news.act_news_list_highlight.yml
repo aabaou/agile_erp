@@ -18,7 +18,7 @@ mode: act_news_list_highlight
 content:
   body:
     label: hidden
-    type: text_formatter
+    type: act_news_text_formatter
     weight: 2
     settings:
       trim_length: '500'
@@ -38,7 +38,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    type: category_formatter
+    type: act_news_category_formatter
     region: content
   field_act_news_image:
     weight: 1
@@ -47,7 +47,7 @@ content:
       responsive_image_style: act_view_list_highlight
       image_link: content
     third_party_settings: {  }
-    type: image_formatter
+    type: act_news_image_formatter
     region: content
   links:
     weight: 0

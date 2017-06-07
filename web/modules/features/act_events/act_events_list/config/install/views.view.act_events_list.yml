@@ -447,7 +447,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: events_text_formatter
+          type: act_events_text_formatter
           settings:
             trim_length: '250'
             trim_type: chars

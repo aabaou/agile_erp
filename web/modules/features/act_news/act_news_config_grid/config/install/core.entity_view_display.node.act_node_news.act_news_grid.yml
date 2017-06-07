@@ -30,7 +30,7 @@ content:
         text: 0
       more_class: more-link
     third_party_settings: {  }
-    type: text_formatter
+    type: act_news_text_formatter
     region: content
   field_act_news_categories:
     weight: 6
@@ -40,7 +40,7 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    type: category_formatter
+    type: act_news_category_formatter
     region: content
   field_act_news_image:
     weight: 4
@@ -49,7 +49,7 @@ content:
       responsive_image_style: act_view_grid
       image_link: content
     third_party_settings: {  }
-    type: image_formatter
+    type: act_news_image_formatter
     region: content
   links:
     weight: 0

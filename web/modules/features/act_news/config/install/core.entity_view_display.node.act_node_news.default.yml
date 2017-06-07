@@ -32,7 +32,7 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    type: category_formatter
+    type: act_news_category_formatter
     region: content
   field_act_news_image:
     weight: 2

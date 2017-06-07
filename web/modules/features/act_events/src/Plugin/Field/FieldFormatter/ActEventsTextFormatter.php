@@ -15,10 +15,10 @@ use Drupal\Core\Link;
 use Drupal\smart_trim\Truncate\TruncateHTML;
 
 /**
- * Plugin implementation of the 'image_formatter' formatter.
+ * Plugin implementation of the 'act_events_text_formatter' formatter.
  *
  * @FieldFormatter(
- *   id = "events_text_formatter",
+ *   id = "act_events_text_formatter",
  *   label = @Translation("Text formatter for Events"),
  *   field_types = {
  *     "text",

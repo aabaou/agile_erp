@@ -14,11 +14,11 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Plugin implementation of the 'category_formatter' formatter.
+ * Plugin implementation of the 'act_news_category_formatter' formatter.
  *
  * @FieldFormatter(
- *   id = "category_formatter",
- *   label = @Translation("Category formatter"),
+ *   id = "act_news_category_formatter",
+ *   label = @Translation("Category formatter for News"),
  *   field_types = {
  *     "entity_reference"
  *   }
