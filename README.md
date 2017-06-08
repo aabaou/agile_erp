@@ -11,6 +11,7 @@ This starterkit uses by default the theme Bactency (child theme of the Bootstrap
 3. [Import - Save a database](data/README.md)
 4. [Drush aliases](bin/drush/README.md)
 5. [Drupal console aliases ]()
+6. [News and Events Modules](web/modules/features/README.md)
 
 ## Git <a id="git"></a>
 The project code is DR8. Any branch created for this project should be named `feature/DR8-XXX` (where XXX is the number of the ticket).

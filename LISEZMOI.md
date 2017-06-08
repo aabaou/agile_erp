@@ -12,6 +12,7 @@ Ce starterkit utilise par défaut le thème Bactency (thème enfant du thème Bo
 3. [Importer -Sauvegarder une base de données](data/LISEZMOI.md)
 4. [Aliases drush](bin/drush/LISEZMOI.md)
 5. [Aliases drupal console]()
+6. [Modules de News et d'évènements](web/modules/features/LISEZMOI.md)
 
 ## Git <a id="git"></a>
 Le code du projet est DR8. Toute branche créée pour ce projet doit être nommée `feature/DR8-XXX` (où XXX est le numéro du ticket).
