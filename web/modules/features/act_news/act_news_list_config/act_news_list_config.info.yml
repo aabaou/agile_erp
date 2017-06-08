@@ -1,4 +1,4 @@
-name: 'Actency news configuration list'
+name: 'Actency news list configuration'
 description: 'Provides configuration files for list views.'
 type: module
 core: 8.x

@@ -401,7 +401,7 @@ display:
               page: '#ffffff'
             taxonomy_field: ''
             calendar_colors_vocabulary: {  }
-      path: calendar-events/day
+      path: events-calendar/day
       menu:
         type: tab
         title: Day
@@ -487,7 +487,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: calendar-events/month
+      path: events-calendar/month
       display_description: ''
       menu:
         type: tab
@@ -613,7 +613,7 @@ display:
               page: '#ffffff'
             taxonomy_field: ''
             calendar_colors_vocabulary: {  }
-      path: calendar-events/week
+      path: events-calendar/week
       menu:
         type: tab
         title: Week
@@ -789,7 +789,7 @@ display:
           content: ''
           pager_embed: 1
           plugin_id: calendar_header
-      path: calendar-events/year
+      path: events-calendar/year
       menu:
         type: tab
         title: Year

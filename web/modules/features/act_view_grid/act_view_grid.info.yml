@@ -2,4 +2,8 @@ name: 'Actency view grid configuration'
 description: 'Provides configuration files for grid views for News and Events.'
 type: module
 core: 8.x
+dependencies:
+  - act_path
+  - image
+  - responsive_image
 version: 8.x-1.0

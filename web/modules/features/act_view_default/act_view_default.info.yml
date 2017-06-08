@@ -2,4 +2,7 @@ name: 'Actency view default configuration'
 description: 'Provides configuration files for default views for News and Events.'
 type: module
 core: 8.x
+dependencies:
+  - image
+  - responsive_image
 version: 8.x-1.0

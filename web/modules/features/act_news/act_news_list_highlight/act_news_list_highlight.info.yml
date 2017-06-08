@@ -4,7 +4,7 @@ type: module
 core: 8.x
 dependencies:
   - act_news
-  - act_news_config_list
+  - act_news_list_config
   - act_view_list
   - act_view_list_highlight
   - system

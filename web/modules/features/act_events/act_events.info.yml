@@ -4,16 +4,13 @@ type: module
 core: 8.x
 dependencies:
   - act_view_default
-  - act_path
   - datetime
   - field
   - file
-  - image
   - language
   - menu_ui
   - node
   - path
-  - responsive_image
   - text
   - user
 version: 8.x-1.0
