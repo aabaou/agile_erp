@@ -7,8 +7,7 @@
 Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manière suivante :
 
 1. Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet,
-2. Modifier la valeur memory_limit du fichier php.ini,
-3. Lancer le script install.sh.
+2. Lancer le script install.sh.
 
 ### Modification du fichier docker-compose.yml
 Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet afin qu’il corresponde à votre configuration locale.
@@ -74,11 +73,6 @@ Rq: En cas de modification d'une configuration avancée du fichier docker-compos
 
 Rq : Si vous avez un doute sur le nom du container, vous pouvez lancer la commande `docker ps`. Cette commande liste les containers.
 
-### Modifier la valeur memory_limit dans le fichier php.ini
-
-Dans usr/local/etc/php modifier la valeur memory_limit en remplaçant memory_limit= 512M par memory_limit=-1.
-
-Sans cette modification Composer échouera l'installation ou la mise à jour des dépendances et affichera le message d'erreur `PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...`.
 
 ### Lancer le script install.sh
 
@@ -90,6 +84,7 @@ Suivez les instructions.
 #### Que fait ce script ?
 
 Ce script s'occupe de :
+- Modifier la valeur memory_limit du fichier php.ini à -1 (si l'utilisateur autorise cette modification). Dans usr/local/etc/php/php.ini la valeur memory_limit est par défaut à 512M. Sans cette modification Composer échouera l'installation ou la mise à jour des dépendances et affichera le message d'erreur `PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...`.
 - lancer l'installation des dépendances du projet
 - Génèrer un hash salt utilisé par Drupal pour la génération d'uuid. La mécanique de génération est celle utilisée par Drupal de façon standard.
 - Créer le fichier `settings.local.php` dans le dossier `config/drupal` avec les informations de la bases de données et le nom de domaine que l'utilisateur aura renseigné dans le terminal lors du lancement du script. 

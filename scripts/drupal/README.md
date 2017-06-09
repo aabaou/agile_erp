@@ -7,8 +7,7 @@
 To start the installation of a new Drupal 8 project, proceed as follows:
 
 1. Modify the docker-compose.yml file that is located at the root of your project,
-2. Change the memory_limit value of the php.ini file,
-3. Launch the install.sh script.
+2. Launch the install.sh script.
 
 ### Change the docker-compose.yml file
 Modify the docker-compose.yml file that is located at the root of your project to match your local configuration.
@@ -74,12 +73,6 @@ Note : When you modify the docker-compose.yml file, it is sometimes necessary to
 
 Note : If you are unsure of the container name, you can run the `docker ps` command. This command lists the containers.
 
-### Change the memory_limit value of the php.ini file
-
-In usr/local/etc/php change the value memory_limit by replacing memory_limit = 512M with memory_limit = -1.
-
-Without this change, Composer will fail to install or update dependencies and will display the error message `PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...`.
-
 ### Launch the install.sh script
 
 
@@ -90,6 +83,7 @@ Follow the instructions.
 #### What does this script do ?
 
 This script :
+- Change the memory_limit value of the php.ini file to -1 (If the user allows this change). In usr/local/etc/php/php.ini the default value of memory_limit is 512M. Without this change, Composer will fail to install or update dependencies and will display the error message `PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...`.
 - starts the installation of the project dependencies
 - create a hash salt used by Drupal for the generation of uuid. The generation mechanics is the one used by Drupal in a standard way.
 - create `settings.local.php` file in the `config/drupal` with the information of the database and the domain name that the user will have specified in the terminal when the script is launched.

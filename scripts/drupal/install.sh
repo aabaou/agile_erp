@@ -11,9 +11,35 @@ function displayOperation {
 function displayError {
   echo -e "\e[7;49;31m$1\e[0m"
 }
+
+# Checking memory
+displayOperation "Checking memory"
+cd /usr/local/etc/php
+
+tmp=$(grep memory_limit php.ini | head -1)
+memory_limit=$(echo $tmp | cut -d'=' -f2)
+	
+if [ $memory_limit != -1 ]
+then
+  echo "The current limit memory : $tmp"
+  read -p "In order for Composer to install or update all libraries, the limit memory must be equal to -1. If this value is different from -1, the install.sh script may not execute correctly and display the 'PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...' error message. Do you want to change this value to -1?? (y/n)? " -n 1 -r
+  echo
+  
+  if [[  $REPLY =~ ^[Yy]$ ]]
+  then
+    displayOperation "Modifying the memory_limit value in the php.ini file"
+	sed -ie "s/$tmp/memory_limit = -1/g" php.ini
+  fi
+  if [ -f php.inie ];then
+	rm php.inie
+  fi
+   
+fi
+
+cd /var/www/html
+
 # Composer operations.
 displayOperation "Composer operations"
-cd ..
 
   # Update the autoload classes, this is sometimes required
   # if the project has been installed and some files has been deleted.
