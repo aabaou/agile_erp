@@ -7,7 +7,8 @@
 Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manière suivante :
 
 1. Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet,
-2. Lancer le script install.sh.
+2. Modifier la valeur memory_limit du fichier php.ini,
+3. Lancer le script install.sh.
 
 ### Modification du fichier docker-compose.yml
 Modifier le fichier docker-compose.yml qui se trouve à la racine de votre projet afin qu’il corresponde à votre configuration locale.
@@ -65,14 +66,19 @@ services:
       - "1025:1025"
       - "8025:8025"
 ````
-- remplacer `example` et `path` par votre configuration locale
-- lancer la commande `docker-compose up` ou son alias `dcup` pour lancer les containers
+- remplacer `example` et `path` par votre configuration locale,
+- lancer la commande `docker-compose up -d` ou son alias `dcup` pour lancer les containers.
 
 Rq: En cas de modification d'une configuration avancée du fichier docker-compose.yml il est parfois nécessaire de recréer les containers pour que la modification soit prise en compte. Dans ce cas lancez la commande suivante : `dcup --force-recreate`
 - lancer la commande `go [nom_container_web_1] bash`. Cette commande permet d'entrer dans le container `nom_container_web_1`.
 
 Rq : Si vous avez un doute sur le nom du container, vous pouvez lancer la commande `docker ps`. Cette commande liste les containers.
 
+### Modifier la valeur memory_limit dans le fichier php.ini
+
+Dans usr/local/etc/php modifier la valeur memory_limit en remplaçant memory_limit= 512M par memory_limit=-1.
+
+Sans cette modification Composer échouera l'installation ou la mise à jour des dépendances et affichera le message d'erreur `PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted ...`.
 
 ### Lancer le script install.sh
 
