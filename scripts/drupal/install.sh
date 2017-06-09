@@ -29,7 +29,7 @@ cd web
 
 # Generating the settings.local.php file with the right information
 if [[ ! -f ../config/drupal/settings.local.php && -f ../config/drupal/example.settings.local.php ]];then
-	displayWarning "The settings.local.php file will be created"
+	displayWarning "The settings.local.php file is created"
 	cp ../config/drupal/example.settings.local.php ../config/drupal/settings.local.php
 
 	
