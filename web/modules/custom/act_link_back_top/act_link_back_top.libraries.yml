@@ -1,0 +1,5 @@
+act_link_back_top:
+  js:
+    js/act-link-back-top.js: {}
+  dependencies:
+    - core/jquery

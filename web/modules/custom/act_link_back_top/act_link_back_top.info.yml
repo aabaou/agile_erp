@@ -1,0 +1,8 @@
+name: 'Actency link ''Back to the top'''
+description: 'Provides a custom block with a link "back to the top".'
+package: Custom
+type: module
+core: 8.x
+version: 8.x-1.0
+dependencies:
+  - block
