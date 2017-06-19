@@ -41,6 +41,7 @@
 
 
       $(".act-link-back-top a").click(function(event){
+		event.preventDefault();
         var duration = parseInt($(this).attr('data-duration'));
 
         if(duration  !== '' ){
