@@ -6,6 +6,7 @@ namespace Drupal\act_link_back_top\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Entity\File;
 
 
 /**
@@ -45,12 +46,13 @@ class ActBackTopBlock extends BlockBase implements BlockPluginInterface{
     if (isset($config['act_link_back_top_link']['picture']) && !empty($config['act_link_back_top_link']['picture'])) {
       $base_url = \Drupal::request()->getSchemeAndHttpHost();
       $imageid = $config['act_link_back_top_link']['picture'];
-      $file = file_load($imageid[0]);
-      $file_alt=$config['act_link_back_top_link']['picture_alt'];
+      $file = File::load($imageid[0]);
+      //$file_alt=$config['act_link_back_top_link']['picture_alt'];
+      $file_alt=$this->t("'Back to the top' link");
 
       return [
         '#type' => 'markup',
-       '#markup' =>'<p class="act-link-back-top"><a href="#main-content"  data-position="' . $data_position . '" data-duration="' . $data_duration . '"><img src="' . $base_url . '/sites/default/files/images/' . $file->getFilename() . '" alt="' . $file_alt . '" /></a></p>',
+        '#markup' =>'<p class="act-link-back-top"><a href="#main-content"  data-position="' . $data_position . '" data-duration="' . $data_duration . '"><img src="' . $base_url . '/sites/default/files/images/' . $file->getFilename() . '" alt="' . $file_alt . '" /></a></p>',
         '#title' => '',
         '#attached' => array(
           'library' => array('act_link_back_top/act_link_back_top'),
@@ -132,7 +134,7 @@ class ActBackTopBlock extends BlockBase implements BlockPluginInterface{
 
     );
 
-
+    /*
     $form['act_link_back_top_link']['picture_alt'] = [
       '#type'           => 'textfield',
       '#size'           => 45,
@@ -148,7 +150,7 @@ class ActBackTopBlock extends BlockBase implements BlockPluginInterface{
       ),
     ];
 
-
+    */
     return $form;
   }
 
@@ -162,7 +164,7 @@ class ActBackTopBlock extends BlockBase implements BlockPluginInterface{
     $this->configuration['act_link_back_top_duration_effect'] = $values['act_link_back_top_duration_effect'];
     $this->configuration['act_link_back_top_link']['text'] = $values['act_link_back_top_link']['text'];
     $this->configuration['act_link_back_top_link']['picture'] = $values['act_link_back_top_link']['picture'];
-    $this->configuration['act_link_back_top_link']['picture_alt'] = $values['act_link_back_top_link']['picture_alt'];
+    //$this->configuration['act_link_back_top_link']['picture_alt'] = $values['act_link_back_top_link']['picture_alt'];
 
   }
 
