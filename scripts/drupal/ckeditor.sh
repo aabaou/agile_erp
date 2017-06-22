@@ -53,8 +53,7 @@ if [[ $version_chaine ]] ; then
 					"preview" 
 					"print" 
 					"smiley" 
-					"templates"  
-					"youtube" 
+					"templates" 
 					
 				)
 		
