@@ -8,10 +8,11 @@ This starterkit uses by default the theme Bactency (child theme of the Bootstrap
 1. [Git - Recovering the starterkit](#git)
 2. [Launch of the starterkit](scripts/drupal/README.md)
 3. [Build.sh use and options](scripts/drupal/README.md)
-3. [Import - Save a database](data/README.md)
-4. [Drush aliases](bin/drush/README.md)
-5. [Drupal console aliases ]()
-6. [News and Events Modules](web/modules/features/README.md)
+4. [Import - Save a database](data/README.md)
+5. [Drush aliases](bin/drush/README.md)
+6. [Drupal console aliases ]()
+7. [News and Events Modules](web/modules/features/README.md)
+8. [ckeditor.sh use](scripts/drupal/README.md)
 
 ## Git <a id="git"></a>
 The project code is DR8. Any branch created for this project should be named `feature/DR8-XXX` (where XXX is the number of the ticket).

@@ -1,0 +1,8 @@
+name: 'Actency CKEditor'
+description: 'This plugin extends functionality for the basic CKEditor. Before activating this module it is advisable to run the script ckeditor.sh otherwise you will have to manually add the libraries that it uses.'
+type: module
+core: 8.x
+package: CKEditor
+dependencies:
+  - ckeditor
+version: 8.x-1.0

@@ -2,6 +2,7 @@
 1. [Lancement du starterkit avec install.sh](#install.sh)
 2. [Utilisation du script build.sh](#build.sh)
 3. [Utilisation du script archive.sh](#archive.sh)
+4. [Utilisation du script ckeditor.sh](#ckeditor.sh)
 
 ## Lancement du starterkit avec install.sh <a id="install.sh"></a>
 Pour lancer l'installation d'un nouveau projet Drupal 8, procédez de la manière suivante :
@@ -182,5 +183,24 @@ Ce script effectu :
 - une sauvegarde de la base de données dans le dossier `data/db`. Le fichier généré se nomme `dump-[data].gz` où `date` est la date à laquelle le fichier a été généré.
 - compresse tous les dossiers nécessaires au site. Les dossiers `data/db` et `config/drupal/local` sont exclus de l'archive à l'exeption du fichier `dump-[date].gz` généré par le script. Le fichier d'archive se nomme `archive-[date].tar.gz` où `date` est la date à laquelle le fichier a été généré.
 Le fichier `archive-[date].tar.gz` est généré à la racine du projet.
+
+[Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)
+
+## Utilisation du script ckeditor.sh <a id="ckeditor.sh"></a>
+
+Pour utiliser ce script, vous devez être dans le répertoire web de votre projet.
+
+Pour exécuter le script, lancer la commande :
+- `../scripts/drupal/ckeditor.sh`
+- `bash ../scripts/drupal/ckeditor.sh` (si le fichier ne s'exécute pas)
+
+Ce script installe des modules qui ajoutent des fonctionnalités à l’éditeur WYSIWYG CKEditor inclus dans Drupal 8 core.
+Il s’agit des modules suivant :
+- **act_ckeditor** : Le module custom  CKEditor Actency étend les fonctionnalités de base de CKEditor. Vous devez configurer votre barre d'outils WYSIWYG pour inclure les nouveaux boutons. Pour plus d'information [cliquez ici](web/modules/custom/act_ckeditor/LISEZMOI.md).
+- **anchor_link** : Ce module ajoute une boîte de dialogue qui gère mieux les liens hypertexte et les ancres dans le CKEditor de Drupal 8.
+- **file_browser** : Ce module fournit un Navigateur d’Entité qui vous permet de parcourir et de sélectionner vos fichiers dans une interface basée sur Masonry, et de télécharger des fichiers en utilisant le module Dropzonejs. Il requiert les modules suivant: entity, embed, dropzonejs, entity_embed, entity_browser, dropzones ,imagesloaded and masonry.
+- **Imce** : IMCE est un uploader d'image / fichier et un navigateur qui prend en charge les répertoires personnels et les quotas.
+- **layouter** : Via une interface WYSIWYG, il permet de choisir un modèles de mise en page.
+- **Youtube** : Le module de champ YouTube fournit un champ simple qui vous permet d'ajouter une vidéo youtube à un type de contenu, à un utilisateur ou à toute autre entité Drupal.
 
 [Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)
