@@ -14,9 +14,9 @@ Ce module ajoute automatiquement un certain nombre d’add-ons à CKEditor.
 - **Dialog** (requis par smiley et templates) : Ce plugin fournit l'API Dialog pour d'autres plugins pour créer une boîte de dialogue d'éditeur à partir d'un objet de définition.
 - **Fakeobjects** (requis par pagebreak)
 - **Floatpanel** (requis par colorbutton) : Ce plugin avec le plugin panel sert à fournir la base de tous les UI panels de l'éditeur - menu déroulant, menus, etc.
-- **Pagebreak** : Ce plugin ajoute un bouton à la barre d'outils qui insère les sauts de page horizontales..
+- **Pagebreak** : Ce plugin ajoute un bouton à la barre d'outils qui insère les sauts de page horizontales.
 - **Panelbutton** : Ce plugin étend le plugin Button Interface et permet de visualiser un seul menu déroulant, un panneau de couleurs, etc.
-- **Preview** : This plugin adds toolbar button which shows a preview of the document as it will be displayed to end users or printed. Ce plugin ajoute un bouton à la barre d'outils qui montre un aperçu du document tel qu’il sera affiché aux utilisateurs finaux ou imprimé.
+- **Preview** : Ce plugin ajoute un bouton à la barre d'outils qui montre un aperçu du document tel qu’il sera affiché aux utilisateurs finaux ou imprimé.
 - **Print** : Ce plugin active la fonction d'impression. Une fenêtre pop-up d'impression du système d'exploitation standard apparaîtra où l’on pourra choisir l'imprimante ainsi que toutes les options qui semblent utiles.
 - **Smiley** : Ce plugin fournit un ensemble d'émoticônes à insérer dans l'éditeur via une fenêtre de dialogue.
 - **Templates** : Permet l'insertion en un clic de différents modèles HTML utiles dans votre document CKEditor.

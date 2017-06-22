@@ -196,7 +196,7 @@ Pour exécuter le script, lancer la commande :
 
 Ce script installe des modules qui ajoutent des fonctionnalités à l’éditeur WYSIWYG CKEditor inclus dans Drupal 8 core.
 Il s’agit des modules suivant :
-- **act_ckeditor** : Le module custom  CKEditor Actency étend les fonctionnalités de base de CKEditor. Vous devez configurer votre barre d'outils WYSIWYG pour inclure les nouveaux boutons. Pour plus d'information [cliquez ici](web/modules/custom/act_ckeditor/LISEZMOI.md).
+- **act_ckeditor** : Le module custom  CKEditor Actency étend les fonctionnalités de base de CKEditor. Vous devez configurer votre barre d'outils WYSIWYG pour inclure les nouveaux boutons. Pour plus d'information [cliquez ici](../../web/modules/custom/act_ckeditor/LISEZMOI.md).
 - **anchor_link** : Ce module ajoute une boîte de dialogue qui gère mieux les liens hypertexte et les ancres dans le CKEditor de Drupal 8.
 - **file_browser** : Ce module fournit un Navigateur d’Entité qui vous permet de parcourir et de sélectionner vos fichiers dans une interface basée sur Masonry, et de télécharger des fichiers en utilisant le module Dropzonejs. Il requiert les modules suivant: entity, embed, dropzonejs, entity_embed, entity_browser, dropzones ,imagesloaded and masonry.
 - **Imce** : IMCE est un uploader d'image / fichier et un navigateur qui prend en charge les répertoires personnels et les quotas.
