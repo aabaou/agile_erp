@@ -134,7 +134,7 @@ These modules contain the configuration files (* .yml) of the image formats and 
 
 - **Actency path**<a id="act_path"></a>
 
-[Read service documentation](act_path/README.md)
+[Read service documentation](../custom/act_path/README.md)
 
 ## Events modules
 
