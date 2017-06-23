@@ -1,6 +1,6 @@
 # Module Actency CKEditor <a id="module"></a>
 1. [List of CKEditor plugins added automatically by the act_ckeditor module](#list)
-2. [How to install libraries manually](#manually)
+2. [How to install the act_ckeditor module manually](#manually)
 
 Before activating this module it is advisable to run the script [ckeditor.sh](../../../../scripts/drupal/README.md) otherwise you will have to manually add the libraries and modules that it uses.
 This module adds a new text format called "Actency CKEditor".

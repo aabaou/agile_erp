@@ -1,6 +1,6 @@
 # Module Actency CKEditor <a id="module"></a>
 1. [Liste des plugins CKEditor automatiquement ajoutés par le module act_ckeditor](#list)
-2. [Comment installer les librairies manuellement](#manually)
+2. [Comment installer le module act_ckeditor manuellement](#manually)
 
 Avant d’activer ce module il est conseillé de lancer le script [ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md) sinon il vous faudra ajouter les librairies et modules qu’il utilise manuellement.
 Ce module ajoute un nouveau format de texte qui s'appelle « Actency CKEditor ». 
