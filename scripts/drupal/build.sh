@@ -53,12 +53,12 @@ if [[ ! -f index.php && ! -d core ]]; then
 fi
 
 # Require settings file to process the build.
-#if [[ ! -f ../config/drupal/settings.local.php && ! -f ../config/drupal/settings.travis.php ]]; then
-#  displayError "Please setup settings file before proceeding !"
-#  echo "Here is a hash salt example for you to initialize your settings:"
-#  drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";' $verbose
-#  exit 1;
-#fi
+if [[ ! -f ../config/drupal/settings.local.php && ! -f ../config/drupal/settings.travis.php ]]; then
+  displayError "Please setup settings file before proceeding !"
+  echo "Here is a hash salt example for you to initialize your settings:"
+  drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";' $verbose
+  exit 1;
+fi
 
 # Initialize available options.
 noComposer=0
@@ -213,3 +213,7 @@ displayOperation "Performing post-build operations"
 # Display execution time.
 duration=$SECONDS
 displayNotice
+
+# Adds the writing permission to the sites/default folder
+displayOperation "Adds the writing permission to the sites/default folder"
+chmod u+w sites/default
