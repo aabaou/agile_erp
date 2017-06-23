@@ -135,7 +135,7 @@ Ces modules contiennent les fichiers de configuration (*.yml) des formats d’im
 
 - **Actency path**<a id="act_path"></a>
 
-[Voir la documentation du service](act_path/LISEZMOI.md)
+[Voir la documentation du service](../custom/act_path/LISEZMOI.md)
 
 ## Modules Events 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\act_events_back_events\Plugin\Block;
+namespace Drupal\act_events_link_back_events\Plugin\Block;
 
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Provides a 'Back to all events' Block.
  *
  * @Block(
- *   id = "act_events_back_events",
+ *   id = "act_events_link_back_events",
  *   admin_label = @Translation("Back to all events"),
  * )
  *
@@ -41,8 +41,8 @@ class BackEventsBlock extends BlockBase implements BlockPluginInterface{
     $request = \Drupal::request();
     if ($request->query->has('mode')) {
       $path = 'events-'.$request->query->get('mode');
-    }elseif(isset($config['act_events_back_events']) && !empty($config['act_events_back_events'])) {
-      $path = $config['act_events_back_events'];
+    }elseif(isset($config['act_events_link_back_events']) && !empty($config['act_events_link_back_events'])) {
+      $path = $config['act_events_link_back_events'];
     }else{
       if($route_view_events->getRouteNameEventsList() != false){
         $path = 'events-list';
@@ -72,12 +72,12 @@ class BackEventsBlock extends BlockBase implements BlockPluginInterface{
       'events-grid' => t('Grid'),
     );
 
-    $form['act_events_back_events'] = array(
+    $form['act_events_link_back_events'] = array(
       '#type' => 'radios',
       '#title' => $this->t('View mode'),
       '#options' => $options,
       '#description' => $this->t('Specify the default view mode (list or grid). The link "Back to all events" will display this view mode.'),
-      '#default_value' => isset($config['act_events_back_events']) ? $config['act_events_back_events'] : '',
+      '#default_value' => isset($config['act_events_link_back_events']) ? $config['act_events_link_back_events'] : '',
     );
 
     return $form;
@@ -89,7 +89,7 @@ class BackEventsBlock extends BlockBase implements BlockPluginInterface{
   public function blockSubmit($form, FormStateInterface $form_state) {
     parent::blockSubmit($form, $form_state);
     $values = $form_state->getValues();
-    $this->configuration['act_events_back_events'] = $values['act_events_back_events'];
+    $this->configuration['act_events_link_back_events'] = $values['act_events_link_back_events'];
 
   }
 
