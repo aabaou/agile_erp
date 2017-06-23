@@ -2,13 +2,14 @@
 1. [Liste des plugins CKEditor automatiquement ajoutés par le module act_ckeditor](#list)
 2. [Comment installer les librairies manuellement](#manually)
 
-Avant d’activer ce module il est conseillé de lancer le script [ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md) sinon il vous faudra ajouter les librairies qu’il utilise manuellement.
+Avant d’activer ce module il est conseillé de lancer le script [ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md) sinon il vous faudra ajouter les librairies et modules qu’il utilise manuellement.
+Ce module ajoute un nouveau format de texte qui s'appelle « Actency CKEditor ». 
 
 
 ## Liste des [plugins CKEditor](http://ckeditor.com/addons/plugins/all ) automatiquement ajoutés par le module act_ckeditor:<a id="list"></a>
 Ce module ajoute automatiquement un certain nombre d’add-ons à CKEditor.
 
-[ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md) recherche la version de CKEditor et télécharge les bibliothèques requises par act_ckeditor. Vous devrez configurer votre barre d'outils WYSIWYG pour inclure les boutons qui ont été ajoutés.
+[ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md) recherche la version de CKEditor et télécharge les bibliothèques requises par act_ckeditor.
 
 - **Colorbutton** : Ce plugin ajoute les fonctions de Couleur du texte et Couleur de fond à l'éditeur.
 - **Dialog** (requis par smiley et templates) : Ce plugin fournit l'API Dialog pour d'autres plugins pour créer une boîte de dialogue d'éditeur à partir d'un objet de définition.
@@ -21,17 +22,18 @@ Ce module ajoute automatiquement un certain nombre d’add-ons à CKEditor.
 - **Smiley** : Ce plugin fournit un ensemble d'émoticônes à insérer dans l'éditeur via une fenêtre de dialogue.
 - **Templates** : Permet l'insertion en un clic de différents modèles HTML utiles dans votre document CKEditor.
 
+
 [Retourner au sommaire de la page](#module) | [Retourner au sommaire du projet](../../../../LISEZMOI.md)
 
-## Comment installer les librairies manuellement<a id="manually"></a>
+## Comment installer le module act_ckeditor manuellement<a id="manually"></a>
 Si vous n’utilisez pas le script ckeditor.sh, il va falloir créer un dossier libraries à la racine du site.
 
 Vous devez savoir quelle version de CKEditor votre Drupal utilise afin de télécharger la version appropriée du plugin. Trouvez le fichier core / assets / vendor / ckeditor / ckeditor.js dans le code Drupal et recherchez le mot "version". Vous le trouverez à côté du "timestamp".
 
 Sur la [page des plugins](http://ckeditor.com/addons/plugins/all), vérifiez que vous avez sélectionnez la bonne version à télécharger pour votre CKEditor. Décompressez le fichier et placez le dossier résultant dans le dossier libraries précédemment créé.
 
-Après cette étape, il ne vous suffit plus qu’à activer le module act_ckeditor (Actency CKEditor) une fois que vous aurez téléchargé toutes les librairies qu’il utilise.
+A cause des fichiers de configuration incluent dans le module act_ckeditor, il est également nécessaire d'activer un certain nombre de modules qui apparaissent dans les dépendances. Pour connaître la liste des modules et des librairies à installer, veuillez consulter la documentation sur [ckeditor.sh](../../../../scripts/drupal/LISEZMOI.md). 
 
-Vous devrez configurer votre barre d'outils WYSIWYG pour inclure les boutons qui ont été ajoutés.
+
 
 [Retourner au sommaire de la page](#module) | [Retourner au sommaire du projet](../../../../LISEZMOI.md)

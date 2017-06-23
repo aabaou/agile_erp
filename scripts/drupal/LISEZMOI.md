@@ -196,11 +196,11 @@ Pour exécuter le script, lancer la commande :
 
 Ce script installe des modules qui ajoutent des fonctionnalités à l’éditeur WYSIWYG CKEditor inclus dans Drupal 8 core.
 Il s’agit des modules suivant :
-- **act_ckeditor** : Le module custom  CKEditor Actency étend les fonctionnalités de base de CKEditor. Vous devez configurer votre barre d'outils WYSIWYG pour inclure les nouveaux boutons. Pour plus d'information [cliquez ici](../../web/modules/custom/act_ckeditor/LISEZMOI.md).
+- **act_ckeditor** : Le module custom  CKEditor Actency étend les fonctionnalités de base de CKEditor. Pour plus d'information [cliquez ici](../../web/modules/custom/act_ckeditor/LISEZMOI.md).
 - **anchor_link** : Ce module ajoute une boîte de dialogue qui gère mieux les liens hypertexte et les ancres dans le CKEditor de Drupal 8.
-- **file_browser** : Ce module fournit un Navigateur d’Entité qui vous permet de parcourir et de sélectionner vos fichiers dans une interface basée sur Masonry, et de télécharger des fichiers en utilisant le module Dropzonejs. Il requiert les modules suivant: entity, embed, dropzonejs, entity_embed, entity_browser, dropzones ,imagesloaded and masonry.
+- **file_browser** : Ce module fournit un Navigateur d’Entité qui vous permet de parcourir et de sélectionner vos fichiers dans une interface basée sur Masonry, et de télécharger des fichiers en utilisant le module Dropzonejs. Il requiert les modules suivant: entity, embed, dropzonejs, entity_embed, entity_browser, et les librairies dropzones ,imagesloaded and masonry.
 - **Imce** : IMCE est un uploader d'image / fichier et un navigateur qui prend en charge les répertoires personnels et les quotas.
-- **layouter** : Via une interface WYSIWYG, il permet de choisir un modèles de mise en page.
+- **layouter** : Via une interface WYSIWYG, il permet de choisir un modèles de mise en page. Ce module doit être configuré (/admin/config/content/layouter) avant de pouvoir être utilisé une première fois.
 - **Youtube** : Le module de champ YouTube fournit un champ simple qui vous permet d'ajouter une vidéo youtube à un type de contenu, à un utilisateur ou à toute autre entité Drupal.
 
 [Retourner au sommaire de la page](#shellscripts) | [Retourner au sommaire du projet](../../LISEZMOI.md)

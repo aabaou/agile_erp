@@ -2,13 +2,13 @@
 1. [List of CKEditor plugins added automatically by the act_ckeditor module](#list)
 2. [How to install libraries manually](#manually)
 
-Before activating this module it is advisable to run the script [ckeditor.sh](../../../../scripts/drupal/README.md) otherwise you will have to manually add the libraries that it uses.
-
+Before activating this module it is advisable to run the script [ckeditor.sh](../../../../scripts/drupal/README.md) otherwise you will have to manually add the libraries and modules that it uses.
+This module adds a new text format called "Actency CKEditor".
 
 ## List of [CKEditor plugins](http://ckeditor.com/addons/plugins/all ) added automatically by the act_ckeditor module <a id="list"></a>
 This module automatically adds a number of add-ons to CKEditor.
 
-[ckeditor.sh](../../../../scripts/drupal/README.md) searches for the CKEditor version and downloads the libraries required by act_ckeditor. You must configure your WYSIWYG toolbar to include the buttons that have been added.
+[ckeditor.sh](../../../../scripts/drupal/README.md) searches for the CKEditor version and downloads the libraries required by act_ckeditor.
 
 - **Colorbutton** : This plugin adds the Text Color and Background Color feature to the editor.
 - **Dialog** (Required by smiley and templates) : This plugin provides the Dialog API for other plugins to build an editor Dialog from a definition object.
@@ -23,15 +23,15 @@ This module automatically adds a number of add-ons to CKEditor.
 
 [Back to the top of the page](#module) | [Return to project summary](../../../../README.md)
 
-## How to install libraries manually <a id="manually"></a>
+## How to install the act_ckeditor module manually <a id="manually"></a>
 If you do not use the ckeditor.sh script, you will need to create a libraries folder at the root of the site.
 
 You need to find out which CKEditor version your Drupal is using in order to download the appropriate version of the plugin. Find the core/assets/vendor/ckeditor/ckeditor.js file inside Drupal code and search for "version." You will find it beside the "timestamp".
 
 On the [plugins page](http://ckeditor.com/addons/plugins/all), check for the right version to download for your CKEditor. Unzip the file and place the resulting folder inside the libraries folder on your Drupal root directory.
 
-After this step, all you have to do is activate the act_ckeditor module (Actency CKEditor) once you have downloaded all the libraries it uses.
+Because of the configuration files included in the act_ckeditor module, it is also necessary to activate a number of modules that appear in the dependencies. For a list of modules and libraries to be installed, see the [ckeditor.sh](../../../../scripts/drupal/README.md) documentation.
 
-You will need to configure your WYSIWYG toolbar to include the buttons that have been added.
+
 
 [Back to the top of the page](#module) | [Return to project summary](../../../../README.md)

@@ -196,11 +196,11 @@ To run the script, run the command:
 
 This script installs modules that add functionality to the WYSIWYG CKEditor editor included in Drupal 8 core.
 These modules are:
-- **act_ckeditor** : Actency CKEditor custom module extends functionality for the basic CKEditor. You must configure your WYSIWYG toolbar to include the new buttons. For more information, [click here](../../web/modules/custom/act_ckeditor/README.md).
+- **act_ckeditor** : Actency CKEditor custom module extends functionality for the basic CKEditor. For more information, [click here](../../web/modules/custom/act_ckeditor/README.md).
 - **anchor_link** : This plugin module adds the better link dialog and anchor link related features to CKEditor in Drupal 8.
-- **file_browser** : This module provides a default Entity Browser that lets you browse and select your files in a nice-looking, mobile-ready Masonry based interface, and upload files using the Dropzonejs module. It requires the following modules : entity, embed, dropzonejs, entity_embed, entity_browser, dropzones ,imagesloaded and masonry.
+- **file_browser** : This module provides a default Entity Browser that lets you browse and select your files in a nice-looking, mobile-ready Masonry based interface, and upload files using the Dropzonejs module. It requires the following modules : entity, embed, dropzonejs, entity_embed, entity_browser and libraries dropzones ,imagesloaded and masonry.
 - **imce** : IMCE is an image/file uploader and browser that supports personal directories and quota.
-- **layouter** : WYSIWYG layout templates.
+- **layouter** : WYSIWYG layout templates. This module must be configured (/admin/config/content/layouter) before it can be used for the first time.
 - **Youtube** : The YouTube field module provides a simple field that allows you to add a youtube video to a content type, user, or any other Drupal entity.
 
 [Back to the top of the page](#shellscripts) | [Return to project summary](../../README.md)
