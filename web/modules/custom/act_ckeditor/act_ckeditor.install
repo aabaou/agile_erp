@@ -56,7 +56,7 @@ from http://ckeditor.com/addon/colorbutton releases and place it in /libraries'
     $requirements['dialog'] = array(
       'title' => t('dialog library missing'),
       'description' => t(
-    'File Browser requires the dialog library. Download the newest release from
+    'Actency CKEditor requires the dialog library. Download the newest release from
 http://ckeditor.com/addon/dialog and place it in /libraries'
       ),
       'severity' => REQUIREMENT_ERROR,
@@ -67,8 +67,8 @@ http://ckeditor.com/addon/dialog and place it in /libraries'
 		$requirements['div'] = array(
 			'title' => t('div library missing'),
 			'description' => t(
-				'File Browser requires the Div Editing Area library. Download the newest release from
-http://ckeditor.com/addon/divarea and place it in /libraries'
+				'Actency CKEditor requires the Div Container Manager library. Download the newest release from
+http://ckeditor.com/addon/div and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
 		);
@@ -78,7 +78,7 @@ http://ckeditor.com/addon/divarea and place it in /libraries'
 		$requirements['fakeobjects'] = array(
 			'title' => t('fakeobjects library missing'),
 			'description' => t(
-				'File Browser requires the fakeobjects library. Download the newest release from
+				'Actency CKEditor requires the fakeobjects library. Download the newest release from
 http://ckeditor.com/addon/fakeobjects and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -89,7 +89,7 @@ http://ckeditor.com/addon/fakeobjects and place it in /libraries'
 		$requirements['floatpanel'] = array(
 			'title' => t('floatpanel library missing'),
 			'description' => t(
-				'File Browser requires the Floating Panel library. Download the newest release from
+				'Actency CKEditor requires the Floating Panel library. Download the newest release from
 http://ckeditor.com/addon/floatpanel and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -100,7 +100,7 @@ http://ckeditor.com/addon/floatpanel and place it in /libraries'
 		$requirements['pagebreak'] = array(
 			'title' => t('pagebreak library missing'),
 			'description' => t(
-				'File Browser requires the pagebreak library. Download the newest release from
+				'Actency CKEditor requires the pagebreak library. Download the newest release from
 http://ckeditor.com/addon/pagebreak and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -111,7 +111,7 @@ http://ckeditor.com/addon/pagebreak and place it in /libraries'
 		$requirements['panelbutton'] = array(
 			'title' => t('panelbutton library missing'),
 			'description' => t(
-				'File Browser requires the panelbutton library. Download the newest release from
+				'Actency CKEditor requires the panelbutton library. Download the newest release from
 http://ckeditor.com/addon/panelbutton and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -122,7 +122,7 @@ http://ckeditor.com/addon/panelbutton and place it in /libraries'
 		$requirements['preview'] = array(
 			'title' => t('preview library missing'),
 			'description' => t(
-				'File Browser requires the preview library. Download the newest release from
+				'Actency CKEditor requires the preview library. Download the newest release from
 http://ckeditor.com/addon/preview and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -133,7 +133,7 @@ http://ckeditor.com/addon/preview and place it in /libraries'
 		$requirements['print'] = array(
 			'title' => t('print library missing'),
 			'description' => t(
-				'File Browser requires the print library. Download the newest release from
+				'Actency CKEditor requires the print library. Download the newest release from
 http://ckeditor.com/addon/print and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -144,7 +144,7 @@ http://ckeditor.com/addon/print and place it in /libraries'
 		$requirements['smiley'] = array(
 			'title' => t('smiley library missing'),
 			'description' => t(
-				'File Browser requires the Insert Smiley library. Download the newest release from
+				'Actency CKEditor requires the Insert Smiley library. Download the newest release from
 http://ckeditor.com/addon/smiley and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
@@ -155,7 +155,7 @@ http://ckeditor.com/addon/smiley and place it in /libraries'
 		$requirements['templates'] = array(
 			'title' => t('templates library missing'),
 			'description' => t(
-				'File Browser requires the Content Templates library. Download the newest release from
+				'Actency CKEditor requires the Content Templates library. Download the newest release from
 http://ckeditor.com/addon/templates and place it in /libraries'
 			),
 			'severity' => REQUIREMENT_ERROR,
