@@ -1,0 +1,14 @@
+# Copy and rename this file to 'docker-compose.override.yml'
+version: '2'
+services:
+  # web with xdebug - actency images
+  web:
+    # @see https://github.com/Actency/docker-apache-php
+    image: actency/docker-apache-php:7.0
+    environment:
+      - SERVERNAME=drupal8.loc
+      - SERVERALIAS=drupal8.loc
+      - DOCUMENTROOT=web
+    volumes:
+      - /home/docker/projets/Drupal8/drup8cy/:/var/www/html/
+      - /home/docker/.ssh/:/var/www/.ssh/
