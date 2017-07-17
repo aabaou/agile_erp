@@ -26,6 +26,7 @@
 
 # Ignore local settings file
 /config/drupal/settings.local.php
+/config/drupal/settings.travis.php
 /config/drupal/local/*.yml
 /config/drupal/services.local.yml
 
