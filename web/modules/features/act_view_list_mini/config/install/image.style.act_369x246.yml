@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_369x246
+label: '369x246'
+effects:
+  046644d7-758f-484c-91f5-3396f422a146:
+    uuid: 046644d7-758f-484c-91f5-3396f422a146
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 369
+      height: 246

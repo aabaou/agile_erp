@@ -1,0 +1,24 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.act_260x173
+    - image.style.act_270x180
+    - image.style.act_340x227
+    - image.style.act_737x491
+id: act_view_grid
+label: 'View grid'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 1200px) 270px, (min-width: 992px) 340px, (min-width: 768px) 260px, 737px'
+      sizes_image_styles:
+        - act_260x173
+        - act_270x180
+        - act_340x227
+        - act_737x491
+breakpoint_group: responsive_image
+fallback_image_style: act_737x491

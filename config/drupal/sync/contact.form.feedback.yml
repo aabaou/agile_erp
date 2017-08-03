@@ -1,0 +1,14 @@
+uuid: 4961007b-b55d-4bb5-9600-fd4815e6b892
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - stephane.brichler@actency.fr
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\cache\Tag;
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function act_events_views_pre_render(ViewExecutable $view) {
+
+  if (isset($view)) {
+
+    if($view->storage->id() == 'act_events_grid_highlight'
+      || $view->storage->id() == 'act_events_grid'
+      || $view->storage->id() == 'act_events_list'
+      || $view->storage->id() == 'act_events_list_highlight'){
+
+      $view->element['#attached']['library'][] = 'act_events/views_events';
+      $view->element['#attached']['library'][] = 'act_events/views_events_grid';
+
+    }
+
+  }
+
+
+}
+
+
+
+
+
+

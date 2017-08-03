@@ -1,0 +1,29 @@
+uuid: 002f26e4-f551-4769-b83b-f8333a173c08
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_territoire
+  module:
+    - user
+_core:
+  default_config_hash: l6v7niduP4b4RfUjOnoo4fTHYTa07QP7MlPWMeuE2oE
+id: user.user.field_territoire
+field_name: field_territoire
+entity_type: user
+bundle: user
+label: 'Zone géographique'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

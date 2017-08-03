@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_158x105
+label: '158x105'
+effects:
+  2e484293-3b8c-41f7-85ed-9e69ebbdbf18:
+    uuid: 2e484293-3b8c-41f7-85ed-9e69ebbdbf18
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 158
+      height: 105

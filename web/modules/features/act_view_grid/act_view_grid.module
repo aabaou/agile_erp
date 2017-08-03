@@ -1,0 +1,47 @@
+<?php
+
+
+
+/**
+ * Implements hook_theme_registry_alter
+ * Change View news-grid template
+ */
+
+function act_view_grid_theme_registry_alter(&$theme_registry) {
+
+
+  if(isset($theme_registry['views_view__view_grid']) ){
+    $theme_registry['views_view__view_grid']['preprocess functions'] = $theme_registry['views_view']['preprocess functions'];
+
+  }
+
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ * @inheritdoc
+ */
+function act_view_grid_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+
+  $current_path= \Drupal::service('act_path.path_view_news_events');
+
+  if (false != $current_path ->isNewsGrid()
+    || false != $current_path ->isEventsGrid()){
+    $suggestions = ['views_view__view_grid'];
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function act_view_grid_theme() {
+    return [
+      'views_view__view_grid' => [
+        'template' => 'views-view--view-grid',
+      ],
+    ];
+
+}
+
+

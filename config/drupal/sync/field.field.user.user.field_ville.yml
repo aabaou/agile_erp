@@ -1,0 +1,29 @@
+uuid: 718c7c92-9d70-40b7-883e-9e488a7b1421
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ville
+  module:
+    - user
+_core:
+  default_config_hash: IAkEP507-9goM7WgZGCj7-P_B-dF-HOfPh3-lGVF4Zc
+id: user.user.field_ville
+field_name: field_ville
+entity_type: user
+bundle: user
+label: Ville
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

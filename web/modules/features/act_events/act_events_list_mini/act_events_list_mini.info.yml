@@ -1,0 +1,13 @@
+name: 'Actency events list mini '
+description: 'Provides a block displaying the last 3 events.'
+type: module
+core: 8.x
+dependencies:
+  - act_events
+  - act_view_list
+  - act_view_list_mini
+  - block
+  - smart_trim
+  - system
+  - views
+version: 8.x.1-0

@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_380x253
+label: 380x253
+effects:
+  94452776-7b98-4c80-91ec-98f77130759e:
+    uuid: 94452776-7b98-4c80-91ec-98f77130759e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 380
+      height: 253

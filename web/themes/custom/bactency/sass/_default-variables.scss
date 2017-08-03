@@ -1,0 +1,43 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bactency/bootstrap/assets/stylesheets/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+// Set colors.
+$white: #ffffff;
+$blue01: #01203f;
+$blue02: #023467;
+$blue03: #7ca4d5;
+$blue04: #7ea4d0;
+$blue05: #071e2e;
+$blue06: #1f394e;
+$gray01: #1e252a;
+$gray02: #7c8388;
+$red01: #b63b3d;
+
+// Opacity colors.
+$transblack01: rgba(0, 0, 0, .5);
+
+// Set font faces.
+@font-face {
+  font-family: "Brill Bold Italic";
+  src: url("../fonts/BrillBoldItalic/BrillBoldItalic.eot"); /* IE9*/
+  src: url("../fonts/BrillBoldItalic/BrillBoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/BrillBoldItalic/BrillBoldItalic.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/BrillBoldItalic/BrillBoldItalic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/BrillBoldItalic/BrillBoldItalic.svg#Brill Bold Italic") format("svg"); /* iOS 4.1- */
+}
+
+// Set fonts.
+$opensans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$brillbolditalic: "Brill Bold Italic", "Times New Roman";

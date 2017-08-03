@@ -1,0 +1,13 @@
+name: 'Actency events calendar'
+description: 'Provides a calendar of events.'
+type: module
+core: 8.x
+dependencies:
+  - act_events
+  - block
+  - calendar
+  - datetime
+  - node
+  - user
+  - views
+version: 8.x-1.0

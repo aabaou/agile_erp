@@ -1,0 +1,14 @@
+/**
+ * @file: Contains the styles available for the header.
+ */
+div[role="heading"] {
+  background: $blue01;
+  background: -moz-linear-gradient(left, $blue01 0%, $blue02 15%, $blue02 85%, $blue01 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $blue01 0%, $blue02 15%, $blue02 85%, $blue01 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $blue01 0%, $blue02 15%, $blue02 85%, $blue01 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue01', endColorstr='$blue02',GradientType=1 ); /* IE6-9 */
+
+  overflow: hidden;
+  border-bottom: $blue03 6px solid;
+  text-align: center;
+}

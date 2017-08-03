@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_260x173
+label: 260x173
+effects:
+  4001ba0e-39c0-4030-8213-02f2722742dc:
+    uuid: 4001ba0e-39c0-4030-8213-02f2722742dc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 173

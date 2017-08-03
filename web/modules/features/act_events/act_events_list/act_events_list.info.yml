@@ -1,0 +1,10 @@
+name: 'Actency events list'
+description: 'Provides a list view of events.'
+type: module
+core: 8.x
+dependencies:
+  - act_events
+  - act_view_list
+  - smart_trim
+  - views
+version: 8.x-1.0

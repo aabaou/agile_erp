@@ -1,0 +1,22 @@
+uuid: 205e0b16-5e16-4d02-b870-37bd69e1a55c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+_core:
+  default_config_hash: WoIp1-K0iC2AicRBF7LJBJJnNjNfrHxaEClhSt63wIY
+id: user.field_territoire
+field_name: field_territoire
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: c3256547-15d9-4857-b805-5c17ce0b5c98
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Utilisateur anonyme'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'access kint'
+  - 'use text format html_simple_tous_les_roles'
+  - 'exclude from message filtering'
+  - 'view error messages'
+  - 'view status messages'
+  - 'view warning messages'
+  - 'access user contact forms'

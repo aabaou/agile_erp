@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_340x227
+label: 340x227
+effects:
+  5b4d7119-7f13-445d-9db8-29fb42069687:
+    uuid: 5b4d7119-7f13-445d-9db8-29fb42069687
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 227

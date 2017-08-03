@@ -1,0 +1,15 @@
+uuid: d74caedc-cdeb-485d-9401-1d3c898a1a1c
+name: 'Drupency for Drupal 8 starterkit'
+mail: stephane.brichler@actency.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

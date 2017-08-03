@@ -1,0 +1,5 @@
+name: 'Actency path'
+description: 'Provides a service that retrieves the path or name of the route from the news view or events view.'
+type: module
+core: 8.x
+version: 8.x-1.0

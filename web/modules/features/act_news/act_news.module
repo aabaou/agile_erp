@@ -1,0 +1,49 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+use Drupal\views\Controller\ViewAjaxController;
+
+/**
+* Implements hook_views_pre_render().
+*/
+function act_news_views_pre_render(ViewExecutable $view) {
+
+  if (isset($view)) {
+
+    if($view->storage->id() == 'act_news_grid_highlight'
+      || $view->storage->id() == 'act_news_grid'
+      || $view->storage->id() == 'act_news_list'
+      || $view->storage->id() == 'act_news_list_highlight'){
+
+      $view->element['#attached']['library'][] = 'act_news/views_news';
+      $view->element['#attached']['library'][] = 'act_news/views_news_grid';
+
+    }
+
+  }
+
+
+}
+
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function act_news_preprocess_node(&$vars) {
+  $node = $vars['node']->getType();
+
+  if('act_node_news' == $node){
+    $current_path= \Drupal::service('act_path.path_view_news_events');
+
+    if ( false != $current_path ->isNewsGrid() ) {
+      $vars['url']= $vars['url'].'?mode=grid';
+    }
+    elseif ( false != $current_path ->isNewsList()  ) {
+      $vars['url']= $vars['url'].'?mode=list';
+    }
+
+  }
+}
+
+
+

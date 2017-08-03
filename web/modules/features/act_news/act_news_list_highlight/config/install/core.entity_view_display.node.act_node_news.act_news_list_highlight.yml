@@ -1,0 +1,58 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.act_news_list_highlight
+    - field.field.node.act_node_news.body
+    - field.field.node.act_node_news.field_act_news_categories
+    - field.field.node.act_node_news.field_act_news_image
+    - node.type.act_node_news
+    - responsive_image.styles.act_view_list_highlight
+  module:
+    - act_news
+    - user
+id: node.act_node_news.act_news_list_highlight
+targetEntityType: node
+bundle: act_node_news
+mode: act_news_list_highlight
+content:
+  body:
+    label: hidden
+    type: act_news_text_formatter
+    weight: 2
+    settings:
+      trim_length: '500'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '1'
+      more_text: 'Read more'
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings: {  }
+    region: content
+  field_act_news_categories:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: act_news_category_formatter
+    region: content
+  field_act_news_image:
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: act_view_list_highlight
+      image_link: content
+    third_party_settings: {  }
+    type: act_news_image_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

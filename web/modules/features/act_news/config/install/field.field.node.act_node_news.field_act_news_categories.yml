@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_act_news_categories
+    - node.type.act_node_news
+    - taxonomy.vocabulary.act_taxonomy_news
+id: node.act_node_news.field_act_news_categories
+field_name: field_act_news_categories
+entity_type: node
+bundle: act_node_news
+label: Catégories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      act_taxonomy_news: act_taxonomy_news
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: 8d9ef19f-b1f0-4aa6-ab58-4e0d2cd5cef5
+langcode: fr
+status: true
+dependencies: {  }
+name: slide_show_partenaires
+label: slide_show_partenaires
+effects:
+  102c5ce4-9d57-4c65-8cae-9d5ea6fe05e8:
+    uuid: 102c5ce4-9d57-4c65-8cae-9d5ea6fe05e8
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

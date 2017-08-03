@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_270x180
+label: '270x180'
+effects:
+  b3b84165-40d5-4075-b8d0-0455d9181372:
+    uuid: b3b84165-40d5-4075-b8d0-0455d9181372
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 180

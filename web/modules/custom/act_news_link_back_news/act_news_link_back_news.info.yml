@@ -1,0 +1,8 @@
+name: 'Actency news link ''Back to all news'''
+description: 'Provides a custom block with a link "back to all news".'
+type: module
+core: 8.x
+dependencies:
+  - act_news
+version: 8.x-1.0
+

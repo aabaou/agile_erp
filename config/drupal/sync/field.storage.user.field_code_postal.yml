@@ -1,0 +1,23 @@
+uuid: 566ab892-d101-4f11-bc20-c0bab818f731
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: FS0dwbHfwCvETHH8Nz-JkefVU_Lj89A-594CzPgPMbg
+id: user.field_code_postal
+field_name: field_code_postal
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

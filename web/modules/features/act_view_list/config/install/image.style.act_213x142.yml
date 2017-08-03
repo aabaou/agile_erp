@@ -1,0 +1,13 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: act_213x142
+label: '213x142'
+effects:
+  1d08c95a-ddc3-4f87-88f4-591f5b0eb12b:
+    uuid: 1d08c95a-ddc3-4f87-88f4-591f5b0eb12b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 213
+      height: 142

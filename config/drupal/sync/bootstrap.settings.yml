@@ -1,0 +1,21 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://crsn.local/themes/bootstrap/favicon.ico'
+  use_default: true
+schema: 8000
+schemas:
+  bootstrap: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+table_responsive: '-1'
+tooltip_enabled: 0
+table: ''
+langcode: fr

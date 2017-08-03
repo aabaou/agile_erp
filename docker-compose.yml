@@ -1,0 +1,51 @@
+version: '2'
+services:
+  # web with xdebug - actency images
+  web:
+    # @see https://github.com/Actency/docker-apache-php
+    image: actency/docker-apache-php:7.0
+    ports:
+      - "80:80"
+      - "9000:9000"
+    environment:
+      - SERVERNAME=drup8cy.loc
+      - SERVERALIAS=drup8cy.loc
+      - DOCUMENTROOT=web
+    volumes:
+      - /home/docker/projets/drup8cy/:/var/www/html/
+      - /home/docker/.ssh/:/var/www/.ssh/
+    links:
+      - database:mysql
+      - mailhog
+    tty: true
+    shm_size: 2G
+
+  # database container - actency images
+  database:
+    # @see https://github.com/Actency/docker-mysql
+    image: actency/docker-mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysqlroot
+      - MYSQL_DATABASE=drup8cy
+      - MYSQL_USER=mysqlusr
+      - MYSQL_PASSWORD=mysqlpwd
+
+  # phpmyadmin container - actency images
+  phpmyadmin:
+    image: actency/docker-phpmyadmin
+    ports:
+      - "8010:80"
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysqlroot
+      - UPLOAD_SIZE=1G
+    links:
+      - database:mysql
+
+  # mailhog container - official images
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"

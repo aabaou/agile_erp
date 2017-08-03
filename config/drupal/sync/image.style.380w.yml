@@ -1,0 +1,15 @@
+uuid: 36a73a26-bbe9-4d50-9d61-5a82b3c04b37
+langcode: fr
+status: true
+dependencies: {  }
+name: 380w
+label: 380w
+effects:
+  b5f0b548-f83f-44c7-b301-99d59a28cf03:
+    uuid: b5f0b548-f83f-44c7-b301-99d59a28cf03
+    id: image_scale
+    weight: 1
+    data:
+      width: 380
+      height: null
+      upscale: false

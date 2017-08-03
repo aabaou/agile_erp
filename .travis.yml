@@ -1,0 +1,90 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+# list any PHP version you want to test against
+php:
+  - 7.0
+
+# Use new container-bases TravisCI infrastructure
+#dist: trusty
+sudo: false
+
+# No need for git history here
+git:
+  depth: 1
+
+# ENV variables
+env:
+  global:
+    - BASE_URL="http://127.0.0.1:8080"
+    - PROJECT_CODE="numericemploi"
+  matrix:
+    - RELEASE=stable COMPOSER_CHANNEL=stable
+
+# Define some addons like hosts etc.
+addons:
+  hosts:
+    - numeric-emploi.loc
+
+# DB Credential
+mysql:
+  database: numericemploi
+  username: root
+  encoding: utf8
+
+# define services
+services:
+  - mysql
+
+# using travis ci cache mecanism
+cache:
+  directories:
+    # cache for generic composer & drush stuff
+    - $HOME/.composer/cache
+    - $HOME/.drush/cache
+
+before_install:
+  # Disable xdebug
+  - phpenv config-rm xdebug.ini
+
+  # Update composer
+  - composer --verbose self-update --$COMPOSER_CHANNEL
+  - composer --version
+
+  # Define some variables
+  - export BASEDIR=${PWD}
+  - export WEBDIR="web"
+  - export DRUPAL_ROOT="$BASEDIR/$WEBDIR"
+  - export BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drush":{"root":"'$DRUPAL_ROOT'"}}}}'
+
+  # Create DB
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS numericemploi;'
+
+install:
+  - composer --verbose install
+
+  # export alias like drush, drupal console etc.
+  - export PATH="$BASEDIR/vendor/bin:$PATH"
+
+  # Site install
+  - cd $DRUPAL_ROOT
+  - bash $BASEDIR/scripts/drupal/build.sh --nb
+
+  # Build Behat dependencies
+  - cd $TRAVIS_BUILD_DIR/tests/behat
+  - composer install --no-interaction --prefer-dist
+
+before_script:
+  # Run Web server
+  - cd $DRUPAL_ROOT
+  - drush runserver $BASE_URL &
+  - sleep 3
+
+script:
+  # Run Drupency Behat tests
+  - cd $TRAVIS_BUILD_DIR/tests/behat
+  - ./bin/behat --config behat.travis.yml
+
+notifications:
+  slack:
+    rooms:
+      - actency:aZt1XDKinCaYrWT7oEeEmtY4

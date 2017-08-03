@@ -1,0 +1,17 @@
+uuid: a3ca67d2-e84b-4912-ae04-04af2c1c1598
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: J-unuJ5bSVkzB8vupVmLszEC2j7oQ_gqB02EMhAzKc4
+name: thumbnail
+label: 'Vignette (100x100)'
+effects:
+  1cfec298-8620-4749-b100-ccb6c4500779:
+    uuid: 1cfec298-8620-4749-b100-ccb6c4500779
+    id: image_scale
+    weight: 0
+    data:
+      width: 100
+      height: 100
+      upscale: false

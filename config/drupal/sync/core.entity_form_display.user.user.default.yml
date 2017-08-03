@@ -1,0 +1,141 @@
+uuid: 2f89b94c-9128-46f7-af3a-5887f8b7912a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_adresse
+    - field.field.user.user.field_civilite
+    - field.field.user.user.field_code_postal
+    - field.field.user.user.field_fonction
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_nom_du_site
+    - field.field.user.user.field_organisme
+    - field.field.user.user.field_prenom
+    - field.field.user.user.field_telephone_fixe
+    - field.field.user.user.field_telephone_mobile
+    - field.field.user.user.field_territoire
+    - field.field.user.user.field_user_cnil
+    - field.field.user.user.field_user_validation
+    - field.field.user.user.field_ville
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - telephone
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_adresse:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_civilite:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_code_postal:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_fonction:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_nom:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_nom_du_site:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_organisme:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_prenom:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_telephone_fixe:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_telephone_mobile:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_territoire:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_user_cnil:
+    weight: 5
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_user_validation:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_ville:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 3
+hidden:
+  contact: true
+  langcode: true
+  language: true
+  timezone: true

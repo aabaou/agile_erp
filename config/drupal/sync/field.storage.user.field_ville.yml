@@ -1,0 +1,22 @@
+uuid: eec8b07c-03b1-43fa-b0f0-80703293d36e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+_core:
+  default_config_hash: xUv3VxRQanttn73v4ecGfkxGMRSGGJFSsq8UiTySyiU
+id: user.field_ville
+field_name: field_ville
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

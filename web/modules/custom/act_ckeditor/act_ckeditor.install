@@ -1,0 +1,175 @@
+<?php
+
+/**
+ * @file
+ * Defines library requirements for act_ckeditor.
+ */
+
+
+/**
+ * Implements hook_requirements().
+ */
+function act_ckeditor_requirements($phase) {
+
+  $requirements = [];
+
+  // Optionally use the Libraries module to determine our library paths.
+  if (\Drupal::moduleHandler()->moduleExists('libraries')) {
+    $colorbutton_path = libraries_get_path('colorbutton') . '/plugin.js';
+    $dialog_path = libraries_get_path('dialog') . '/plugin.js';
+	  $div_path = libraries_get_path('div') . '/plugin.js';
+	  $fakeobjects_path = libraries_get_path('fakeobjects') . '/plugin.js';
+	  $floatpanel_path = libraries_get_path('floatpanel') . '/plugin.js';
+	  $pagebreak_path = libraries_get_path('pagebreak') . '/plugin.js';
+	  $panelbutton_path = libraries_get_path('panelbutton') . '/plugin.js';
+	  $preview_path = libraries_get_path('preview') . '/plugin.js';
+	  $print_path = libraries_get_path('print') . '/plugin.js';
+	  $smiley_path = libraries_get_path('smiley') . '/plugin.js';
+	  $templates_path = libraries_get_path('templates') . '/plugin.js';
+  }
+  else {
+    $colorbutton_path = DRUPAL_ROOT . '/libraries/colorbutton/plugin.js';
+    $dialog_path = DRUPAL_ROOT . '/libraries/dialog/plugin.js';
+	  $div_path = DRUPAL_ROOT . '/libraries/div/plugin.js';
+	  $fakeobjects_path = DRUPAL_ROOT . '/libraries/fakeobjects/plugin.js';
+	  $floatpanel_path = DRUPAL_ROOT . '/libraries/floatpanel/plugin.js';
+	  $pagebreak_path = DRUPAL_ROOT . '/libraries/pagebreak/plugin.js';
+	  $panelbutton_path = DRUPAL_ROOT . '/libraries/panelbutton/plugin.js';
+	  $preview_path = DRUPAL_ROOT . '/libraries/preview/plugin.js';
+	  $print_path = DRUPAL_ROOT . '/libraries/print/plugin.js';
+	  $smiley_path = DRUPAL_ROOT . '/libraries/smiley/plugin.js';
+	  $templates_path = DRUPAL_ROOT . '/libraries/templates/plugin.js';
+  }
+
+  if (!file_exists($colorbutton_path)) {
+    $requirements['colorbutton'] = array(
+      'title' => t('colorbutton library missing'),
+      'description' => t(
+    'Actency CKEditor requires the colorbutton library. Download the newest release
+from http://ckeditor.com/addon/colorbutton releases and place it in /libraries'
+      ),
+      'severity' => REQUIREMENT_ERROR,
+    );
+  }
+
+  if (!file_exists($dialog_path)) {
+    $requirements['dialog'] = array(
+      'title' => t('dialog library missing'),
+      'description' => t(
+    'Actency CKEditor requires the dialog library. Download the newest release from
+http://ckeditor.com/addon/dialog and place it in /libraries'
+      ),
+      'severity' => REQUIREMENT_ERROR,
+    );
+  }
+
+	if (!file_exists($div_path)) {
+		$requirements['div'] = array(
+			'title' => t('div library missing'),
+			'description' => t(
+				'Actency CKEditor requires the Div Container Manager library. Download the newest release from
+http://ckeditor.com/addon/div and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($fakeobjects_path)) {
+		$requirements['fakeobjects'] = array(
+			'title' => t('fakeobjects library missing'),
+			'description' => t(
+				'Actency CKEditor requires the fakeobjects library. Download the newest release from
+http://ckeditor.com/addon/fakeobjects and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($floatpanel_path)) {
+		$requirements['floatpanel'] = array(
+			'title' => t('floatpanel library missing'),
+			'description' => t(
+				'Actency CKEditor requires the Floating Panel library. Download the newest release from
+http://ckeditor.com/addon/floatpanel and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($pagebreak_path)) {
+		$requirements['pagebreak'] = array(
+			'title' => t('pagebreak library missing'),
+			'description' => t(
+				'Actency CKEditor requires the pagebreak library. Download the newest release from
+http://ckeditor.com/addon/pagebreak and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($panelbutton_path)) {
+		$requirements['panelbutton'] = array(
+			'title' => t('panelbutton library missing'),
+			'description' => t(
+				'Actency CKEditor requires the panelbutton library. Download the newest release from
+http://ckeditor.com/addon/panelbutton and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($preview_path)) {
+		$requirements['preview'] = array(
+			'title' => t('preview library missing'),
+			'description' => t(
+				'Actency CKEditor requires the preview library. Download the newest release from
+http://ckeditor.com/addon/preview and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($print_path)) {
+		$requirements['print'] = array(
+			'title' => t('print library missing'),
+			'description' => t(
+				'Actency CKEditor requires the print library. Download the newest release from
+http://ckeditor.com/addon/print and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($smiley_path)) {
+		$requirements['smiley'] = array(
+			'title' => t('smiley library missing'),
+			'description' => t(
+				'Actency CKEditor requires the Insert Smiley library. Download the newest release from
+http://ckeditor.com/addon/smiley and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+
+	if (!file_exists($templates_path)) {
+		$requirements['templates'] = array(
+			'title' => t('templates library missing'),
+			'description' => t(
+				'Actency CKEditor requires the Content Templates library. Download the newest release from
+http://ckeditor.com/addon/templates and place it in /libraries'
+			),
+			'severity' => REQUIREMENT_ERROR,
+		);
+	}
+  // Prevent installation if the webserver cannot write to "public://" .
+ /*
+  if (!\Drupal::isConfigSyncing() && !is_writable('public://')) {
+    $requirements['public_files_not_writable'] = [
+      'title' => t('Public files directory not writable'),
+      'description' => t('The webserver needs to be able to write to the public files directory (public://). Please check your server configuration and try again.'),
+      'severity' => REQUIREMENT_ERROR,
+    ];
+  }
+*/
+  return $requirements;
+}

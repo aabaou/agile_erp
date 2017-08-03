@@ -1,0 +1,14 @@
+uuid: 85ee8d6e-f509-4b4f-b5b4-bd89f5b0530e
+langcode: fr
+status: true
+dependencies: {  }
+name: slide_show_homepage
+label: slide_show_homepage
+effects:
+  c02d2fee-e457-45e5-9c2e-b8e76b0b955c:
+    uuid: c02d2fee-e457-45e5-9c2e-b8e76b0b955c
+    id: image_resize
+    weight: 1
+    data:
+      width: 1170
+      height: 300

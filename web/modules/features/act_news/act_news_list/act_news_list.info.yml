@@ -1,0 +1,10 @@
+name: 'Actency news list'
+description: 'Provides a list view of news.'
+type: module
+core: 8.x
+dependencies:
+  - act_news
+  - act_news_list_config
+  - act_view_list
+  - views
+version: 8.x-1.0

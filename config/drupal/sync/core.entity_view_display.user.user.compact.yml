@@ -1,0 +1,56 @@
+uuid: 5f8c8d75-077b-4fb3-a500-b56b395bf4e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_adresse
+    - field.field.user.user.field_civilite
+    - field.field.user.user.field_code_postal
+    - field.field.user.user.field_fonction
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_nom_du_site
+    - field.field.user.user.field_organisme
+    - field.field.user.user.field_prenom
+    - field.field.user.user.field_telephone_fixe
+    - field.field.user.user.field_telephone_mobile
+    - field.field.user.user.field_territoire
+    - field.field.user.user.field_user_cnil
+    - field.field.user.user.field_user_validation
+    - field.field.user.user.field_ville
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: C3k_McOy8bL8rTnIjspy5OfFdgqV1z6OdGZaI-tO5eM
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_adresse: true
+  field_civilite: true
+  field_code_postal: true
+  field_fonction: true
+  field_nom: true
+  field_nom_du_site: true
+  field_organisme: true
+  field_prenom: true
+  field_telephone_fixe: true
+  field_telephone_mobile: true
+  field_territoire: true
+  field_user_cnil: true
+  field_user_validation: true
+  field_ville: true
+  member_for: true

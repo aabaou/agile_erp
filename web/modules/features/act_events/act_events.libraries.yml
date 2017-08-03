@@ -1,0 +1,10 @@
+views_events_grid:
+  js:
+    js/views-events-grid.js: {}
+  dependencies:
+    - core/jquery
+
+views_events:
+  css:
+      theme:
+        css/views-events.css: {}

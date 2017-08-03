@@ -1,0 +1,32 @@
+{
+  "name": "bactency",
+  "version": "2.0.0",
+  "description": "Actency boostrap subtheme",
+  "author": "Actency",
+  "devDependencies": {
+    "array-uniq": "^1.0.3",
+    "gulp": "^3.9.0",
+    "gulp-accessibility": "~1.2.1",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-beautify": "^1.1.2",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-csso": "^1.0.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-jsvalidate": "^2.1.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-scss-lint": "^0.3.9",
+    "gulp-shell": "^0.4.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "jshint-stylish": "^2.0.0"
+  },
+  "scripts": {
+    "postinstall": "find ./node_modules/ -name '*.info' -type f -delete"
+  },
+  "dependencies": {
+    "array-uniq": "^1.0.3"
+  }
+}
