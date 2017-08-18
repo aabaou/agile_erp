@@ -190,6 +190,10 @@ else
 fi 
 
 
-
-
+# Generate sub theme
+read -p "Do you want to create a bootstrap subtheme (y/n)? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    bash ../scripts/drupal/theme.sh
+fi
 
