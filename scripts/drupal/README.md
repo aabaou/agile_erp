@@ -188,7 +188,7 @@ The file `archive-[date].tar.gz` is generated at the root of the project.
 
 ## Use of the ckeditor.sh script <a id="ckeditor.sh"></a>
 
-To use this script, you must be in the web directory of your project.
+To use this script, you must be in the web directory of your project as **www-data**.
 
 To run the script, run the command:
 - `../scripts/drupal/ckeditor.sh`
