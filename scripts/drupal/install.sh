@@ -196,10 +196,10 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 
 displayOperation "Downloading bactency"
-    wget "https://github.com/Actency/bactency/archive/d8/develop.zip"
-            unzip "bactency-d8-develop.zip"
-            rm "bactency-d8-develop.zip"
+    wget "hhttps://github.com/Guicom/bactency/archive/master.zip"
+            unzip "bactency-master.zip"
+            rm "bactency-master.zip"
             mv bactency-master/theme.sh theme.sh
-    bash ../scripts/drupal/theme.sh
+    bash theme.sh
 fi
 
