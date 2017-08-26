@@ -194,6 +194,12 @@ fi
 read -p "Do you want to create a bootstrap subtheme (y/n)? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
+
+displayOperation "Downloading bactency"
+    wget "https://github.com/Actency/bactency/archive/d8/develop.zip"
+            unzip "bactency-d8-develop.zip"
+            rm "bactency-d8-develop.zip"
+            mv bactency-master/theme.sh theme.sh
     bash ../scripts/drupal/theme.sh
 fi
 
