@@ -196,9 +196,9 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 
 displayOperation "Downloading bactency"
-    wget "hhttps://github.com/Guicom/bactency/archive/master.zip"
-            unzip "bactency-master.zip"
-            rm "bactency-master.zip"
+    wget "https://github.com/Guicom/bactency/archive/master.zip"
+            unzip "master.zip"
+            rm "master.zip"
             mv bactency-master/theme.sh theme.sh
     bash theme.sh
 fi
