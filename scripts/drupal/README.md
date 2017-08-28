@@ -127,6 +127,7 @@ $options['uri'] = "http://***URI***";
 ```
 
 - Install the site or build it from an imported sql file
+- Install custom Bootstrap subtheme and activate it
 
 [Back to the top of the page](#shellscripts) | [Return to project summary](../../README.md)
 

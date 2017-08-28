@@ -190,6 +190,16 @@ else
 fi 
 
 
+# Generate sub theme
+read -p "Do you want to create a bootstrap subtheme (y/n)? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
 
-
+displayOperation "Downloading bactency"
+    wget "https://github.com/Guicom/bactency/archive/master.zip"
+            unzip "master.zip"
+            rm "master.zip"
+            mv bactency-master/theme.sh theme.sh
+    bash theme.sh
+fi
 
