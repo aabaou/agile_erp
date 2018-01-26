@@ -4,7 +4,7 @@ services:
   # web with xdebug - actency images
   web:
     # @see https://github.com/Actency/docker-apache-php
-    image: actency/docker-apache-php:7.0
+    image: actency/docker-apache-php:7.1
     environment:
       - SERVERNAME=drupal8.loc
       - SERVERALIAS=drupal8.loc
