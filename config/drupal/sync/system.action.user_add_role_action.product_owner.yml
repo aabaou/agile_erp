@@ -1,0 +1,14 @@
+uuid: ab87a6e7-172f-433b-aaf5-f49ddb50e15b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.product_owner
+  module:
+    - user
+id: user_add_role_action.product_owner
+label: 'Add the Product owner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: product_owner

@@ -1,0 +1,19 @@
+uuid: f8f1a862-80f0-451d-a01b-df06936ea3d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_entreprise
+    - node.type.entreprise
+id: node.entreprise.field_email_entreprise
+field_name: field_email_entreprise
+entity_type: node
+bundle: entreprise
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

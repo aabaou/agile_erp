@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the agilerp theme.
+
+agilerp.settings:
+  type: theme_settings
+  label: 'agilerp settings'

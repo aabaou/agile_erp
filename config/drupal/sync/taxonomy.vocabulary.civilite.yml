@@ -1,0 +1,9 @@
+uuid: 95c5c0f0-3c39-42bb-a86b-9e2be9353349
+langcode: fr
+status: true
+dependencies: {  }
+name: Civilité
+vid: civilite
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,27 @@
+uuid: 40321048-593a-4ac9-819e-ec37edacf4f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.entreprise.field_adresse_entreprise
+    - field.field.node.entreprise.field_correspondant_entreprise
+    - field.field.node.entreprise.field_email_entreprise
+    - field.field.node.entreprise.field_telephone_entreprise
+    - node.type.entreprise
+  module:
+    - user
+id: node.entreprise.teaser
+targetEntityType: node
+bundle: entreprise
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_adresse_entreprise: true
+  field_correspondant_entreprise: true
+  field_email_entreprise: true
+  field_telephone_entreprise: true
+  langcode: true

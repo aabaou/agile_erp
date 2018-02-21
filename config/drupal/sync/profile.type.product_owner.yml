@@ -1,0 +1,18 @@
+uuid: c6aa6687-63d8-495f-96c9-05ce9ef586bd
+langcode: fr
+status: true
+dependencies: {  }
+id: product_owner
+label: 'Product owner'
+registration: false
+multiple: false
+roles:
+  product_owner: product_owner
+  authenticated: '0'
+  administrator: '0'
+  developper: '0'
+  scrum_master: '0'
+  client: '0'
+weight: 0
+use_revisions: false
+description: ''

@@ -1,2 +1,2 @@
 <?php
-$options['uri'] = "http://***URI***";
+$options['uri'] = "http://agile_erp.vm";

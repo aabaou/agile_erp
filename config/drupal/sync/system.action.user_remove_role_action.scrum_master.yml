@@ -1,0 +1,14 @@
+uuid: 6e102bb5-20eb-4c26-81d0-39f30ac157ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.scrum_master
+  module:
+    - user
+id: user_remove_role_action.scrum_master
+label: 'Remove the Scrum Master role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: scrum_master

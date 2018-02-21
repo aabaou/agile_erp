@@ -1,0 +1,9 @@
+uuid: 16d28d93-b8ba-4d84-bc15-52630dc2df41
+langcode: fr
+status: true
+dependencies: {  }
+id: scrum_master
+label: 'Scrum Master'
+weight: -5
+is_admin: null
+permissions: {  }

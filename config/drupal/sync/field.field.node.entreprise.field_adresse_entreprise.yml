@@ -1,0 +1,21 @@
+uuid: 0c38b78a-f467-4f5e-92c1-d3e9fd90f2f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse_entreprise
+    - node.type.entreprise
+  module:
+    - text
+id: node.entreprise.field_adresse_entreprise
+field_name: field_adresse_entreprise
+entity_type: node
+bundle: entreprise
+label: Adresse
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

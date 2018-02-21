@@ -1,0 +1,22 @@
+uuid: 7ec8d648-5a2a-4b6b-8be7-a3ddfd6c7cc6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.entreprise
+id: node.entreprise.status
+field_name: status
+entity_type: node
+bundle: entreprise
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

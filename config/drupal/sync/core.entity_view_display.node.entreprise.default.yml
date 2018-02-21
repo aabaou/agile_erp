@@ -1,0 +1,52 @@
+uuid: 7ca1c7cf-b8db-4a2d-b985-5a71421fe1ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.entreprise.field_adresse_entreprise
+    - field.field.node.entreprise.field_correspondant_entreprise
+    - field.field.node.entreprise.field_email_entreprise
+    - field.field.node.entreprise.field_telephone_entreprise
+    - node.type.entreprise
+  module:
+    - text
+    - user
+id: node.entreprise.default
+targetEntityType: node
+bundle: entreprise
+mode: default
+content:
+  field_adresse_entreprise:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_correspondant_entreprise:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_email_entreprise:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_telephone_entreprise:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

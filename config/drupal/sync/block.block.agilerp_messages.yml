@@ -1,0 +1,22 @@
+uuid: 38359609-750b-4608-80d5-e6a6a26316ad
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agilerp
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: agilerp_messages
+theme: agilerp
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 6369f2e7-83c9-49d8-a116-941bfccb86ca
+langcode: fr
+status: true
+dependencies: {  }
+id: product_owner
+label: 'Product owner'
+weight: -7
+is_admin: null
+permissions: {  }

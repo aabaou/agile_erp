@@ -1,0 +1,34 @@
+{
+  "name": "agilerp",
+  "description": "A theme based on Bootstrap.",
+  "bowerDir": "bower_components",
+  "css": {
+    "file" : "style.scss",
+    "src": [
+      "themes/custom/agilerp/assets/scss/**/*.scss"
+    ],
+    "dest": "themes/custom/agilerp/assets/css",
+    "includePaths": [
+      "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+      "bower_components/font-awesome/scss"
+    ]
+  },
+  "js": {
+    "file" : "script.js",
+    "src": [
+      "themes/custom/agilerp/assets/js/**/*.js"
+    ]
+  },
+  "images": {
+    "src": [
+      "themes/custom/agilerp//assets/images/**/*"
+    ],
+    "dest": "themes/custom/agilerp/assets/images/"
+  },
+  "fonts": {
+    "src": [
+      "bower_components/font-awesome/fonts/**.*"
+    ],
+    "dest": "themes/custom/agilerp/assets/fonts/"
+  }
+}

@@ -1,0 +1,14 @@
+uuid: 030fd2d2-2d10-479d-a140-e0a3fe598f4c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.scrum_master
+  module:
+    - user
+id: user_add_role_action.scrum_master
+label: 'Add the Scrum Master role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: scrum_master

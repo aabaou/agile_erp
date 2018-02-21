@@ -1,0 +1,7 @@
+{
+  "directory": "themes/custom/agilerp/assets/vendors",
+  "allow_root": true,
+  "ignoredDependencies": [
+    "jquery"
+  ]
+}

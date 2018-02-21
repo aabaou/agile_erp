@@ -1,0 +1,11 @@
+uuid: fe1cdd36-728c-4086-b37b-20f2c207cbff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.civilite
+id: taxonomy_term.civilite
+target_entity_type_id: taxonomy_term
+target_bundle: civilite
+default_langcode: site_default
+language_alterable: false

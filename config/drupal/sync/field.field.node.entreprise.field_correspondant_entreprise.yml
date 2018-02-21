@@ -1,0 +1,34 @@
+uuid: 3eaa95d9-83e4-473a-a8a6-2ceb9e364f46
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correspondant_entreprise
+    - node.type.entreprise
+id: node.entreprise.field_correspondant_entreprise
+field_name: field_correspondant_entreprise
+entity_type: node
+bundle: entreprise
+label: Correspondant
+description: 'Correspondant d''entreprise'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        client: client
+        administrator: '0'
+        product_owner: '0'
+        developper: '0'
+        scrum_master: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

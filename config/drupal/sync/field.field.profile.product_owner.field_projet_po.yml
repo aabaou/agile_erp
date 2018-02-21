@@ -1,0 +1,28 @@
+uuid: 84a5c113-a17c-4219-b938-e1e337211ef2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_projet_po
+    - node.type.projet
+    - profile.type.product_owner
+id: profile.product_owner.field_projet_po
+field_name: field_projet_po
+entity_type: profile
+bundle: product_owner
+label: Projet
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      projet: projet
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

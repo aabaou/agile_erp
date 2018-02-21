@@ -1,0 +1,17 @@
+uuid: 211af361-4a5a-4afb-92d9-d451b67e0278
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Entreprise
+type: entreprise
+description: 'L''entreprise est une entité qui va définir l''appartenance d''une personne comme développeur, PO, Scrum Master, ... etc  '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

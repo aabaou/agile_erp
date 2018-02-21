@@ -1,0 +1,22 @@
+uuid: 5f65665d-5a63-4dc2-9140-d3c4c706a80d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agilerp
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: agilerp_content
+theme: agilerp
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

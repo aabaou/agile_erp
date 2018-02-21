@@ -1,0 +1,22 @@
+uuid: ed771fa9-6174-4053-88b1-8f8156720555
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.projet
+id: node.projet.status
+field_name: status
+entity_type: node
+bundle: projet
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

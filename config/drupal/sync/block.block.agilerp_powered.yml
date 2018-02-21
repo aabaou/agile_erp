@@ -1,0 +1,22 @@
+uuid: 61e8c82d-1468-417c-a20d-4572d6483c17
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agilerp
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: agilerp_powered
+theme: agilerp
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

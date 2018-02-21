@@ -1,0 +1,22 @@
+uuid: 521624a8-7b05-47c8-afbb-9610f0fdbaab
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - agilerp
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: agilerp_help
+theme: agilerp
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

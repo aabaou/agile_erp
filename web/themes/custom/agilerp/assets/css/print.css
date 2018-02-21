@@ -1,0 +1,65 @@
+/**
+ * Site printable version stylesheet
+ *
+ * This stylesheet is used only to import .scss files.
+ * NO CUSTOM CODE HERE !!!
+ */
+/**
+ * Fonts configurations.
+ */
+/**
+ * All custom variables should reside here.
+ * To customize bootstrap variables, see _variables_boostrap.scss file.
+ */
+/**
+ * Custom mixins.
+ */
+/**
+custom function to manage font size conversion from px to em
+**/
+/**
+Simple vertical align mixin
+**/
+/**
+Advanced vertical align mixin
+if this doesn't work, change position to absolute. In this case you must have a parent with relative position
+**/
+/**
+Advanced horyzontal align mixin
+if this doesn't work, change position to absolute. In this case you must have a parent with relative position
+**/
+/**
+Advanced align all mixin
+if this doesn't work, change position to absolute. In this case you must have a parent with relative position
+**/
+/**
+Use this placeholder to make an element take the full parent size
+Parent element must av
+**/
+/* Grid Mixins */
+/**
+Custom mixin to emulate the .container class
+**/
+/**
+ * Global styles for all pages on printable version.
+ */
+.print-content ul.pagination {
+  display: none; }
+
+.print-content table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+  .print-content table td {
+    border: 1px solid #000000;
+    padding: 5px; }
+  .print-content table thead {
+    font-weight: 700;
+    background: #333333; }
+    .print-content table thead > tr > th {
+      border: 1px solid #000000;
+      padding: 5px; }
+
+.print-hr {
+  clear: both; }
+
+/*# sourceMappingURL=print.css.map */
