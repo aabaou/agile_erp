@@ -1,0 +1,30 @@
+uuid: 68902bb4-5cd0-4736-899f-0149d6f5c2bc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_dev.field_developpeur_team_dev
+    - field.field.paragraph.team_dev.field_lead_team_dev
+    - paragraphs.paragraphs_type.team_dev
+id: paragraph.team_dev.default
+targetEntityType: paragraph
+bundle: team_dev
+mode: default
+content:
+  field_developpeur_team_dev:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lead_team_dev:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: b800d573-cace-4491-8d0e-b6f05fa0d1c5
+langcode: fr
+status: true
+dependencies: {  }
+id: commentaires_us
+label: 'Commentaires en US'
+target_entity_type_id: comment
+description: ''

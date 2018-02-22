@@ -1,0 +1,89 @@
+uuid: 17c25d65-6dbe-4745-8a74-45b7d4c617b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.us.field_commentaires_us
+    - field.field.paragraph.us.field_description_us
+    - field.field.paragraph.us.field_estimation_us
+    - field.field.paragraph.us.field_journal_de_travail_us
+    - field.field.paragraph.us.field_pieces_jointes_us
+    - field.field.paragraph.us.field_statut_us
+    - field.field.paragraph.us.field_titre_us
+    - field.field.paragraph.us.field_type_us
+    - paragraphs.paragraphs_type.us
+  module:
+    - comment
+    - file
+    - paragraphs
+    - text
+id: paragraph.us.default
+targetEntityType: paragraph
+bundle: us
+mode: default
+content:
+  field_commentaires_us:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_description_us:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_estimation_us:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_journal_de_travail_us:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pieces_jointes_us:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_statut_us:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_titre_us:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_type_us:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

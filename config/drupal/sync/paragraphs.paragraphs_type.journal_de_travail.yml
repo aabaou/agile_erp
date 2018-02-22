@@ -1,0 +1,9 @@
+uuid: cfc35f01-73b3-4f32-9a8d-bd863ef744a1
+langcode: fr
+status: true
+dependencies: {  }
+id: journal_de_travail
+label: 'Journal de travail'
+icon_uuid: null
+description: 'Activité dans un US'
+behavior_plugins: {  }

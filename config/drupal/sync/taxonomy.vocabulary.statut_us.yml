@@ -1,0 +1,9 @@
+uuid: 93593b80-5b5e-4d14-98fa-a3825e008932
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Statut d''US'
+vid: statut_us
+description: 'Status d''un Us de sprint'
+hierarchy: 0
+weight: 0

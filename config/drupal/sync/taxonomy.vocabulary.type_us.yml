@@ -1,0 +1,9 @@
+uuid: 79039332-feab-4c61-a202-a8c64b0550ec
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type d''US'
+vid: type_us
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,21 @@
+uuid: eaf18875-3308-47bd-8521-12cb0afbf56d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre_jt
+    - paragraphs.paragraphs_type.journal_de_travail
+  module:
+    - text
+id: paragraph.journal_de_travail.field_titre_jt
+field_name: field_titre_jt
+entity_type: paragraph
+bundle: journal_de_travail
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

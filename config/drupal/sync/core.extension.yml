@@ -1,4 +1,6 @@
 module:
+  act_ckeditor: 0
+  anchor_link: 0
   automated_cron: 0
   block: 0
   block_content: 0
@@ -11,16 +13,26 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  dropzonejs: 0
+  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity: 0
+  entity_browser: 0
+  entity_embed: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
+  file_browser: 0
   filter: 0
   help: 0
   history: 0
   image: 0
+  imce: 0
   language: 0
+  layouter: 0
   link: 0
   locale: 0
   menu_ui: 0
@@ -30,6 +42,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  reroute_email: 0
   search: 0
   shortcut: 0
   system: 0
@@ -40,9 +53,12 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_simplechart: 0
   views_ui: 0
+  youtube: 0
   menu_link_content: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   stable: 0
@@ -50,7 +66,10 @@ theme:
   bartik: 0
   seven: 0
   bootstrap: 0
+  agilerp: 0
+  adminimal_theme: 0
+  drupal8_zymphonies_theme: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-profile:    standard
+profile: standard
 langcode: fr

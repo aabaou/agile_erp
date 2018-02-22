@@ -1,0 +1,25 @@
+uuid: 3661c436-283e-4529-a64d-7849b4be39a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_temps_consacre_jt
+    - paragraphs.paragraphs_type.journal_de_travail
+id: paragraph.journal_de_travail.field_temps_consacre_jt
+field_name: field_temps_consacre_jt
+entity_type: paragraph
+bundle: journal_de_travail
+label: 'Temps consacré'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 2.28
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: heure(s)
+  suffix: ''
+field_type: decimal

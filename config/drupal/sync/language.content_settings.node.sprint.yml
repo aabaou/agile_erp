@@ -1,0 +1,11 @@
+uuid: a14951a5-4ae4-4d98-9ccf-f36e419adced
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.sprint
+id: node.sprint
+target_entity_type_id: node
+target_bundle: sprint
+default_langcode: site_default
+language_alterable: false

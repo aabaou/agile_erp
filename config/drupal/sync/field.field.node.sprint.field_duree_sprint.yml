@@ -1,0 +1,21 @@
+uuid: fba4c285-0adb-4958-9ba1-0bd179c733e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree_sprint
+    - node.type.sprint
+  module:
+    - options
+id: node.sprint.field_duree_sprint
+field_name: field_duree_sprint
+entity_type: node
+bundle: sprint
+label: Durée
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

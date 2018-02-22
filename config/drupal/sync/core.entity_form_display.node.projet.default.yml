@@ -3,10 +3,19 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.projet.body
+    - field.field.node.projet.field_contrat_projet
+    - field.field.node.projet.field_description_projet
+    - field.field.node.projet.field_entreprise_projet
+    - field.field.node.projet.field_facure_projet
+    - field.field.node.projet.field_product_owner_projet
     - field.field.node.projet.field_project_code
+    - field.field.node.projet.field_representant_client_projet
+    - field.field.node.projet.field_scrum_master_projet
+    - field.field.node.projet.field_team_dev_projet
     - node.type.projet
   module:
+    - file
+    - paragraphs
     - path
     - text
 id: node.projet.default
@@ -14,21 +23,52 @@ targetEntityType: node
 bundle: projet
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_contrat_projet:
+    weight: 128
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_description_projet:
+    weight: 123
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_entreprise_projet:
+    weight: 129
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_facure_projet:
+    weight: 130
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_product_owner_projet:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_project_code:
     weight: 122
     settings:
@@ -36,6 +76,36 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
+  field_representant_client_projet:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_scrum_master_projet:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_team_dev_projet:
+    type: entity_reference_paragraphs
+    weight: 131
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   langcode:
     type: language_select

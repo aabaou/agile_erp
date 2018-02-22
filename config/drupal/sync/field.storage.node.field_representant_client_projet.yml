@@ -1,0 +1,20 @@
+uuid: c3ccba62-5cd5-4c10-96cc-e64e02870c6f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_representant_client_projet
+field_name: field_representant_client_projet
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

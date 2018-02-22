@@ -1,0 +1,20 @@
+uuid: 734c52ff-f036-4f3e-a8a2-640ec4f226f8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - comment
+    - paragraphs
+id: paragraph.field_commentaires_us
+field_name: field_commentaires_us
+entity_type: paragraph
+type: comment
+settings:
+  comment_type: ''
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

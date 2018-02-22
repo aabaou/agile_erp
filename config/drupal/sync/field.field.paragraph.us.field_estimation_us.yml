@@ -1,0 +1,23 @@
+uuid: 9ed28ab5-fddb-4865-8944-8f34fb1b0220
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_estimation_us
+    - paragraphs.paragraphs_type.us
+id: paragraph.us.field_estimation_us
+field_name: field_estimation_us
+entity_type: paragraph
+bundle: us
+label: Estimation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: h
+  suffix: ''
+field_type: decimal

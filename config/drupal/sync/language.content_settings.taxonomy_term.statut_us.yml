@@ -1,0 +1,11 @@
+uuid: 28ba342e-af1a-45b9-b40b-893127f2aa0c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.statut_us
+id: taxonomy_term.statut_us
+target_entity_type_id: taxonomy_term
+target_bundle: statut_us
+default_langcode: site_default
+language_alterable: false

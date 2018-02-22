@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.entreprise.field_adresse_entreprise
     - field.field.node.entreprise.field_correspondant_entreprise
     - field.field.node.entreprise.field_email_entreprise
+    - field.field.node.entreprise.field_logo_entreprise
     - field.field.node.entreprise.field_telephone_entreprise
     - node.type.entreprise
   module:
+    - image
     - text
     - user
 id: node.entreprise.default
@@ -37,6 +39,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_logo_entreprise:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_telephone_entreprise:
     weight: 103

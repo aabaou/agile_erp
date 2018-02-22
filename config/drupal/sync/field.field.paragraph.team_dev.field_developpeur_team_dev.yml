@@ -1,0 +1,34 @@
+uuid: 4eb4d6ef-44df-4808-88f0-ae153802074b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_developpeur_team_dev
+    - paragraphs.paragraphs_type.team_dev
+id: paragraph.team_dev.field_developpeur_team_dev
+field_name: field_developpeur_team_dev
+entity_type: paragraph
+bundle: team_dev
+label: Développeur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        developper: developper
+        administrator: '0'
+        product_owner: '0'
+        scrum_master: '0'
+        client: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

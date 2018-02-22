@@ -1,0 +1,24 @@
+uuid: 86fffbc2-1b6e-43b6-ba8b-be722700e622
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_de_fin_jt
+    - paragraphs.paragraphs_type.journal_de_travail
+  module:
+    - datetime
+id: paragraph.journal_de_travail.field_date_de_fin_jt
+field_name: field_date_de_fin_jt
+entity_type: paragraph
+bundle: journal_de_travail
+label: 'Date de fin'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

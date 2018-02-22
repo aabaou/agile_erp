@@ -1,0 +1,23 @@
+uuid: 4f16687f-4a98-4f6d-b2d5-88682d55980a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_pieces_jointes_us
+field_name: field_pieces_jointes_us
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: private
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

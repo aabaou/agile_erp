@@ -1,0 +1,9 @@
+uuid: 43eb7e2c-a624-43cb-bb03-8d1c5fa062ef
+langcode: fr
+status: true
+dependencies: {  }
+id: team_dev
+label: 'Team DEV'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

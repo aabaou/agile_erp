@@ -1,0 +1,37 @@
+uuid: 6015d886-bd55-4ebd-8eb0-3766eb1d0b11
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_journal_de_travail_us
+    - paragraphs.paragraphs_type.journal_de_travail
+    - paragraphs.paragraphs_type.us
+  module:
+    - entity_reference_revisions
+id: paragraph.us.field_journal_de_travail_us
+field_name: field_journal_de_travail_us
+entity_type: paragraph
+bundle: us
+label: 'Journal de travail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      journal_de_travail: journal_de_travail
+    target_bundles_drag_drop:
+      journal_de_travail:
+        enabled: true
+        weight: 4
+      team_dev:
+        weight: 5
+        enabled: false
+      us:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

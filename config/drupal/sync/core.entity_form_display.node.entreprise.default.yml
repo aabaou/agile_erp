@@ -6,9 +6,12 @@ dependencies:
     - field.field.node.entreprise.field_adresse_entreprise
     - field.field.node.entreprise.field_correspondant_entreprise
     - field.field.node.entreprise.field_email_entreprise
+    - field.field.node.entreprise.field_logo_entreprise
     - field.field.node.entreprise.field_telephone_entreprise
+    - image.style.thumbnail
     - node.type.entreprise
   module:
+    - image
     - path
     - telephone
     - text
@@ -47,6 +50,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_logo_entreprise:
+    weight: 126
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_telephone_entreprise:
     weight: 123

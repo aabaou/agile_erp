@@ -1,0 +1,22 @@
+uuid: 48ddb445-8ffb-40c5-a0e0-e735106a640c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_jt
+    - paragraphs.paragraphs_type.journal_de_travail
+  module:
+    - text
+id: paragraph.journal_de_travail.field_description_jt
+field_name: field_description_jt
+entity_type: paragraph
+bundle: journal_de_travail
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

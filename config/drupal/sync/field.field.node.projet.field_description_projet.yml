@@ -1,0 +1,21 @@
+uuid: fcad5973-472e-46a9-b402-13662cc5b2ae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_projet
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_description_projet
+field_name: field_description_projet
+entity_type: node
+bundle: projet
+label: Description
+description: 'La description du projet'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

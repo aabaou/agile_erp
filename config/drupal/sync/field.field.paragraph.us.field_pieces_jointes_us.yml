@@ -1,0 +1,27 @@
+uuid: c3051e44-9c71-4a42-ae10-cff6c9fb71d2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pieces_jointes_us
+    - paragraphs.paragraphs_type.us
+  module:
+    - file
+id: paragraph.us.field_pieces_jointes_us
+field_name: field_pieces_jointes_us
+entity_type: paragraph
+bundle: us
+label: 'Pièces jointes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpeg jpg png pdf doc docx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

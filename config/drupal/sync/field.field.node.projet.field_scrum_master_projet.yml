@@ -1,0 +1,34 @@
+uuid: 89180035-bd35-4b85-b8c6-96a2280da379
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scrum_master_projet
+    - node.type.projet
+id: node.projet.field_scrum_master_projet
+field_name: field_scrum_master_projet
+entity_type: node
+bundle: projet
+label: 'Scrum Master'
+description: 'Le scrum master du projet'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        scrum_master: scrum_master
+        administrator: '0'
+        product_owner: '0'
+        developper: '0'
+        client: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: 8aaff807-7dec-4b36-9876-caa264e10ede
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_commentaires_us
+    - paragraphs.paragraphs_type.us
+  module:
+    - comment
+id: paragraph.us.field_commentaires_us
+field_name: field_commentaires_us
+entity_type: paragraph
+bundle: us
+label: Commentaires
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

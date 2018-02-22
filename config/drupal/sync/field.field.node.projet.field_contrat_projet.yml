@@ -1,0 +1,27 @@
+uuid: 037b72de-a5e8-43ae-8de2-edeb04beced4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contrat_projet
+    - node.type.projet
+  module:
+    - file
+id: node.projet.field_contrat_projet
+field_name: field_contrat_projet
+entity_type: node
+bundle: projet
+label: Contrats
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

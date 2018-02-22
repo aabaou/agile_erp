@@ -1,0 +1,63 @@
+uuid: 7a28e370-00b3-4a60-a683-35972d43bdd3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.journal_de_travail.field_date_de_debut_jt
+    - field.field.paragraph.journal_de_travail.field_date_de_fin_jt
+    - field.field.paragraph.journal_de_travail.field_description_jt
+    - field.field.paragraph.journal_de_travail.field_temps_consacre_jt
+    - field.field.paragraph.journal_de_travail.field_titre_jt
+    - paragraphs.paragraphs_type.journal_de_travail
+  module:
+    - datetime
+    - text
+id: paragraph.journal_de_travail.default
+targetEntityType: paragraph
+bundle: journal_de_travail
+mode: default
+content:
+  field_date_de_debut_jt:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_fin_jt:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description_jt:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_temps_consacre_jt:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_titre_jt:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

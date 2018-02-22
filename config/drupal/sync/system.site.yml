@@ -1,11 +1,11 @@
 uuid: d74caedc-cdeb-485d-9401-1d3c898a1a1c
-name: 'Drupency for Drupal 8 starterkit'
-mail: stephane.brichler@actency.fr
+name: 'Agile ERP'
+mail: aissam.abaou@actency.fr
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr

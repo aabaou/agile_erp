@@ -8,11 +8,11 @@ services:
       - "80:80"
       - "9000:9000"
     environment:
-      - SERVERNAME=drup8cy.loc
-      - SERVERALIAS=drup8cy.loc
+      - SERVERNAME=agile_erp.vm
+      - SERVERALIAS=agile_erp.vm
       - DOCUMENTROOT=web
     volumes:
-      - /home/docker/projets/drup8cy/:/var/www/html/
+      - /home/docker/projets/Agile_erp/:/var/www/html/
       - /home/docker/.ssh/:/var/www/.ssh/
     links:
       - database:mysql
@@ -28,7 +28,7 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=mysqlroot
-      - MYSQL_DATABASE=drup8cy
+      - MYSQL_DATABASE=agile_erp
       - MYSQL_USER=mysqlusr
       - MYSQL_PASSWORD=mysqlpwd
 

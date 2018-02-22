@@ -1,0 +1,31 @@
+uuid: ac12c731-47aa-422b-a2c2-4ace2d057838
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_dev_projet
+    - node.type.projet
+    - paragraphs.paragraphs_type.team_dev
+  module:
+    - entity_reference_revisions
+id: node.projet.field_team_dev_projet
+field_name: field_team_dev_projet
+entity_type: node
+bundle: projet
+label: 'Team DEV'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      team_dev: team_dev
+    target_bundles_drag_drop:
+      team_dev:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

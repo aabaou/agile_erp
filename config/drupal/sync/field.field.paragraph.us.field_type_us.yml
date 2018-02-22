@@ -1,0 +1,29 @@
+uuid: 346abcdd-f3a3-4725-8d62-b73d88db3956
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_us
+    - paragraphs.paragraphs_type.us
+    - taxonomy.vocabulary.type_us
+id: paragraph.us.field_type_us
+field_name: field_type_us
+entity_type: paragraph
+bundle: us
+label: 'Type d''US'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_us: type_us
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

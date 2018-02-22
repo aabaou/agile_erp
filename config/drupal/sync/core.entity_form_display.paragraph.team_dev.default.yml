@@ -1,0 +1,35 @@
+uuid: 4a60d9dd-c663-49be-a246-1100494562a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_dev.field_developpeur_team_dev
+    - field.field.paragraph.team_dev.field_lead_team_dev
+    - paragraphs.paragraphs_type.team_dev
+id: paragraph.team_dev.default
+targetEntityType: paragraph
+bundle: team_dev
+mode: default
+content:
+  field_developpeur_team_dev:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_lead_team_dev:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

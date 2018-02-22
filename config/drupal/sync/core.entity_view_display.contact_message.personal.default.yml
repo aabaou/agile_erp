@@ -19,11 +19,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_default
+    region: content
   message:
     type: basic_string
     weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   field_form_contact_nom_orga: true
+  langcode: true

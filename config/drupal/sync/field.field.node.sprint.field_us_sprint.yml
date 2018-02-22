@@ -1,0 +1,37 @@
+uuid: 30cff2c3-2e7d-405c-8814-2eac43edeb4e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_us_sprint
+    - node.type.sprint
+    - paragraphs.paragraphs_type.us
+  module:
+    - entity_reference_revisions
+id: node.sprint.field_us_sprint
+field_name: field_us_sprint
+entity_type: node
+bundle: sprint
+label: US
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      us: us
+    target_bundles_drag_drop:
+      journal_de_travail:
+        weight: 4
+        enabled: false
+      team_dev:
+        weight: 5
+        enabled: false
+      us:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

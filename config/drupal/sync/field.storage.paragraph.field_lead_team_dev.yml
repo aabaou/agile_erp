@@ -1,16 +1,16 @@
-uuid: 4af79e82-1a13-4f4c-9539-22c908871cb9
+uuid: c863e315-1130-4608-afc1-6487bb3f9d37
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-    - profile
-id: profile.field_projet_po
-field_name: field_projet_po
-entity_type: profile
+    - paragraphs
+    - user
+id: paragraph.field_lead_team_dev
+field_name: field_lead_team_dev
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: node
+  target_type: user
 module: core
 locked: false
 cardinality: 1

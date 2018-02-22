@@ -1,0 +1,24 @@
+uuid: 39998cb2-d779-4e75-b5d8-bb66fbf03a95
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_debut_sprint
+    - node.type.sprint
+  module:
+    - datetime
+id: node.sprint.field_date_debut_sprint
+field_name: field_date_debut_sprint
+entity_type: node
+bundle: sprint
+label: 'Date de début'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

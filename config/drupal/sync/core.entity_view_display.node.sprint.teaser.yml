@@ -1,0 +1,21 @@
+uuid: a4cfb767-9ed6-425e-bdf5-740a000b0f68
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sprint.field_us_sprint
+    - node.type.sprint
+  module:
+    - user
+id: node.sprint.teaser
+targetEntityType: node
+bundle: sprint
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_us_sprint: true
+  langcode: true

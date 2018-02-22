@@ -36,6 +36,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_nom:
     type: string
     weight: 3
@@ -43,6 +44,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   field_organisme:
     weight: 1
     label: inline
@@ -50,6 +52,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_prenom:
     type: string
     weight: 4
@@ -57,8 +60,10 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   profile_main:
     weight: 10
+    region: content
   user_picture:
     type: image
     weight: 0
@@ -67,6 +72,7 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
+    region: content
 hidden:
   field_adresse: true
   field_civilite: true
@@ -78,4 +84,6 @@ hidden:
   field_user_cnil: true
   field_user_validation: true
   field_ville: true
+  langcode: true
   member_for: true
+  profile_product_owner: true

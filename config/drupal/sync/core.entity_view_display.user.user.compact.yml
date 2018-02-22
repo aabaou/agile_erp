@@ -38,6 +38,7 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
+    region: content
 hidden:
   field_adresse: true
   field_civilite: true
@@ -53,4 +54,5 @@ hidden:
   field_user_cnil: true
   field_user_validation: true
   field_ville: true
+  langcode: true
   member_for: true

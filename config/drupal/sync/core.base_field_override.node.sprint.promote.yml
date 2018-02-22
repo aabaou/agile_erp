@@ -1,0 +1,22 @@
+uuid: 06c12043-7ea4-4d9d-8034-149c68016ccf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.sprint
+id: node.sprint.promote
+field_name: promote
+entity_type: node
+bundle: sprint
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean
