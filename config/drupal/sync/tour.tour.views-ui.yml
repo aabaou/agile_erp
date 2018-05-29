@@ -24,7 +24,7 @@ tips:
   views-ui-displays:
     id: views-ui-displays
     plugin: text
-    label: 'Displays in this view'
+    label: 'S''affiche dans cette vue'
     body: 'Un affichage est une façon de rendre les résultats, par exemple comme une page ou un bloc. Une vue peut contenir plusieurs affichages, qui sont listés ici. L''affichage actif est mis en évidence.'
     weight: 2
     attributes:
@@ -89,7 +89,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Aperçu
+    label: Preview
     body: 'Afficher un aperçu du résultat de la vue.'
     weight: 10
     location: left

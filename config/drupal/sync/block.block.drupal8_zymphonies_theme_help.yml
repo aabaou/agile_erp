@@ -11,12 +11,12 @@ _core:
 id: drupal8_zymphonies_theme_help
 theme: drupal8_zymphonies_theme
 region: highlighted
-weight: -30
+weight: -7
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Help
+  label: Aide
   provider: help
   label_display: '0'
 visibility: {  }

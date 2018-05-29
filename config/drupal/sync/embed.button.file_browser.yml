@@ -8,7 +8,7 @@ dependencies:
     - image
 _core:
   default_config_hash: D5QbkhbHfWlohKBxTofPCBUqp9vCE2dFnJii5JdWEk4
-label: 'File Browser'
+label: 'Explorateur de Fichiers'
 id: file_browser
 type_id: entity
 type_settings:

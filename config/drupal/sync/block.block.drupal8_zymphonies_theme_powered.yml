@@ -11,12 +11,12 @@ _core:
 id: drupal8_zymphonies_theme_powered
 theme: drupal8_zymphonies_theme
 region: auto_hidden_block
-weight: -10
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
-  label: 'Powered by Drupal'
+  label: 'Propulsé par Drupal'
   provider: system
   label_display: '0'
 visibility: {  }

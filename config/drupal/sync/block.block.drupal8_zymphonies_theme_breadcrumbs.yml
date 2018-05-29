@@ -11,12 +11,12 @@ _core:
 id: drupal8_zymphonies_theme_breadcrumbs
 theme: drupal8_zymphonies_theme
 region: breadcrumb
-weight: -100
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Breadcrumbs
+  label: 'Fils d''Ariane'
   provider: system
   label_display: '0'
 visibility: {  }

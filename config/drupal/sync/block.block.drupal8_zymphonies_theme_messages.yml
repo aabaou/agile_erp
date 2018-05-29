@@ -11,12 +11,12 @@ _core:
 id: drupal8_zymphonies_theme_messages
 theme: drupal8_zymphonies_theme
 region: highlighted
-weight: -50
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: 'Messages de statut'
   provider: system
   label_display: '0'
 visibility: {  }

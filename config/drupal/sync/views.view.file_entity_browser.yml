@@ -24,7 +24,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Maître
     position: 0
     display_options:
       access:
@@ -45,10 +45,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Appliquer
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -60,10 +60,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: "‹\_précédent"
+            next: "suivant\_›"
+            first: "«\_premier"
+            last: "dernier\_»"
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -391,6 +391,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -419,7 +420,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'File MIME type'
+            label: 'Type MIME du fichier'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -431,6 +432,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -497,7 +499,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Created date'
+            label: 'Date de création'
           granularity: second
           entity_type: file
           entity_field: created
@@ -512,7 +514,7 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'File size'
+            label: 'Taille du fichier'
           entity_type: file
           entity_field: filesize
           plugin_id: standard
